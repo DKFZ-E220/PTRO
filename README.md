@@ -3,7 +3,6 @@ Ontology for Preclinical Trials in Radiation Oncology (PTRO)
 
 <h3>About</h3>
 
-# PTRO
 The ontology for Preclinical Trials in Radiation Oncology (PTRO) represents: 
 i) Demographic characteristics of mice.  
 ii) Findings or information collected during a study, like body weight, cause of death, clinical observation. 
