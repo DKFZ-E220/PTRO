@@ -1,0 +1,67 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#>.
+@prefix ptro: <http://www.radplanbio.org/ptro/>.
+@prefix ro: <http://purl.obolibrary.org/obo/ro.owl>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@base <http://example.com/ns#>.
+
+<#TriplesMap1> a rr:TriplesMap;
+	
+  rml:logicalSource [ 
+		rml:source      "/data/B1_full_data.csv";
+    rml:referenceFormulation ql:CSV
+  ];
+    
+	rr:subjectMap [
+		rr:template   "http://www.radplanbio.org/ptro/instance/{Subject Id}";
+		rr:class ncit:C69256;
+		rr:termType rr:IRI;
+	];
+   
+	rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000010;
+    rr:objectMap [ rml:reference "Subject Identification" ];
+	];
+   
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [ rml:reference "Subject Id" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000009;
+    rr:objectMap [ rml:reference "Subject Id" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000008;
+    rr:objectMap [ rml:reference "Study Identifier" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000033;
+    rr:objectMap [ rml:reference "Age" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000034;
+    rr:objectMap [ rml:reference "Age Unit" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000043;
+    rr:objectMap [ rml:reference "Age Range" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000040;
+    rr:objectMap [ rml:reference "Sex" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000041;
+    rr:objectMap [ rml:reference "Strain/Substrain" ];
+  ];
+.

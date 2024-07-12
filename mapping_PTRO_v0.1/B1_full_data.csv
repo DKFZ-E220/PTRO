@@ -1,0 +1,21 @@
+Subject Id,Visit,Study Identifier,Domain Abbreviation,Project Unique Identifier,Cohort,Subject Identification,Subject Reference Start Date/Time,Subject Reference End Date/Time,Date/Time of First Study Treatment,Date/Time of Last Study Treatment,Date/Time of Birth,Age,Age Range,Age Unit,Sex,Species,Strain/Substrain,Strain/Substrain Details,Planned Arm Code,Description of Planned Arm,Set Code
+N150a009,DM,"Xeno Nimo Hypox,FaDu",DM,N150,a,9,2011-12-06,2012-07-05,2011-12-26,2012-02-03,2011-09-23,74.0,,days,0,Mouse,Nude Mouse,,30f6Wo_Nimo+Cispl._54Gy,RT 30fx with Nimorazole + Cisplatin,B
+N150a011,DM,"Xeno Nimo Hypox,FaDu",DM,N150,a,11,2011-12-06,2012-07-05,2011-12-19,2012-01-27,2011-09-23,,72-74,days,0,Mouse,Nude Mouse,,30f6Wo_Nimo+Cispl._54Gy,RT 30fx with Nimorazole + Cisplatin,B
+N150a012,DM,"Xeno Nimo Hypox,FaDu",DM,N150,a,12,2011-12-06,2012-07-05,2011-12-22,2012-02-01,2011-09-23,,72-74,days,0,Mouse,Nude Mouse,,30f6Wo_Nimo+Cispl._54Gy,RT 30fx with Nimorazole + Cisplatin,B
+N150b057,DM,"Xeno Nimo Hypox,FaDu",DM,N150,b,57,2012-01-31,2012-09-04,2012-02-27,2012-04-06,2011-11-19,,72-73,days,0,Mouse,Nude Mouse,,30f6Wo_Nimo+Cispl._54Gy,RT 30fx with Nimorazole + Cisplatin,B
+N150b059,DM,"Xeno Nimo Hypox,FaDu",DM,N150,b,59,2012-01-31,2012-09-06,2012-02-27,2012-04-06,2011-11-19,,72-73,days,0,Mouse,Nude Mouse,,30f6Wo_Nimo+Cispl._54Gy,RT 30fx with Nimorazole + Cisplatin,B
+N150b081,DM,"Xeno Nimo Hypox,FaDu",DM,N150,b,81,2012-01-31,2012-09-06,2012-03-12,2012-04-20,2011-11-13,,75-79,days,1,Mouse,Nude Mouse,,30f6Wo_Nimo+Cispl._54Gy,RT 30fx with Nimorazole + Cisplatin,B
+N150b082,DM,"Xeno Nimo Hypox,FaDu",DM,N150,b,82,2012-01-31,2012-07-09,2012-03-05,2012-04-13,2011-11-13,,75-79,days,1,Mouse,Nude Mouse,,30f6Wo_Nimo+Cispl._54Gy,RT 30fx with Nimorazole + Cisplatin,B
+N150b083,DM,"Xeno Nimo Hypox,FaDu",DM,N150,b,83,2012-01-31,2012-06-18,2012-02-27,2012-04-06,2011-11-13,,75-79,days,1,Mouse,Nude Mouse,,30f6Wo_Nimo+Cispl._54Gy,RT 30fx with Nimorazole + Cisplatin,B
+N150b084,DM,"Xeno Nimo Hypox,FaDu",DM,N150,b,84,2012-01-31,2012-09-06,2012-03-19,2012-04-27,2011-11-13,,75-79,days,1,Mouse,Nude Mouse,,30f6Wo_Nimo+Cispl._54Gy,RT 30fx with Nimorazole + Cisplatin,B
+N150b095,DM,"Xeno Nimo Hypox,FaDu",DM,N150,b,95,2012-01-31,2012-05-14,2012-02-23,2012-04-04,2011-11-25,67.0,,days,0,Mouse,Nude Mouse,,30f6Wo_Nimo+Cispl._54Gy,RT 30fx with Nimorazole + Cisplatin,B
+N150b096,DM,"Xeno Nimo Hypox,FaDu",DM,N150,b,96,2012-01-31,2012-09-06,2012-02-27,2012-04-06,2011-11-25,67.0,,days,0,Mouse,Nude Mouse,,30f6Wo_Nimo+Cispl._54Gy,RT 30fx with Nimorazole + Cisplatin,B
+N150b098,DM,"Xeno Nimo Hypox,FaDu",DM,N150,b,98,2012-01-31,2012-09-06,2012-03-26,2012-05-04,2011-11-25,67.0,,days,0,Mouse,Nude Mouse,,30f6Wo_Nimo+Cispl._54Gy,RT 30fx with Nimorazole + Cisplatin,B
+N150b103,DM,"Xeno Nimo Hypox,FaDu",DM,N150,b,103,2012-01-31,2012-08-09,2012-02-20,2012-03-30,2011-11-25,,66-67,days,0,Mouse,Nude Mouse,,30f6Wo_Nimo+Cispl._54Gy,RT 30fx with Nimorazole + Cisplatin,B
+N150b104,DM,"Xeno Nimo Hypox,FaDu",DM,N150,b,104,2012-01-31,2012-09-06,2012-03-12,2012-04-20,2011-11-25,,66-67,days,0,Mouse,Nude Mouse,,30f6Wo_Nimo+Cispl._54Gy,RT 30fx with Nimorazole + Cisplatin,B
+N150b110,DM,"Xeno Nimo Hypox,FaDu",DM,N150,b,110,2012-01-31,2012-08-30,2012-02-27,2012-04-06,2011-11-25,,66-67,days,0,Mouse,Nude Mouse,,30f6Wo_Nimo+Cispl._54Gy,RT 30fx with Nimorazole + Cisplatin,B
+N150b111,DM,"Xeno Nimo Hypox,FaDu",DM,N150,b,111,2012-01-31,2012-06-28,2012-03-15,2012-04-25,2011-11-18,74.0,,days,1,Mouse,Nude Mouse,,30f6Wo_Nimo+Cispl._54Gy,RT 30fx with Nimorazole + Cisplatin,B
+N150b112,DM,"Xeno Nimo Hypox,FaDu",DM,N150,b,112,2012-01-31,2012-09-06,2012-02-27,2012-04-06,2011-11-18,74.0,,days,1,Mouse,Nude Mouse,,30f6Wo_Nimo+Cispl._54Gy,RT 30fx with Nimorazole + Cisplatin,B
+N150b115,DM,"Xeno Nimo Hypox,FaDu",DM,N150,b,115,2012-01-31,2012-09-06,2012-02-23,2012-04-04,2011-11-18,74.0,,days,1,Mouse,Nude Mouse,,30f6Wo_Nimo+Cispl._54Gy,RT 30fx with Nimorazole + Cisplatin,B
+N150b116,DM,"Xeno Nimo Hypox,FaDu",DM,N150,b,116,2012-01-31,2012-08-07,2012-02-23,2012-04-04,2011-11-18,74.0,,days,1,Mouse,Nude Mouse,,30f6Wo_Nimo+Cispl._54Gy,RT 30fx with Nimorazole + Cisplatin,B
+N150b128,DM,"Xeno Nimo Hypox,FaDu",DM,N150,b,128,2012-01-31,2012-09-06,2012-03-12,2012-04-20,2011-11-26,,65-66,days,0,Mouse,Nude Mouse,,30f6Wo_Nimo+Cispl._54Gy,RT 30fx with Nimorazole + Cisplatin,B
