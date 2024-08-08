@@ -1,0 +1,131 @@
+N150a009
+
+
+<http://www.radplanbio.org/ptro/instanceDKFZ000012> rdf:type ncit:C69256
+<http://www.radplanbio.org/ptro/instanceDKFZ000012> ptro:DKFZ000009 “N150a009”
+<http://www.radplanbio.org/ptro/instanceDKFZ000012> ptro:DKFZ000008 “Xeno Nimo Hypox;FaDu”
+<http://www.radplanbio.org/ptro/instanceDKFZ000012> ptro:DKFZ000010 009^^xsd:Integer
+<http://www.radplanbio.org/ptro/instanceDKFZ000012> ptro:DKFZ000033 74.0^^xsd:decimal
+<http://www.radplanbio.org/ptro/instanceDKFZ000012> ptro:DKFZ000034 “days”
+<http://www.radplanbio.org/ptro/instanceDKFZ000012> ptro:DKFZ000043 “”
+<http://www.radplanbio.org/ptro/instanceDKFZ000012> ptro:DKFZ000041 “Nude Mouse”
+<http://www.radplanbio.org/ptro/instanceDKFZ000012> ptro:DKFZ000040 0^^xsd:Integer
+<http://www.radplanbio.org/ptro/instanceDKFZ000012> ptro:DKFZ000019 “DEATHD”
+<http://www.radplanbio.org/ptro/instanceDKFZ000012> ptro:DKFZ000020 “Death Diagnosis”
+<http://www.radplanbio.org/ptro/instanceDKFZ000012> ptro:DKFZ000021 “TERMINAL SACRIFICE”
+<http://www.radplanbio.org/ptro/instanceDKFZ000012> ptro:DKFZ000022 “EJ”
+<http://www.radplanbio.org/ptro/instanceDKFZ000012> ptro:DKFZ000023 212.0^^xsd:decimal
+<http://www.radplanbio.org/ptro/instanceDKFZ000012> roo:P100040 <http://www.radplanbio.org/ptro/instanceDKFZ000017>
+<http://www.radplanbio.org/ptro/instanceDKFZ000012> roo:P100040 <http://www.radplanbio.org/ptro/instanceDKFZ000018>
+
+
+
+
+N150a011
+
+
+<http://www.radplanbio.org/ptro/instanceDKFZ000014> rdf:type ncit:C69256
+<http://www.radplanbio.org/ptro/instanceDKFZ000014> ptro:DKFZ000009 “N150a011”
+<http://www.radplanbio.org/ptro/instanceDKFZ000014> ptro:DKFZ000008 “Xeno Nimo Hypox;FaDu”
+<http://www.radplanbio.org/ptro/instanceDKFZ000014> ptro:DKFZ000010 011^^xsd:Integer
+<http://www.radplanbio.org/ptro/instanceDKFZ000014> ptro:DKFZ000033 0.0^^xsd:decimal
+<http://www.radplanbio.org/ptro/instanceDKFZ000014> ptro:DKFZ000034 “days”
+<http://www.radplanbio.org/ptro/instanceDKFZ000014> ptro:DKFZ000043 “72-74”
+<http://www.radplanbio.org/ptro/instanceDKFZ000014> ptro:DKFZ000041 “Nude Mouse”
+<http://www.radplanbio.org/ptro/instanceDKFZ000014> ptro:DKFZ000040 0^^xsd:Integer
+<http://www.radplanbio.org/ptro/instanceDKFZ000014> ptro:DKFZ000019 “DEATHD”
+<http://www.radplanbio.org/ptro/instanceDKFZ000014> ptro:DKFZ000020 “Death Diagnosis”
+<http://www.radplanbio.org/ptro/instanceDKFZ000014> ptro:DKFZ000021 “TERMINAL SACRIFICE”
+<http://www.radplanbio.org/ptro/instanceDKFZ000014> ptro:DKFZ000022 “EJ”
+<http://www.radplanbio.org/ptro/instanceDKFZ000014> roo:DKFZ000023 212.0^^xsd:decimal
+<http://www.radplanbio.org/ptro/instanceDKFZ000014> roo:P100040 <http://www.radplanbio.org/ptro/instanceDKFZ000019>
+<http://www.radplanbio.org/ptro/instanceDKFZ000014> roo:P100040 <http://www.radplanbio.org/ptro/instanceDKFZ000020>
+
+
+
+
+N150a009_20.0_1
+
+
+<http://www.radplanbio.org/ptro/instanceDKFZ000017> rdf:type ptro:DKFZ000050
+<http://www.radplanbio.org/ptro/instanceDKFZ000017> ptro:DKFZ000009 “N150a009”
+<http://www.radplanbio.org/ptro/instanceDKFZ000017> ptro:DKFZ000010 009^^xsd:Integer
+<http://www.radplanbio.org/ptro/instanceDKFZ000017> ptro:DKFZ000008 “Xeno Nimo Hypox;FaDu”
+<http://www.radplanbio.org/ptro/instanceDKFZ000017> ptro:DKFZ000013 “NIMORAZOLE”
+<http://www.radplanbio.org/ptro/instanceDKFZ000017> ptro:DKFZ000053 9.9^^xsd:decimal
+<http://www.radplanbio.org/ptro/instanceDKFZ000017> ptro:DKFZ000054 “mg/kg”
+<http://www.radplanbio.org/ptro/instanceDKFZ000017> ptro:DKFZ000011 “INTRAPERITONEAL”
+<http://www.radplanbio.org/ptro/instanceDKFZ000017> ptro:DKFZ000012 “SALINE;SODIUM CHLORIDE 0.9%”
+<http://www.radplanbio.org/ptro/instanceDKFZ000017> ptro:DKFZ000055 0.33^^xsd:decimal
+<http://www.radplanbio.org/ptro/instanceDKFZ000017> ptro:DKFZ000056 “ml”
+<http://www.radplanbio.org/ptro/instanceDKFZ000017> ptro:DKFZ000044 20.0^^xsd:decimal
+<http://www.radplanbio.org/ptro/instanceDKFZ000017> ptro:DKFZ000057 20.0^^xsd:decimal
+<http://www.radplanbio.org/ptro/instanceDKFZ000017> ptro:DKFZ000058 1.0^^xsd:decimal
+<http://www.radplanbio.org/ptro/instanceDKFZ000017>
+roo:P100040 <http://www.radplanbio.org/ptro/instanceDKFZ000012>
+
+
+
+
+N150a009_20.0_2
+
+
+<http://www.radplanbio.org/ptro/instanceDKFZ000018> rdf:type ptro:DKFZ000050
+<http://www.radplanbio.org/ptro/instanceDKFZ000018> ptro:DKFZ000009 “N150a009”
+<http://www.radplanbio.org/ptro/instanceDKFZ000018> ptro:DKFZ000010 009^^xsd:Integer
+<http://www.radplanbio.org/ptro/instanceDKFZ000018> ptro:DKFZ000008 “Xeno Nimo Hypox;FaDu”
+<http://www.radplanbio.org/ptro/instanceDKFZ000018> ptro:DKFZ000013 “CISPLATIN”
+<http://www.radplanbio.org/ptro/instanceDKFZ000018> ptro:DKFZ000053 99^^xsd:decimal
+<http://www.radplanbio.org/ptro/instanceDKFZ000018> ptro:DKFZ000054 “mg/kg”
+<http://www.radplanbio.org/ptro/instanceDKFZ000018> ptro:DKFZ000011 “INTRAPERITONEAL”
+<http://www.radplanbio.org/ptro/instanceDKFZ000018> ptro:DKFZ000012 “SALINE;SODIUM CHLORIDE 0.9%”
+<http://www.radplanbio.org/ptro/instanceDKFZ000018> ptro:DKFZ000055 0.33^^xsd:decimal
+<http://www.radplanbio.org/ptro/instanceDKFZ000018> ptro:DKFZ000056 “ml”
+<http://www.radplanbio.org/ptro/instanceDKFZ000018> ptro:DKFZ000044 20.0^^xsd:decimal
+<http://www.radplanbio.org/ptro/instanceDKFZ000018> ptro:DKFZ000057 20.0^^xsd:decimal
+<http://www.radplanbio.org/ptro/instanceDKFZ000018> ptro:DKFZ000058 1.0^^xsd:decimal
+<http://www.radplanbio.org/ptro/instanceDKFZ000018> roo:P100040 <http://www.radplanbio.org/ptro/instanceDKFZ000012>
+
+
+
+
+N150a011_13.0_1
+
+
+<http://www.radplanbio.org/ptro/instanceDKFZ000019> rdf:type ptro:DKFZ000050
+<http://www.radplanbio.org/ptro/instanceDKFZ000019> ptro:DKFZ000009 “N150a011”
+<http://www.radplanbio.org/ptro/instanceDKFZ000019> ptro:DKFZ000010 011^^xsd:Integer
+<http://www.radplanbio.org/ptro/instanceDKFZ000019> ptro:DKFZ000008 “Xeno Nimo Hypox;FaDu”
+<http://www.radplanbio.org/ptro/instanceDKFZ000019> ptro:DKFZ000013 “NIMORAZOLE”
+<http://www.radplanbio.org/ptro/instanceDKFZ000019> ptro:DKFZ000053 12.6^^xsd:decimal
+<http://www.radplanbio.org/ptro/instanceDKFZ000019> ptro:DKFZ000054 “mg/kg”
+<http://www.radplanbio.org/ptro/instanceDKFZ000019> ptro:DKFZ000011 “INTRAPERITONEAL”
+<http://www.radplanbio.org/ptro/instanceDKFZ000019> ptro:DKFZ000012 “SALINE;SODIUM CHLORIDE 0.9%”
+<http://www.radplanbio.org/ptro/instanceDKFZ000019> ptro:DKFZ000055 0.42^^xsd:decimal
+<http://www.radplanbio.org/ptro/instanceDKFZ000019> ptro:DKFZ000056 “ml”
+<http://www.radplanbio.org/ptro/instanceDKFZ000019> ptro:DKFZ000044 13.0^^xsd:decimal
+<http://www.radplanbio.org/ptro/instanceDKFZ000019> ptro:DKFZ000057 13.0^^xsd:decimal
+<http://www.radplanbio.org/ptro/instanceDKFZ000019> ptro:DKFZ000058 1.0^^xsd:decimal
+<http://www.radplanbio.org/ptro/instanceDKFZ000019> roo:P100040 <http://www.radplanbio.org/ptro/instanceDKFZ000014>
+
+
+
+
+N150a011_13.0_2
+
+
+<http://www.radplanbio.org/ptro/instanceDKFZ000020> rdf:type ptro:DKFZ000050
+<http://www.radplanbio.org/ptro/instanceDKFZ000020> ptro:DKFZ000009 “N150a011”
+<http://www.radplanbio.org/ptro/instanceDKFZ000020> ptro:DKFZ000010 011^^xsd:Integer
+<http://www.radplanbio.org/ptro/instanceDKFZ000020> ptro:DKFZ000008 “Xeno Nimo Hypox;FaDu”
+<http://www.radplanbio.org/ptro/instanceDKFZ000020> ptro:DKFZ000013 “CISPLATIN”
+<http://www.radplanbio.org/ptro/instanceDKFZ000020> ptro:DKFZ000053 126^^xsd:decimal
+<http://www.radplanbio.org/ptro/instanceDKFZ000020> ptro:DKFZ000054 “mg/kg”
+<http://www.radplanbio.org/ptro/instanceDKFZ000020> ptro:DKFZ000011 “INTRAPERITONEAL”
+<http://www.radplanbio.org/ptro/instanceDKFZ000020> ptro:DKFZ000012 “SALINE;SODIUM CHLORIDE 0.9%”
+<http://www.radplanbio.org/ptro/instanceDKFZ000020> ptro:DKFZ000055 0.42^^xsd:decimal
+<http://www.radplanbio.org/ptro/instanceDKFZ000020> ptro:DKFZ000056 “ml”
+<http://www.radplanbio.org/ptro/instanceDKFZ000020> ptro:DKFZ000044 13.0^^xsd:decimal
+<http://www.radplanbio.org/ptro/instanceDKFZ000020> ptro:DKFZ000057 13.0^^xsd:decimal
+<http://www.radplanbio.org/ptro/instanceDKFZ000020> ptro:DKFZ000058 1.0^^xsd:decimal
+<http://www.radplanbio.org/ptro/instanceDKFZ000020> roo:P100040 <http://www.radplanbio.org/ptro/instanceDKFZ000014>
