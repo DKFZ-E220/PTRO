@@ -10,7 +10,7 @@
 <#TriplesMap1> a rr:TriplesMap;
 	
   rml:logicalSource [ 
-		rml:source      "/data/B1_full_data.csv";
+		rml:source      "/data/B1_DM_full_data.csv";
     rml:referenceFormulation ql:CSV
   ];
     
