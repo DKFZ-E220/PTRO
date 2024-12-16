@@ -1,0 +1,1639 @@
+1.  The following query returns all ontology terms with a label.
+
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+SELECT ?sub ?obj WHERE {
+  ?sub rdfs:label ?obj .
+}
+
+
+Minimum Amount Information
+ 
+2. The following query returns the Subject Identifier (a.k.a Subject Identification) of the subjects.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000010 ?value .
+}
+
+
+3. The following query returns the Unique Subject Identifier for the Study (a.k.a Subject Id) of the subjects. 
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?participantid 
+WHERE { 
+?participantid a ncit:C69256  .
+}
+
+
+4. The following query returns the Study Identifier where the subjects are part of. 
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000008 ?value .
+}
+
+
+
+
+Demographics information
+
+
+5. The following query returns the Age of the subjects. 
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+select ?x ?y where { 
+  ?x ptro:DKFZ000033 ?y
+}
+
+
+6. The following query returns the Age unit of the subjects.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+select ?x ?y where { 
+  ?x ptro:DKFZ000034 ?y
+}
+
+
+7. The following query returns the Age range of the subjects.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+select ?x ?y where { 
+  ?x ptro:DKFZ000043 ?y
+}
+
+
+8. The following query returns the Sex of the subjects.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+select ?x ?y where { 
+  ?x ptro:DKFZ000040 ?y
+}
+
+
+9. The following query returns the strain/substrain of the subjects.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+select ?x ?y where { 
+  ?x ptro:DKFZ000041 ?y
+}
+
+
+10. Give me the list of female mice
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?Subject_Unique_Identifier ?Sex
+WHERE
+  {?Subject_Unique_Identifier ptro:DKFZ000040 ?Sex .
+  FILTER (?Sex = 1)
+  }
+
+
+11. Give me the list of male mice
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?Subject_Unique_Identifier ?Sex
+
+
+WHERE
+  {?Subject_Unique_Identifier ptro:DKFZ000040 ?Sex .
+  FILTER (?Sex = 0)
+  }
+
+
+
+
+
+
+12. Give me the mice with an age equal to or older than 67 days.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?Subject_Unique_Identifier ?Age
+WHERE
+  {?Subject_Unique_Identifier ptro:DKFZ000033 ?Age .
+  FILTER (?Age >= 67.0)
+ }
+
+
+
+
+13. Give me the mice older than 67 days. 
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?Subject_Unique_Identifier ?Age
+WHERE
+  {?Subject_Unique_Identifier ptro:DKFZ000033 ?Age .
+  FILTER (?Age > 67.0)
+ }
+
+
+14. Give me the mice with an age equal to or younger than 74 days. 
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?Subject_Unique_Identifier ?Age
+WHERE
+  {?Subject_Unique_Identifier ptro:DKFZ000033 ?Age .
+  FILTER (?Age <= 74.0)
+ }
+
+
+15. Give me the mice younger than 74 days. 
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?Subject_Unique_Identifier ?Age
+WHERE
+  {?Subject_Unique_Identifier ptro:DKFZ000033 ?Age .
+  FILTER (?Age < 74.0)
+ }
+
+
+
+
+16. Give me the list of male mice and 74.0 days old 
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT ?Subject_Unique_Identifier
+WHERE
+{
+  ?Subject_Unique_Identifier ptro:DKFZ000040 ?Sex .
+  FILTER (?Sex = 0).
+  ?Subject_Unique_Identifier ptro:DKFZ000033 ?Age .
+  FILTER (?Age = 74.0)
+  }
+
+
+
+
+17. Give me the list of male mice and 67.0 days old 
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?Subject_Unique_Identifier
+WHERE
+{
+  ?Subject_Unique_Identifier ptro:DKFZ000040 ?Sex .
+  FILTER (?Sex = 0).
+  ?Subject_Unique_Identifier ptro:DKFZ000033 ?Age .
+  FILTER (?Age = 67.0)
+  }
+
+
+
+
+Findings - Death Diagnosis and Details
+
+
+18. The following query returns the Death DIagnosis Short Name of the subjects
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?x ?y
+WHERE {
+?x ptro:DKFZ000019 ?y .
+}
+
+
+
+
+19. The following query returns the Death Diagnosis Name of the subjects
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?x ?y
+WHERE {
+?x ptro:DKFZ000020 ?y .
+}
+
+
+
+
+20. The following query returns the Death Diagnosis Result Category of the subjects
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?x ?y
+WHERE {
+?x ptro:DKFZ000021 ?y .
+}
+
+
+21. The following query returns the Death Diagnosis evaluator of the subjects
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?x ?y
+WHERE {
+?x ptro:DKFZ000022 ?y .
+}
+
+
+22. The following query returns the Study Day Animal Death of the subjects
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?x ?y
+WHERE {
+?x ptro:DKFZ000023 ?y .
+}
+
+
+
+
+23. Give me the list of mice with a death diagnosis TERMINAL SACRIFICE
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?Subject_Unique_Identifier ?Death_Diagnosis_Result_Category
+
+
+WHERE
+  {?Subject_Unique_Identifier ptro:DKFZ000021 ?Death_Diagnosis_Result_Category .
+  FILTER (?Death_Diagnosis_Result_Category = "TERMINAL SACRIFICE")
+ }
+
+
+
+
+24. Give me the list of mice with a death diagnosis INTERIM SACRIFICE
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?Subject_Unique_Identifier ?Death_Diagnosis_Result_Category
+
+
+WHERE
+  {?Subject_Unique_Identifier ptro:DKFZ000021 ?Death_Diagnosis_Result_Category .
+  FILTER (?Death_Diagnosis_Result_Category = "INTERIM SACRIFICE")
+ }
+
+
+25. Give me the evaluators of mice with a death diagnosis INTERIM SACRIFICE
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?Subject_Unique_Identifier ?Death_Diagnosis_Evaluator
+
+
+WHERE
+{
+?Subject_Unique_Identifier ptro:DKFZ000022 ?Death_Diagnosis_Evaluator .
+?Subject_Unique_Identifier ptro:DKFZ000021 ?Death_Diagnosis_Result_Category .
+  FILTER (?Death_Diagnosis_Result_Category = "INTERIM SACRIFICE")
+ }
+
+
+26. Give me the study day of the mice with a death diagnosis result category TERMINAL SACRIFICE
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?Subject_Unique_Identifier ?Study_day_Animal_Death
+
+
+WHERE
+{
+?Subject_Unique_Identifier ptro:DKFZ000023 ?Study_day_Animal_Death .
+?Subject_Unique_Identifier ptro:DKFZ000021 ?Death_Diagnosis_Result_Category .
+  FILTER (?Death_Diagnosis_Result_Category = "TERMINAL SACRIFICE")
+}
+
+
+
+
+Queries retrieving information from DM and DD databases
+
+
+27. Give me the death diagnosis result category of female mice.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?Subject_Unique_Identifier ?Death_Diagnosis_Result_Category
+
+
+WHERE
+{
+?Subject_Unique_Identifier ptro:DKFZ000021 ?Death_Diagnosis_Result_Category .
+?Subject_Unique_Identifier ptro:DKFZ000040 ?Sex .
+  FILTER (?Sex = 1)
+}
+
+
+28. Give me the death diagnosis result category of male mice.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?Subject_Unique_Identifier ?Death_Diagnosis_Result_Category
+
+
+WHERE
+{
+?Subject_Unique_Identifier ptro:DKFZ000021 ?Death_Diagnosis_Result_Category .
+?Subject_Unique_Identifier ptro:DKFZ000040 ?Sex .
+  FILTER (?Sex = 0)
+}
+
+
+Exposure information (long table ‘transformed’ in wide table)
+
+
+29. The following query returns the session ids associated to the subjects ids
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?Treatment_Session_Identifier ?Subject_Unique_Identifier
+
+
+WHERE
+{
+?Treatment_Session_Identifier ptro:DKFZ000079 ?Subject_Unique_Identifier .
+}
+
+
+30. The following query returns the treatment sessions ids, subjects and corresponding study identifiers.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?Treatment_Session_Identifier ?Subject_Unique_Identifier
+?value
+
+
+WHERE {
+ ?Subject_Unique_Identifier ptro:DKFZ000077 ?Treatment_Session_Identifier .
+?Treatment_Session_Identifier ptro:DKFZ000008 ?value .
+}
+
+
+Queries tested on 5.12.2024
+31. The following query returns the name of the actual treatment used in the treatment sessions.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000013 ?value .
+}
+
+
+32. The following query returns the dose used in the  treatment sessions.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000053 ?value .
+}
+
+
+33. The following query returns the dose units used in the  treatment sessions.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000054 ?value .
+}
+
+
+34. The following query returns the Route of Administration used in the  treatment sessions.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000011 ?value .
+}
+
+
+35. The following query returns the Treatment Vehicle used in the  treatment sessions.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000012 ?value .
+}
+
+
+36. The following query returns the Amount Administered used in the  treatment sessions.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000055 ?value .
+}
+
+
+37. The following query returns the Amount Administered Units used in the  treatment sessions.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000056 ?value .
+}
+
+
+38. The following query returns the Study Day of Start of Treatment used in the  treatment sessions.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000044 ?value .
+}
+
+
+39. The following query returns the Study Day of End of Treatment used in the  treatment sessions.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000057 ?value .
+}
+
+
+40. The following query returns the Duration of Treatment used in the  treatment sessions.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000058 ?value .
+}
+
+
+
+
+Queries retrieving information from DM and EX databases
+
+
+41. The following query returns the treatment session ID, name of the treatment, dose, dose unit and route of administration used in male mice participating in the study ‘Xeno Nimo Hypox,FaDu’.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/>
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?Subject_Unique_Identifier ?Treatment_Session_Identifier  ?Name_of_Actual_Treatment ?Dose_per_Administration ?Dose_Units ?Route_of_Administration ?Study_Identifier 
+
+
+WHERE {
+ ?Subject_Unique_Identifier ptro:DKFZ000077 ?Treatment_Session_Identifier .
+?Subject_Unique_Identifier ptro:DKFZ000040 ?Sex .
+  FILTER (?Sex = 0)
+?Treatment_Session_Identifier ptro:DKFZ000013 ?Name_of_Actual_Treatment .
+?Treatment_Session_Identifier ptro:DKFZ000053 ?Dose_per_Administration .
+?Treatment_Session_Identifier ptro:DKFZ000054 ?Dose_Units .
+?Treatment_Session_Identifier ptro:DKFZ000011 ?Route_of_Administration .
+?Treatment_Session_Identifier ptro:DKFZ000008 ?Study_Identifier .
+}
+
+
+42. The following query returns the treatment session ID, name of the treatment, dose, dose unit and route of administration used in female mice participating in the study ‘Xeno Nimo Hypox,FaDu’.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/>
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?Subject_Unique_Identifier ?Treatment_Session_Identifier  ?Name_of_Actual_Treatment ?Dose_per_Administration ?Dose_Units ?Route_of_Administration ?Study_Identifier 
+
+
+WHERE {
+ ?Subject_Unique_Identifier ptro:DKFZ000077 ?Treatment_Session_Identifier .
+?Subject_Unique_Identifier ptro:DKFZ000040 ?Sex .
+  FILTER (?Sex = 1)
+?Treatment_Session_Identifier ptro:DKFZ000013 ?Name_of_Actual_Treatment .
+?Treatment_Session_Identifier ptro:DKFZ000053 ?Dose_per_Administration .
+?Treatment_Session_Identifier ptro:DKFZ000054 ?Dose_Units .
+?Treatment_Session_Identifier ptro:DKFZ000011 ?Route_of_Administration .
+?Treatment_Session_Identifier ptro:DKFZ000008 ?Study_Identifier .
+}
+
+
+Queries retrieving information from DD and EX databases
+
+
+43. The following query returns the subjects with a death diagnosis result ‘TERMINAL SACRIFICE’ and exposed to a treatment with ‘CISPLATIN”
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/>
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?Subject_Unique_Identifier ?Treatment_Session_Identifier ?Name_of_Actual_Treatment ?Death_Diagnosis_Result_Category
+
+
+WHERE
+  {?Subject_Unique_Identifier ptro:DKFZ000077 ?Treatment_Session_Identifier .
+?Treatment_Session_Identifier ptro:DKFZ000013 ?Name_of_Actual_Treatment .
+  FILTER (?Name_of_Actual_Treatment = "CISPLATIN")
+  ?Subject_Unique_Identifier ptro:DKFZ000021 ?Death_Diagnosis_Result_Category .
+  FILTER (?Death_Diagnosis_Result_Category = "TERMINAL SACRIFICE")
+ }
+
+
+
+
+44. The following query returns the subjects with a death diagnosis result ‘TERMINAL SACRIFICE’ and exposed to a treatment with ‘NIMORAZOLE”
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/>
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?Subject_Unique_Identifier ?Treatment_Session_Identifier ?Name_of_Actual_Treatment ?Death_Diagnosis_Result_Category
+
+
+WHERE
+  {?Subject_Unique_Identifier ptro:DKFZ000077 ?Treatment_Session_Identifier .
+?Treatment_Session_Identifier ptro:DKFZ000013 ?Name_of_Actual_Treatment .
+  FILTER (?Name_of_Actual_Treatment = "NIMORAZOLE")
+  ?Subject_Unique_Identifier ptro:DKFZ000021 ?Death_Diagnosis_Result_Category .
+  FILTER (?Death_Diagnosis_Result_Category = "TERMINAL SACRIFICE")
+ }
+
+
+
+
+Laboratory information (long table ‘transformed’ in wide table)
+
+
+45. The following query returns the Lab record ids associated to the subjects ids
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?Laboratory_Record_Identifier ?Subject_Unique_Identifier
+
+
+WHERE
+{
+?Laboratory_Record_Identifier ptro:DKFZ000078 ?Subject_Unique_Identifier .
+}
+
+
+46. The following query returns the Lab records ids, subjects and corresponding study identifiers.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?Laboratory_Record_Identifier ?Subject_Unique_Identifier
+?value
+
+
+WHERE {
+ ?Subject_Unique_Identifier ptro:DKFZ000076 ?Laboratory_Record_Identifier .
+?Laboratory_Record_Identifier ptro:DKFZ000008 ?value .
+}
+
+
+47. The following query returns the data about Specimen Usability for the Test available in the lab records.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000067 ?value .
+}
+
+
+48. The following query returns the data about Portion or Totality available in the lab records.
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000068 ?value .
+}
+
+
+49. The following query returns the data about Method of Test or Examination available in the lab records.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000069 ?value .
+}
+
+
+50. The following query returns the data about Specimen Condition available in the lab records.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000066 ?value .
+}
+
+
+51. The following query returns the data about the Anatomical Region of Specimen available in the lab records.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000065 ?value .
+}
+
+
+52. The following query returns the data about the Study Day of End of Specimen Collection available in the lab records.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000072 ?value .
+}
+
+
+53. The following query returns the data about the Study Day of Specimen Collection available in the lab records.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000071 ?value .
+}
+
+
+54. The following query returns the data about the Lab Result or Findings as Collected available in the lab records.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000062 ?value .
+}
+
+
+55. The following query returns the data about the Lab Test or Examination Name available in the lab records.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000061 ?value .
+}
+
+
+56. The following query returns the data about the Laboratory Name available in the lab records.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000064 ?value .
+}
+
+
+57. The following query returns the data about the Label for Nominal Study Day available in the lab records.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000074 ?value .
+}
+
+
+58. The following query returns the data about the Baseline Flag available in the lab records.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000070 ?value .
+}
+
+
+59. The following query returns the data about the Lab Test or Examination Short Name available in the lab records.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000060 ?value .
+}
+
+
+60. The following query returns the data about the Nominal Study Day for Tabulations available in the lab records.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000073 ?value .
+}
+
+
+61. The following query returns the data about the Lab Unit of the Original Result available in the lab records.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000063 ?value .
+}
+
+
+62. The following query returns the data about the Laboratory name available in the lab records.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000064 ?value .
+}
+
+
+
+
+63. The following query returns the data about the Specimen Condition available in the lab records.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000066 ?value .
+}
+
+
+64. The following query returns the data about the Specimen Usability for the Test available in the lab records.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000067 ?value .
+}
+
+
+65. The following query returns the data about the Portion or Totality available in the lab records.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000068 ?value .
+}
+
+
+66. The following query returns the data about the Method of Test or Examination available in the lab records.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000069 ?value .
+}
+
+
+
+
+67. The following query returns the data about the Study Day of Specimen Collection available in the lab records.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000071 ?value .
+}
+
+
+68. The following query returns the data about the Study Day of end of Specimen Collection available in the lab records.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000072 ?value .
+}
+
+
+69. The following query returns the data about the Nominal Study Day for Tabulations available in the lab records.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000073 ?value .
+}
+
+
+70. The following query returns the data about the Nominal Study Day for Tabulations available in the lab records.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000074 ?value .
+}
+
+
+Queries retrieving information from DM and LB databases
+
+
+71. The following query returns the Lab record ids, Lab Test Name, Laboratory Name, Anatomical Region of Specimen, Specimen Condition, Method of Test or Examination, and the Study Day of Specimen Collection of male subjects.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/>
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?Subject_Unique_Identifier ?Laboratory_Record_Identifier ?Lab_Test_or_Examination_Name ?Laboratory_Name ?Anatomical_Region_of_Specimen ?Specimen_Condition ?Method_of_Test_or_Examination ?Study_Day_of_Specimen_Collection ?Study_Identifier 
+
+
+WHERE {
+ ?Subject_Unique_Identifier ptro:DKFZ000076 ?Laboratory_Record_Identifier .
+?Subject_Unique_Identifier ptro:DKFZ000040 ?Sex .
+  FILTER (?Sex = 0)
+?Laboratory_Record_Identifier ptro:DKFZ000061 ?Lab_Test_or_Examination_Name .
+?Laboratory_Record_Identifier ptro:DKFZ000064 ?Laboratory_Name .
+?Laboratory_Record_Identifier ptro:DKFZ000065 ?Anatomical_Region_of_Specimen .
+?Laboratory_Record_Identifier ptro:DKFZ000066 ?Specimen_Condition .
+?Laboratory_Record_Identifier ptro:DKFZ000069 ?Method_of_Test_or_Examination .
+?Laboratory_Record_Identifier ptro:DKFZ000071 ?Study_Day_of_Specimen_Collection .
+?Laboratory_Record_Identifier ptro:DKFZ000008 ?Study_Identifier .
+}
+
+
+72. The following query returns the Lab record ids, Lab Test Name, Laboratory Name, Anatomical Region of Specimen, Specimen Condition, Method of Test or Examination, and the Study Day of Specimen Collection of female subjects.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/>
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?Subject_Unique_Identifier ?Laboratory_Record_Identifier ?Lab_Test_or_Examination_Name ?Laboratory_Name ?Anatomical_Region_of_Specimen ?Specimen_Condition ?Method_of_Test_or_Examination ?Study_Day_of_Specimen_Collection ?Study_Identifier 
+
+
+WHERE {
+ ?Subject_Unique_Identifier ptro:DKFZ000076 ?Laboratory_Record_Identifier .
+?Subject_Unique_Identifier ptro:DKFZ000040 ?Sex .
+  FILTER (?Sex = 1)
+?Laboratory_Record_Identifier ptro:DKFZ000061 ?Lab_Test_or_Examination_Name .
+?Laboratory_Record_Identifier ptro:DKFZ000064 ?Laboratory_Name .
+?Laboratory_Record_Identifier ptro:DKFZ000065 ?Anatomical_Region_of_Specimen .
+?Laboratory_Record_Identifier ptro:DKFZ000066 ?Specimen_Condition .
+?Laboratory_Record_Identifier ptro:DKFZ000069 ?Method_of_Test_or_Examination .
+?Laboratory_Record_Identifier ptro:DKFZ000071 ?Study_Day_of_Specimen_Collection .
+?Laboratory_Record_Identifier ptro:DKFZ000008 ?Study_Identifier .
+}
+
+
+73. The following query return male subjects, with a death diagnosis result category “TERMINAL SACRIFICE”, received a treatment “NIMORAZOLE” and participated in the lab test “Tumor Volume Measurement”
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/>
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?Subject_Unique_Identifier ?Treatment_Session_Identifier  ?Laboratory_Record_Identifier
+
+
+WHERE {
+?Subject_Unique_Identifier ptro:DKFZ000021 ?Death_Diagnosis_Result_Category .
+FILTER (?Death_Diagnosis_Result_Category = "TERMINAL SACRIFICE")
+?Subject_Unique_Identifier ptro:DKFZ000077 ?Treatment_Session_Identifier .
+?Treatment_Session_Identifier ptro:DKFZ000013
+?Name_of_Actual_Treatment .
+FILTER (?Name_of_Actual_Treatment = "NIMORAZOLE")
+?Subject_Unique_Identifier ptro:DKFZ000076 ?Laboratory_Record_Identifier .
+?Laboratory_Record_Identifier ptro:DKFZ000061 ?Lab_Test_or_Examination_Name .
+FILTER (?Lab_Test_or_Examination_Name = "Tumor Volume Measurement")
+?Subject_Unique_Identifier ptro:DKFZ000040 ?Sex .
+  FILTER (?Sex = 0)
+}
+
+
+
+
+
+
+
+
+Body weights (long table ‘transformed’ in wide table)
+
+
+74. The following query returns the Body weights ids associated to the subjects ids 
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?Body_Weight_Identifier ?Subject_Unique_Identifier
+
+
+WHERE
+{
+?Body_Weight_Identifier ptro:DKFZ000082 ?Subject_Unique_Identifier .
+}
+
+
+75. The following query returns the  Body weights ids, subjects and corresponding study identifiers.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?Body_Weight_Identifier ?Subject_Unique_Identifier
+?value
+
+
+WHERE {
+ ?Subject_Unique_Identifier ptro:DKFZ000081 ?Body_Weight_Identifier .
+?Body_Weight_Identifier ptro:DKFZ000008 ?value .
+}
+
+
+76. The following query return the test short names available in the Body weight templates
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000015 ?value .
+}
+
+
+77. The following query return the test names available in the Body weight templates
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000016 ?value .
+}
+
+
+78. The following query return the Body Weight Result or Findings as Collected available in the Body weight templates
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000017 ?value .
+}
+
+
+79. The following query return the units of the original result available in the Body weight templates
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000046 ?value .
+}
+
+
+80. The following query return the Study Day Animal Weighed available in the Body weight templates
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000018 ?value .
+}
+
+
+81. The following query return the Label for Nominal Study Day available in the Body weight templates
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/> 
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+SELECT ?subject ?value
+WHERE {
+?subject ptro:DKFZ000083 ?value .
+}
+
+
+Queries retrieving information from DM, EX and BW databases
+
+
+82. The following query returns the male mice, treated with NIMORAZOLE and its Body Weights
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/>
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?Subject_Unique_Identifier ?Sex ?Name_of_Actual_Treatment
+
+
+WHERE {
+?Subject_Unique_Identifier ptro:DKFZ000077 ?Treatment_Session_Identifier .
+?Treatment_Session_Identifier ptro:DKFZ000013
+?Name_of_Actual_Treatment .
+FILTER (?Name_of_Actual_Treatment = "NIMORAZOLE")
+?Subject_Unique_Identifier ptro:DKFZ000081 ?Body_Weight_Identifier .
+?Body_Weight_Identifier ptro:DKFZ000017 ?Body_Weight_Result_or_Findings_as_Collected .
+?Subject_Unique_Identifier ptro:DKFZ000040 ?Sex .
+  FILTER (?Sex = 0)
+}
+
+
+83. The following query returns the female mice, treated with NIMORAZOLE and its Body Weights
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/>
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?Subject_Unique_Identifier ?Sex ?Name_of_Actual_Treatment
+
+
+WHERE {
+?Subject_Unique_Identifier ptro:DKFZ000077 ?Treatment_Session_Identifier .
+?Treatment_Session_Identifier ptro:DKFZ000013
+?Name_of_Actual_Treatment .
+FILTER (?Name_of_Actual_Treatment = "NIMORAZOLE")
+?Subject_Unique_Identifier ptro:DKFZ000081 ?Body_Weight_Identifier .
+?Body_Weight_Identifier ptro:DKFZ000017 ?Body_Weight_Result_or_Findings_as_Collected .
+?Subject_Unique_Identifier ptro:DKFZ000040 ?Sex .
+  FILTER (?Sex = 1)
+}
+
+
+Queries retrieving information from DD and LB databases
+
+
+84. The following query returns the study day ( on which the death was recorded), Death's result category and study day of specimen collection of the subjects weighing more than 30 g and participating in the Xeno Nimo Hypox;FaDu study. 
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/>
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?Subject_Unique_Identifier ?Study_day_Animal_Death ?Death_Diagnosis_Result_Category ?Study_Day_of_Specimen_Collection ?Body_Weight_Result_or_Findings_as_Collected
+
+
+WHERE {
+?Subject_Unique_Identifier ptro:DKFZ000023 ?Study_day_Animal_Death .
+?Subject_Unique_Identifier ptro:DKFZ000021 ?Death_Diagnosis_Result_Category .
+?Subject_Unique_Identifier ptro:DKFZ000076 ?Laboratory_Record_Identifier .
+?Laboratory_Record_Identifier ptro:DKFZ000071 ?Study_Day_of_Specimen_Collection .
+?Body_Weight_Identifier ptro:DKFZ000017 ?Body_Weight_Result_or_Findings_as_Collected .
+FILTER (?Body_Weight_Result_or_Findings_as_Collected > 30)
+?Subject_Unique_Identifier ptro:DKFZ000008 ?Study_Identifier .
+FILTER (?Study_Identifier = "Xeno Nimo Hypox;FaDu")
+}

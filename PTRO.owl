@@ -20,7 +20,9 @@
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="ncit" IRI="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#"/>
+    <Prefix name="obda" IRI="https://w3id.org/obda/vocabulary#"/>
     <Prefix name="ocre" IRI="http://purl.org/net/OCRe/statistics.owl#"/>
+    <Prefix name="ptro" IRI="http://www.radplanbio.org/ptro/"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
     <Prefix name="ctcae" IRI="http://ncicb.nci.nih.gov/xml/owl/EVS/ctcae.owl#"/>
@@ -89,9 +91,6 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="ncit:C118286"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="ncit:C119794"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="ncit:C120274"/>
@@ -569,9 +568,6 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="ncit:C47850"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="ncit:C47891"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="ncit:C48232"/>
@@ -2908,6 +2904,12 @@
         <Class IRI="DKFZ000059"/>
     </Declaration>
     <Declaration>
+        <Class IRI="DKFZ000080"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DKFZ000087"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="owl:Thing"/>
     </Declaration>
     <Declaration>
@@ -2930,6 +2932,21 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="DKFZ000079"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="DKFZ000081"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="DKFZ000082"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="DKFZ000086"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="DKFZ000088"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="DKFZ000089"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
@@ -3100,7 +3117,19 @@
         <DataProperty IRI="DKFZ000075"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="DKFZ000083"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="DKFZ000084"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="DKFZ000085"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="instanceDKFZ_N150a009"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="instanceDKFZ_N150a009_BW_20"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="instanceDKFZ_N150a009_EX_20.0_1"/>
@@ -3118,6 +3147,9 @@
         <NamedIndividual IRI="instanceDKFZ_N150a011"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="instanceDKFZ_N150a011_BW_13"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="instanceDKFZ_N150a011_EX_13.0_1"/>
     </Declaration>
     <Declaration>
@@ -3131,6 +3163,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="instanceDKFZ_N150b081"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="instanceDKFZ_N150b081_BW_41"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="instanceDKFZ_N150b081_EX_41.0_1"/>
@@ -3298,10 +3333,6 @@
     <SubClassOf>
         <Class abbreviatedIRI="ncit:C118286"/>
         <Class abbreviatedIRI="ncit:C15313"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="ncit:C119794"/>
-        <Class abbreviatedIRI="ncit:C47891"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="ncit:C120274"/>
@@ -4006,10 +4037,6 @@
     <SubClassOf>
         <Class abbreviatedIRI="ncit:C47850"/>
         <Class abbreviatedIRI="sty:T033"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="ncit:C47891"/>
-        <Class abbreviatedIRI="sty:T062"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="ncit:C48232"/>
@@ -7387,6 +7414,14 @@
         <Class IRI="DKFZ000059"/>
         <Class abbreviatedIRI="ncit:C25364"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DKFZ000080"/>
+        <Class abbreviatedIRI="ncit:C25364"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DKFZ000087"/>
+        <Class abbreviatedIRI="ncit:C25364"/>
+    </SubClassOf>
     <DisjointClasses>
         <Class abbreviatedIRI="ncit:C15212"/>
         <Class abbreviatedIRI=":C100256"/>
@@ -7406,6 +7441,10 @@
     <ClassAssertion>
         <Class abbreviatedIRI="ncit:C69256"/>
         <NamedIndividual IRI="instanceDKFZ_N150a009"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="DKFZ000080"/>
+        <NamedIndividual IRI="instanceDKFZ_N150a009_BW_20"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="DKFZ000050"/>
@@ -7428,6 +7467,10 @@
         <NamedIndividual IRI="instanceDKFZ_N150a011"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="DKFZ000080"/>
+        <NamedIndividual IRI="instanceDKFZ_N150a011_BW_13"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="DKFZ000050"/>
         <NamedIndividual IRI="instanceDKFZ_N150a011_EX_13.0_1"/>
     </ClassAssertion>
@@ -7446,6 +7489,10 @@
     <ClassAssertion>
         <Class abbreviatedIRI="ncit:C69256"/>
         <NamedIndividual IRI="instanceDKFZ_N150b081"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="DKFZ000080"/>
+        <NamedIndividual IRI="instanceDKFZ_N150b081_BW_41"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="DKFZ000050"/>
@@ -7480,6 +7527,16 @@
         <NamedIndividual IRI="instanceDKFZ_N150a009_EX_20.0_2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="DKFZ000081"/>
+        <NamedIndividual IRI="instanceDKFZ_N150a009"/>
+        <NamedIndividual IRI="instanceDKFZ_N150a009_BW_20"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="DKFZ000082"/>
+        <NamedIndividual IRI="instanceDKFZ_N150a009_BW_20"/>
+        <NamedIndividual IRI="instanceDKFZ_N150a009"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="DKFZ000079"/>
         <NamedIndividual IRI="instanceDKFZ_N150a009_EX_20.0_1"/>
         <NamedIndividual IRI="instanceDKFZ_N150a009"/>
@@ -7520,6 +7577,16 @@
         <NamedIndividual IRI="instanceDKFZ_N150a011_EX_13.0_2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="DKFZ000081"/>
+        <NamedIndividual IRI="instanceDKFZ_N150a011"/>
+        <NamedIndividual IRI="instanceDKFZ_N150a011_BW_13"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="DKFZ000082"/>
+        <NamedIndividual IRI="instanceDKFZ_N150a011_BW_13"/>
+        <NamedIndividual IRI="instanceDKFZ_N150a011"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="DKFZ000079"/>
         <NamedIndividual IRI="instanceDKFZ_N150a011_EX_13.0_1"/>
         <NamedIndividual IRI="instanceDKFZ_N150a011"/>
@@ -7550,6 +7617,16 @@
         <NamedIndividual IRI="instanceDKFZ_N150b081_EX_41.0_1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="DKFZ000081"/>
+        <NamedIndividual IRI="instanceDKFZ_N150b081"/>
+        <NamedIndividual IRI="instanceDKFZ_N150b081_BW_41"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="DKFZ000082"/>
+        <NamedIndividual IRI="instanceDKFZ_N150b081_BW_41"/>
+        <NamedIndividual IRI="instanceDKFZ_N150b081"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="DKFZ000079"/>
         <NamedIndividual IRI="instanceDKFZ_N150b081_EX_41.0_1"/>
         <NamedIndividual IRI="instanceDKFZ_N150b081"/>
@@ -7572,7 +7649,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="DKFZ000010"/>
         <NamedIndividual IRI="instanceDKFZ_N150a009"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">009</Literal>
+        <Literal>009</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="DKFZ000019"/>
@@ -7593,11 +7670,6 @@
         <DataProperty IRI="DKFZ000022"/>
         <NamedIndividual IRI="instanceDKFZ_N150a009"/>
         <Literal>EJ</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="DKFZ000023"/>
-        <NamedIndividual IRI="instanceDKFZ_N150a009"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">212.0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="DKFZ000033"/>
@@ -7623,6 +7695,51 @@
         <DataProperty IRI="DKFZ000043"/>
         <NamedIndividual IRI="instanceDKFZ_N150a009"/>
         <Literal></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="DKFZ000008"/>
+        <NamedIndividual IRI="instanceDKFZ_N150a009_BW_20"/>
+        <Literal>Xeno Nimo Hypox;FaDu</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="DKFZ000009"/>
+        <NamedIndividual IRI="instanceDKFZ_N150a009_BW_20"/>
+        <Literal>N150a009</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="DKFZ000010"/>
+        <NamedIndividual IRI="instanceDKFZ_N150a009_BW_20"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">009</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="DKFZ000015"/>
+        <NamedIndividual IRI="instanceDKFZ_N150a009_BW_20"/>
+        <Literal>BW</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="DKFZ000016"/>
+        <NamedIndividual IRI="instanceDKFZ_N150a009_BW_20"/>
+        <Literal>Body Weight</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="DKFZ000017"/>
+        <NamedIndividual IRI="instanceDKFZ_N150a009_BW_20"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">33.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="DKFZ000018"/>
+        <NamedIndividual IRI="instanceDKFZ_N150a009_BW_20"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">20.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="DKFZ000046"/>
+        <NamedIndividual IRI="instanceDKFZ_N150a009_BW_20"/>
+        <Literal>g</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="DKFZ000083"/>
+        <NamedIndividual IRI="instanceDKFZ_N150a009_BW_20"/>
+        <Literal>Week 1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="DKFZ000008"/>
@@ -7990,11 +8107,6 @@
         <Literal>EJ</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="DKFZ000023"/>
-        <NamedIndividual IRI="instanceDKFZ_N150a011"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">212.0</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="DKFZ000033"/>
         <NamedIndividual IRI="instanceDKFZ_N150a011"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.0</Literal>
@@ -8018,6 +8130,51 @@
         <DataProperty IRI="DKFZ000043"/>
         <NamedIndividual IRI="instanceDKFZ_N150a011"/>
         <Literal>72-74</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="DKFZ000008"/>
+        <NamedIndividual IRI="instanceDKFZ_N150a011_BW_13"/>
+        <Literal>Xeno Nimo Hypox;FaDu</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="DKFZ000009"/>
+        <NamedIndividual IRI="instanceDKFZ_N150a011_BW_13"/>
+        <Literal>N150a011</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="DKFZ000010"/>
+        <NamedIndividual IRI="instanceDKFZ_N150a011_BW_13"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">011</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="DKFZ000015"/>
+        <NamedIndividual IRI="instanceDKFZ_N150a011_BW_13"/>
+        <Literal>BW</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="DKFZ000016"/>
+        <NamedIndividual IRI="instanceDKFZ_N150a011_BW_13"/>
+        <Literal>Body Weight</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="DKFZ000017"/>
+        <NamedIndividual IRI="instanceDKFZ_N150a011_BW_13"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">44.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="DKFZ000018"/>
+        <NamedIndividual IRI="instanceDKFZ_N150a011_BW_13"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">13.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="DKFZ000046"/>
+        <NamedIndividual IRI="instanceDKFZ_N150a011_BW_13"/>
+        <Literal>g</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="DKFZ000083"/>
+        <NamedIndividual IRI="instanceDKFZ_N150a011_BW_13"/>
+        <Literal>Week 1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="DKFZ000008"/>
@@ -8375,11 +8532,6 @@
         <Literal>EJ</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="DKFZ000023"/>
-        <NamedIndividual IRI="instanceDKFZ_N150b081"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">219.0</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="DKFZ000033"/>
         <NamedIndividual IRI="instanceDKFZ_N150b081"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.0</Literal>
@@ -8403,6 +8555,51 @@
         <DataProperty IRI="DKFZ000043"/>
         <NamedIndividual IRI="instanceDKFZ_N150b081"/>
         <Literal>75-79</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="DKFZ000008"/>
+        <NamedIndividual IRI="instanceDKFZ_N150b081_BW_41"/>
+        <Literal>Xeno Nimo Hypox;FaDu</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="DKFZ000009"/>
+        <NamedIndividual IRI="instanceDKFZ_N150b081_BW_41"/>
+        <Literal>N150b081</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="DKFZ000010"/>
+        <NamedIndividual IRI="instanceDKFZ_N150b081_BW_41"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">081</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="DKFZ000015"/>
+        <NamedIndividual IRI="instanceDKFZ_N150b081_BW_41"/>
+        <Literal>BW</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="DKFZ000016"/>
+        <NamedIndividual IRI="instanceDKFZ_N150b081_BW_41"/>
+        <Literal>Body Weight</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="DKFZ000017"/>
+        <NamedIndividual IRI="instanceDKFZ_N150b081_BW_41"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">35.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="DKFZ000018"/>
+        <NamedIndividual IRI="instanceDKFZ_N150b081_BW_41"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">41.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="DKFZ000046"/>
+        <NamedIndividual IRI="instanceDKFZ_N150b081_BW_41"/>
+        <Literal>g</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="DKFZ000083"/>
+        <NamedIndividual IRI="instanceDKFZ_N150b081_BW_41"/>
+        <Literal>Week 1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="DKFZ000008"/>
@@ -8585,11 +8782,6 @@
         <Literal>KS</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="DKFZ000023"/>
-        <NamedIndividual IRI="instanceDKFZ_N150b095"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">104.0</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="DKFZ000033"/>
         <NamedIndividual IRI="instanceDKFZ_N150b095"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">67.0</Literal>
@@ -8617,6 +8809,18 @@
         <ObjectProperty IRI="DKFZ000077"/>
         <ObjectProperty IRI="DKFZ000079"/>
     </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="DKFZ000081"/>
+        <ObjectProperty IRI="DKFZ000082"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="DKFZ000086"/>
+        <ObjectProperty IRI="DKFZ000088"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI=":P100040"/>
+        <Class abbreviatedIRI="ncit:C83083"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="DKFZ000076"/>
         <Class abbreviatedIRI="ncit:C69256"/>
@@ -8633,6 +8837,26 @@
         <ObjectProperty IRI="DKFZ000079"/>
         <Class IRI="DKFZ000050"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="DKFZ000081"/>
+        <Class abbreviatedIRI="ncit:C69256"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="DKFZ000082"/>
+        <Class IRI="DKFZ000080"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="DKFZ000086"/>
+        <Class abbreviatedIRI="ncit:C69256"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="DKFZ000088"/>
+        <Class IRI="DKFZ000087"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="DKFZ000089"/>
+        <Class abbreviatedIRI="ncit:C69256"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="DKFZ000076"/>
         <Class IRI="DKFZ000059"/>
@@ -8647,6 +8871,22 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="DKFZ000079"/>
+        <Class abbreviatedIRI="ncit:C69256"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="DKFZ000081"/>
+        <Class IRI="DKFZ000080"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="DKFZ000082"/>
+        <Class abbreviatedIRI="ncit:C69256"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="DKFZ000086"/>
+        <Class IRI="DKFZ000087"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="DKFZ000088"/>
         <Class abbreviatedIRI="ncit:C69256"/>
     </ObjectPropertyRange>
     <DataPropertyDomain>
@@ -8658,24 +8898,12 @@
         <Class abbreviatedIRI="ncit:C14238"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="DKFZ000015"/>
-        <Class abbreviatedIRI="ncit:C119794"/>
+        <DataProperty IRI="DKFZ000021"/>
+        <Class abbreviatedIRI="ncit:C69256"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="DKFZ000016"/>
-        <Class abbreviatedIRI="ncit:C119794"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="DKFZ000017"/>
-        <Class abbreviatedIRI="ncit:C119794"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="DKFZ000018"/>
-        <Class abbreviatedIRI="ncit:C119794"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="DKFZ000046"/>
-        <Class abbreviatedIRI="ncit:C119794"/>
+        <DataProperty IRI="DKFZ000040"/>
+        <Class abbreviatedIRI="ncit:C69256"/>
     </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="DKFZ000008"/>
@@ -8684,10 +8912,6 @@
     <DataPropertyRange>
         <DataProperty IRI="DKFZ000009"/>
         <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="DKFZ000010"/>
-        <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="DKFZ000011"/>
@@ -8711,7 +8935,7 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="DKFZ000017"/>
-        <Datatype abbreviatedIRI="xsd:integer"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="DKFZ000018"/>
@@ -8726,16 +8950,12 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="DKFZ000021"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
         <DataProperty IRI="DKFZ000022"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="DKFZ000023"/>
-        <Datatype abbreviatedIRI="xsd:decimal"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="DKFZ000028"/>
@@ -9125,16 +9345,6 @@
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>ncit:C118286</AbbreviatedIRI>
         <Literal xml:lang="en">Stereotactic radiation therapy in which one or several maximum dose radiation treatments are delivered targeting cancers of the body, excluding the brain or spine.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:creator"/>
-        <AbbreviatedIRI>ncit:C119794</AbbreviatedIRI>
-        <Literal>OGiraldo</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>ncit:C119794</AbbreviatedIRI>
-        <Literal>Body Weight Test</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
@@ -11886,26 +12096,6 @@ For most authors, this is the cerebral hemispheres plus the basal ganglia, but m
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>ncit:C47850</AbbreviatedIRI>
         <Literal xml:lang="en">A term referring to the presence of tumor emboli or tumor masses within lymphatic vessels.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:creator"/>
-        <AbbreviatedIRI>ncit:C47891</AbbreviatedIRI>
-        <Literal>OGiraldo</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <AbbreviatedIRI>ncit:C47891</AbbreviatedIRI>
-        <Literal>http://purl.bioontology.org/ontology/NCIT</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>ncit:C47891</AbbreviatedIRI>
-        <Literal>Test</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <AbbreviatedIRI>ncit:C47891</AbbreviatedIRI>
-        <Literal>A procedure for critical evaluation; a means of determining the presence, quality, or truth of something.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
@@ -24212,14 +24402,14 @@ b :  an inner sphincter formed by thickening of the circular smooth muscle of th
         <Literal>OGiraldo</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>DKFZ000050</IRI>
+        <Literal>Term created to represent data in EX template that follows a long table structure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>DKFZ000050</IRI>
         <Literal>Treatment Session Identifier</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="owl:backwardCompatibleWith"/>
-        <IRI>DKFZ000050</IRI>
-        <Literal>Term created to represent data in EX template that follows a long table structure.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
@@ -24392,6 +24582,16 @@ b :  an inner sphincter formed by thickening of the circular smooth muscle of th
         <Literal>Duration and unit of time for a continuous treatment. This may be used to denote the length of an infusion (e.g., PT10M to indicate 10 minutes).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>DKFZ000059</IRI>
+        <Literal>OGiraldo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>DKFZ000059</IRI>
+        <Literal>Term created to represent data in LB template that follows a long table structure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>DKFZ000059</IRI>
         <Literal>Laboratory Record Identifier</Literal>
@@ -24399,7 +24599,7 @@ b :  an inner sphincter formed by thickening of the circular smooth muscle of th
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <IRI>DKFZ000059</IRI>
-        <Literal>Term created to represent data in LB template that follows a long table structure.</Literal>
+        <Literal>A sequence of characters used to identify laboratory records.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:creator"/>
@@ -24764,7 +24964,7 @@ b :  an inner sphincter formed by thickening of the circular smooth muscle of th
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>DKFZ000074</IRI>
-        <Literal>Label_for_Nominal_Study_Day</Literal>
+        <Literal>Laboratory_Label_for_Nominal_Study_Day</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
@@ -24822,9 +25022,144 @@ b :  an inner sphincter formed by thickening of the circular smooth muscle of th
         <Literal>is_session_id_of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>DKFZ000080</IRI>
+        <Literal>OGiraldo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>DKFZ000080</IRI>
+        <Literal>Term created to represent data in BW template that follows a long table structure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DKFZ000080</IRI>
+        <Literal>Body Weight Identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DKFZ000080</IRI>
+        <Literal>A sequence of characters used to identify body weight records.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DKFZ000081</IRI>
+        <Literal>has_body_weight_id</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DKFZ000081</IRI>
+        <Literal>This property links a &apos;Subject Unique Identifie&apos;r  to a &apos;Body Weigh Identifier&apos;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DKFZ000082</IRI>
+        <Literal>is_body_weight_id_of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>DKFZ000083</IRI>
+        <Literal>OGiraldo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DKFZ000083</IRI>
+        <Literal>Body_Weight_Label_for_Nominal_Study_Day</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>DKFZ000083</IRI>
+        <Literal>BWNOMLBL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DKFZ000083</IRI>
+        <Literal>A label for a given value of BWNOMDY as presented in the study report. Examples: &quot;Week 4,&quot; &quot;Day 28,&quot; &quot;Terminal Sac&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>DKFZ000084</IRI>
+        <Literal>OGiraldo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DKFZ000084</IRI>
+        <Literal>Body _Weight_Identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DKFZ000084</IRI>
+        <Literal>Body weight identifier used within the BW template.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>DKFZ000085</IRI>
+        <Literal>OGiraldo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DKFZ000085</IRI>
+        <Literal>Procedure_Identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DKFZ000085</IRI>
+        <Literal>Procedure identifier used within the PR template.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DKFZ000086</IRI>
+        <Literal>has_procedure_id</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DKFZ000086</IRI>
+        <Literal>This property links a &apos;Subject Unique Identifier&apos;  to a &apos;Procedure Identifier&apos;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>DKFZ000087</IRI>
+        <Literal>OGiraldo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>DKFZ000087</IRI>
+        <Literal>Term created to represent data in PR template that follows a long table structure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DKFZ000087</IRI>
+        <Literal>Procedure Identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DKFZ000087</IRI>
+        <Literal>A sequence of characters used to identify procedure records.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DKFZ000088</IRI>
+        <Literal>is_procedure_id_of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>DKFZ000089</IRI>
+        <Literal>This property links a &apos;Subject Unique Identifie&apos;r  to a dd_result_category.table DDa1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DKFZ000089</IRI>
+        <Literal>has_result_category</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>instanceDKFZ_N150a009</IRI>
         <Literal>N150a009</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>instanceDKFZ_N150a009_BW_20</IRI>
+        <Literal>N150a009_BW_20</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -24853,6 +25188,11 @@ b :  an inner sphincter formed by thickening of the circular smooth muscle of th
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>instanceDKFZ_N150a011_BW_13</IRI>
+        <Literal>N150a011_BW_13</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>instanceDKFZ_N150a011_EX_13.0_1</IRI>
         <Literal>N150a011_EX_13.0_1</Literal>
     </AnnotationAssertion>
@@ -24875,6 +25215,11 @@ b :  an inner sphincter formed by thickening of the circular smooth muscle of th
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>instanceDKFZ_N150b081</IRI>
         <Literal>N150b081</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>instanceDKFZ_N150b081_BW_41</IRI>
+        <Literal>N150b081_BW_41</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
