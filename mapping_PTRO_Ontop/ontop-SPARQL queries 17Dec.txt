@@ -1216,3 +1216,155 @@ WHERE
 ?participantid ptro:DKFZ000040 ?sex .
   FILTER (?sex = 0)
 }
+
+
+68. The following query returns the name of the treatment, dose, dose unit and route of administration used in male mice.
+
+
+PREFIX roo: <http://www.cancerdata.org/roo/>
+PREFIX ptro: <http://www.radplanbio.org/ptro/>
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?participantid ?sex ?extrt ?exdose ?exdosu ?exroute
+
+
+WHERE {
+
+
+?participantid ptro:DKFZ000040 ?sex .
+  FILTER (?sex = 0)
+?participantid ptro:DKFZ000013 ?extrt .
+?participantid ptro:DKFZ000053 ?exdose .
+?participantid ptro:DKFZ000054 ?exdosu .
+?participantid ptro:DKFZ000011 ?exroute .
+}
+
+
+69. The following query returns the subjects with a death diagnosis result ‘TERMINAL SACRIFICE’ and exposed to a treatment with ‘CISPLATIN”
+
+
+PREFIX roo: <http://www.cancerdata.org/roo/>
+PREFIX ptro: <http://www.radplanbio.org/ptro/>
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?participantid ?extrt ?ddrescat
+
+
+WHERE
+  { 
+?participantid ptro:DKFZ000013 ?extrt .
+  FILTER (?extrt = "CISPLATIN")
+  ?participantid ptro:DKFZ000021 ?ddrescat .
+  FILTER (?ddrescat = "TERMINAL SACRIFICE")
+ }
+
+
+70. The following query returns the subjects with a death diagnosis result ‘TERMINAL SACRIFICE’ and exposed to a treatment with ‘NIMORAZOLE”
+
+
+Note: This query does not return any results because all individuals in table 'A2_EX' were treated with CISPLATIN
+
+
+PREFIX roo: <http://www.cancerdata.org/roo/>
+PREFIX ptro: <http://www.radplanbio.org/ptro/>
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?participantid ?extrt ?ddrescat
+
+
+WHERE
+  { 
+?participantid ptro:DKFZ000013 ?extrt .
+  FILTER (?extrt = "NIMORAZOLE")
+  ?participantid ptro:DKFZ000021 ?ddrescat .
+  FILTER (?ddrescat = "TERMINAL SACRIFICE")
+ }
+
+
+71. The following query returns the Lab Test Name, Laboratory Name, Anatomical Region of Specimen of male subjects.
+
+
+PREFIX roo: <http://www.cancerdata.org/roo/>
+PREFIX ptro: <http://www.radplanbio.org/ptro/>
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?participantid ?sex ?lbtest ?lbnam ?lbantreg
+
+
+WHERE {
+?participantid ptro:DKFZ000040 ?sex .
+  FILTER (?sex = 0)
+?participantid ptro:DKFZ000061 ?lbtest .
+?participantid ptro:DKFZ000064 ?lbnam .
+?participantid ptro:DKFZ000065 ?lbantreg .
+}
+
+
+72. The following query returns the Specimen Condition, Method of Test or Examination, and the Study Day of Specimen Collection of male subjects.
+
+
+PREFIX roo: <http://www.cancerdata.org/roo/>
+PREFIX ptro: <http://www.radplanbio.org/ptro/>
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?participantid ?sex ?lbspccnd ?lbmethod ?lbdy
+
+
+WHERE {
+?participantid ptro:DKFZ000040 ?sex .
+  FILTER (?sex = 0)
+?participantid ptro:DKFZ000066 ?lbspccnd .
+?participantid ptro:DKFZ000069 ?lbmethod .
+?participantid ptro:DKFZ000071 ?lbdy .
+}
+
+
+73. The following query return male subjects, with a death diagnosis result category “TERMINAL SACRIFICE”, received a treatment “CISPLATIN” and participated in the lab test “Tumor Volume Measurement”
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/>
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?participantid ?sex ?ddrescat ?extrt ?lbtest
+
+
+WHERE {
+?participantid ptro:DKFZ000021 ?ddrescat .
+FILTER (?ddrescat = "TERMINAL SACRIFICE")
+?participantid ptro:DKFZ000013 ?extrt .
+FILTER (?extrt = "CISPLATIN")
+?participantid ptro:DKFZ000061 ?lbtest .
+FILTER (?lbtest = "Tumor Volume Measurement")
+?participantid ptro:DKFZ000040 ?sex .
+          FILTER (?sex = 0)
+}
