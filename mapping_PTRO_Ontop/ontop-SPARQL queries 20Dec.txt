@@ -1368,3 +1368,51 @@ FILTER (?lbtest = "Tumor Volume Measurement")
 ?participantid ptro:DKFZ000040 ?sex .
           FILTER (?sex = 0)
 }
+
+
+
+
+74. The following query returns the male mice, treated with “CISPLATIN” and its Body Weights
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/>
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?participantid ?sex ?extrt
+
+
+WHERE {
+?participantid ptro:DKFZ000013 ?extrt .
+FILTER (?extrt = "CISPLATIN")
+?participantid ptro:DKFZ000017 ?bworres .
+?participantid ptro:DKFZ000040 ?sex .
+FILTER (?sex = 0)
+}
+
+
+75. The following query returns the study day ( on which the death was recorded), Death's result category and study day of specimen collection of the subjects weighing more than 30 g.
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/>
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?participantid ?dddy ?ddrescat  ?lbdy ?bworres
+
+
+WHERE {
+?participantid ptro:DKFZ000023 ?dddy .
+?participantid ptro:DKFZ000021 ?ddrescat .
+?participantid ptro:DKFZ000071 ?lbdy .
+?participantid ptro:DKFZ000017 ?bworres .
+FILTER (?bworres > 30)
+}
