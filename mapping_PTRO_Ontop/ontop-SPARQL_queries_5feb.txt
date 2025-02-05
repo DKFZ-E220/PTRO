@@ -1,4 +1,4 @@
-Minimum Amount Information queries
+﻿Minimum Amount Information queries
  
 1. The following query returns the Subject Identifier (a.k.a Subject Identification) of the subjects.
 
@@ -1383,7 +1383,7 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 
-SELECT ?participantid ?sex ?extrt
+SELECT ?participantid ?sex ?extrt ?bworres 
 
 
 WHERE {
@@ -1415,4 +1415,30 @@ WHERE {
 ?participantid ptro:DKFZ000071 ?lbdy .
 ?participantid ptro:DKFZ000017 ?bworres .
 FILTER (?bworres > 30)
+}
+
+
+1. Give me the male mice, treated with “CISPLATIN” and corresponding “test name”,  “body system”, “ result category of the clinical observation” and “death diagnosis result category”
+
+
+PREFIX ptro: <http://www.radplanbio.org/ptro/>
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
+PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+SELECT ?participantid ?sex ?extrt ?cltest ?clbodsys ?clrescat ?ddrescat 
+
+
+WHERE {
+?participantid ptro:DKFZ000013 ?extrt .
+FILTER (?extrt = "CISPLATIN")
+?participantid ptro:DKFZ000040 ?sex .
+FILTER (?sex = 0)
+?participantid ptro:DKFZ000029 ?cltest .
+?participantid ptro:DKFZ000035 ?clbodsys .
+?participantid ptro:DKFZ000036 ?clrescat .
+?participantid ptro:DKFZ000021 ?ddrescat .
 }
