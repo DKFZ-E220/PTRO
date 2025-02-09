@@ -11,6 +11,6 @@ iii) Exposure information such as treatment name, route of administration, treat
 The ontology follows the design principles from [the Radiation Oncology Ontology (ROO)](https://pubmed.ncbi.nlm.nih.gov/30144092/)
 
 # Relevant sources
-* [The Radiation Oncology Ontology (ROO)](https://pubmed.ncbi.nlm.nih.gov/30144092/)
+* [For background information, please refer to our preprint.]( https://doi.org/10.21203/rs.3.rs-5373454/v1)
 * [RadPlanBio platform](https://helmholtz.software/software/radplanbio)
 </td>
