@@ -35,6 +35,10 @@
         <Literal>DKFZ-E220</Literal>
     </Annotation>
     <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>The Ontology for Preclinical Trials in Radiation Oncology (PTRO), is a domain-specific ontology designed to integrate SEND-standardized preclinical data using semantic web technologies. PTRO incorporates the Semantic Types Ontology (STY) as a framework for broad concept categorization.</Literal>
+    </Annotation>
+    <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
         <Literal>0.1 alpha</Literal>
     </Annotation>
@@ -174,6 +178,9 @@
         <Class IRI="DKFZ000087"/>
     </Declaration>
     <Declaration>
+        <Class IRI="DKFZ000114"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="owl:Thing"/>
     </Declaration>
     <Declaration>
@@ -208,9 +215,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="DKFZ000088"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="DKFZ000089"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
@@ -378,16 +382,82 @@
         <DataProperty IRI="DKFZ000074"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="DKFZ000075"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="DKFZ000083"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="DKFZ000084"/>
+        <DataProperty IRI="DKFZ000090"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="DKFZ000085"/>
+        <DataProperty IRI="DKFZ000091"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="DKFZ000092"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="DKFZ000093"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="DKFZ000094"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="DKFZ000095"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="DKFZ000096"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="DKFZ000097"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="DKFZ000098"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="DKFZ000099"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="DKFZ000100"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="DKFZ000101"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="DKFZ000102"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="DKFZ000103"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="DKFZ000104"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="DKFZ000105"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="DKFZ000106"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="DKFZ000107"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="DKFZ000108"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="DKFZ000109"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="DKFZ000110"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="DKFZ000111"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="DKFZ000112"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="DKFZ000113"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="DKFZ000115"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="metadata:prefixIRI"/>
@@ -594,6 +664,10 @@
         <Class IRI="DKFZ000087"/>
         <Class abbreviatedIRI="ncit:C25364"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DKFZ000114"/>
+        <Class abbreviatedIRI="ncit:C70663"/>
+    </SubClassOf>
     <DisjointClasses>
         <Class IRI="DKFZ000050"/>
         <Class IRI="DKFZ000059"/>
@@ -649,10 +723,6 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="DKFZ000088"/>
         <Class IRI="DKFZ000087"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="DKFZ000089"/>
-        <Class abbreviatedIRI="ncit:C69256"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="DKFZ000076"/>
@@ -903,19 +973,107 @@
         <Class abbreviatedIRI="ncit:C69256"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="DKFZ000075"/>
-        <Class abbreviatedIRI="ncit:C69256"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="DKFZ000083"/>
         <Class abbreviatedIRI="ncit:C69256"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="DKFZ000084"/>
+        <DataProperty IRI="DKFZ000090"/>
         <Class abbreviatedIRI="ncit:C69256"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="DKFZ000085"/>
+        <DataProperty IRI="DKFZ000091"/>
+        <Class abbreviatedIRI="ncit:C69256"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="DKFZ000092"/>
+        <Class abbreviatedIRI="ncit:C69256"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="DKFZ000093"/>
+        <Class abbreviatedIRI="ncit:C69256"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="DKFZ000094"/>
+        <Class abbreviatedIRI="ncit:C69256"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="DKFZ000095"/>
+        <Class abbreviatedIRI="ncit:C69256"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="DKFZ000096"/>
+        <Class abbreviatedIRI="ncit:C69256"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="DKFZ000097"/>
+        <Class abbreviatedIRI="ncit:C69256"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="DKFZ000098"/>
+        <Class abbreviatedIRI="ncit:C69256"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="DKFZ000099"/>
+        <Class abbreviatedIRI="ncit:C69256"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="DKFZ000100"/>
+        <Class abbreviatedIRI="ncit:C69256"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="DKFZ000101"/>
+        <Class abbreviatedIRI="ncit:C69256"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="DKFZ000102"/>
+        <Class abbreviatedIRI="ncit:C69256"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="DKFZ000103"/>
+        <Class abbreviatedIRI="ncit:C69256"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="DKFZ000104"/>
+        <Class abbreviatedIRI="ncit:C69256"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="DKFZ000105"/>
+        <Class abbreviatedIRI="ncit:C69256"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="DKFZ000106"/>
+        <Class abbreviatedIRI="ncit:C69256"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="DKFZ000107"/>
+        <Class abbreviatedIRI="ncit:C69256"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="DKFZ000108"/>
+        <Class abbreviatedIRI="ncit:C69256"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="DKFZ000109"/>
+        <Class abbreviatedIRI="ncit:C69256"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="DKFZ000110"/>
+        <Class abbreviatedIRI="ncit:C69256"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="DKFZ000111"/>
+        <Class abbreviatedIRI="ncit:C69256"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="DKFZ000112"/>
+        <Class abbreviatedIRI="ncit:C69256"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="DKFZ000113"/>
+        <Class abbreviatedIRI="ncit:C69256"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="DKFZ000115"/>
         <Class abbreviatedIRI="ncit:C69256"/>
     </DataPropertyDomain>
     <DataPropertyRange>
@@ -924,6 +1082,10 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="DKFZ000009"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000010"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -963,6 +1125,10 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="DKFZ000021"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="DKFZ000022"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
@@ -987,6 +1153,10 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="DKFZ000033"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="DKFZ000034"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
@@ -1007,6 +1177,10 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="DKFZ000039"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="DKFZ000040"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
@@ -1025,6 +1199,10 @@
     <DataPropertyRange>
         <DataProperty IRI="DKFZ000044"/>
         <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000046"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="DKFZ000051"/>
@@ -1053,6 +1231,170 @@
     <DataPropertyRange>
         <DataProperty IRI="DKFZ000058"/>
         <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000060"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000061"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000062"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000063"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000064"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000065"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000066"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000067"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000068"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000069"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000070"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000071"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000072"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000073"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000074"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000083"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000090"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000091"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000092"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000093"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000094"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000095"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000096"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000097"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000098"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000099"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000100"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000101"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000102"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000103"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000104"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000105"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000106"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000107"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000108"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000109"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000110"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000111"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000112"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000113"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000115"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:creator"/>
@@ -3007,7 +3349,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>DKFZ000068</IRI>
-        <Literal>Portion_or_Totality</Literal>
+        <Literal>Lab_Portion_or_Totality</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
@@ -3170,21 +3512,6 @@
         <Literal>A label for a given value of LBNOMDY as presented in the study report. Examples: Week 4, Day 28, Terminal Sac.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:creator"/>
-        <IRI>DKFZ000075</IRI>
-        <Literal>OGiraldo</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>DKFZ000075</IRI>
-        <Literal>Lab_Record_Identifier</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <IRI>DKFZ000075</IRI>
-        <Literal>Lab identifier used within the LB template.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>DKFZ000076</IRI>
         <Literal>has_lab_record_id</Literal>
@@ -3270,36 +3597,6 @@
         <Literal>A label for a given value of BWNOMDY as presented in the study report. Examples: &quot;Week 4,&quot; &quot;Day 28,&quot; &quot;Terminal Sac&quot;.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:creator"/>
-        <IRI>DKFZ000084</IRI>
-        <Literal>OGiraldo</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>DKFZ000084</IRI>
-        <Literal>Body _Weight_Identifier</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <IRI>DKFZ000084</IRI>
-        <Literal>Body weight identifier used within the BW template.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dc:creator"/>
-        <IRI>DKFZ000085</IRI>
-        <Literal>OGiraldo</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>DKFZ000085</IRI>
-        <Literal>Procedure_Identifier</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <IRI>DKFZ000085</IRI>
-        <Literal>Procedure identifier used within the PR template.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>DKFZ000086</IRI>
         <Literal>has_procedure_id</Literal>
@@ -3335,14 +3632,639 @@
         <Literal>is_procedure_id_of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>DKFZ000089</IRI>
-        <Literal>This property links a &apos;Subject Unique Identifie&apos;r  to a dd_result_category.table DDa1</Literal>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>DKFZ000090</IRI>
+        <Literal>OGiraldo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>DKFZ000090</IRI>
+        <Literal>https://library.cdisc.org/browser</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>DKFZ000089</IRI>
-        <Literal>has_result_category</Literal>
+        <IRI>DKFZ000090</IRI>
+        <Literal>Reported_Name_of_Procedure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>DKFZ000090</IRI>
+        <Literal>PRTRT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DKFZ000090</IRI>
+        <Literal>Name of procedure performed, either preprinted or collected on a CRF.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>DKFZ000091</IRI>
+        <Literal>OGiraldo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>DKFZ000091</IRI>
+        <Literal>https://library.cdisc.org/browser</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DKFZ000091</IRI>
+        <Literal>Identifying_Variable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>DKFZ000091</IRI>
+        <Literal>IDVAR</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DKFZ000091</IRI>
+        <Literal>Variable in the parent dataset that identifies the record(s) to which the comment applies, which is contained in IDVAR. Examples: BWSEQ or CLGRPID. Used only when individual comments are related to domain records.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>DKFZ000092</IRI>
+        <Literal>OGiraldo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>DKFZ000092</IRI>
+        <Literal>https://library.cdisc.org/browser</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DKFZ000092</IRI>
+        <Literal>Identifying_Variable_Value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>DKFZ000092</IRI>
+        <Literal>IDVARVAL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DKFZ000092</IRI>
+        <Literal>Value of identifying variable of the parent record(s). Used only when individual comments are related to domain records. Cannot be populated if IDVAR is null.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>DKFZ000093</IRI>
+        <Literal>OGiraldo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>DKFZ000093</IRI>
+        <Literal>https://library.cdisc.org/browser</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DKFZ000093</IRI>
+        <Literal>Comment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>DKFZ000093</IRI>
+        <Literal>COVAL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DKFZ000093</IRI>
+        <Literal>The text of the comment. Text over 200 characters can be added to additional columns COVAL1-COVALn. See Assumption 4 in Section 5.2.1.1.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>DKFZ000094</IRI>
+        <Literal>OGiraldo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>DKFZ000094</IRI>
+        <Literal>https://library.cdisc.org/browser</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DKFZ000094</IRI>
+        <Literal>Comment_Evaluator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>DKFZ000094</IRI>
+        <Literal>COEVAL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DKFZ000094</IRI>
+        <Literal>Used to describe the originator of the comment. Examples: TECHNICIAN, STUDY DIRECTOR, VET.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>DKFZ000095</IRI>
+        <Literal>OGiraldo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>DKFZ000095</IRI>
+        <Literal>https://library.cdisc.org/browser</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DKFZ000095</IRI>
+        <Literal>Date/Time_of_Comment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>DKFZ000095</IRI>
+        <Literal>CODTC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DKFZ000095</IRI>
+        <Literal>Date/Time of the comment, in ISO 8601 format. May be null if this is a child record of another domain or if the comment date was not collected. In all other cases, this represents the date/time of the comment in ISO 8601 format.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>DKFZ000096</IRI>
+        <Literal>OGiraldo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>DKFZ000096</IRI>
+        <Literal>https://library.cdisc.org/browser</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DKFZ000096</IRI>
+        <Literal>Study_Day_of_Comment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>DKFZ000096</IRI>
+        <Literal>CODY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DKFZ000096</IRI>
+        <Literal>Study day of the comment, in integer days. May be null if this is a child record of another domain or if the comment date was not collected. The algorithm for calculations must be relative to the sponsor-defined RFSTDTC variable in the Demographics (DM) domain.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>DKFZ000097</IRI>
+        <Literal>OGiraldo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>DKFZ000097</IRI>
+        <Literal>https://library.cdisc.org/browser</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DKFZ000097</IRI>
+        <Literal>Standardized_Procedure_Name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>DKFZ000097</IRI>
+        <Literal>PRDECOD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DKFZ000097</IRI>
+        <Literal>Standardized or dictionary-derived name of PRTRT. If the codelist &quot;PROCEDUR&quot; is not used, the sponsor is expected to provide the dictionary name and version used to map the terms in the external codelist element in the Define-XML document. If an intervention term does not have a decode value, then PRDECOD will be null.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>DKFZ000098</IRI>
+        <Literal>OGiraldo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>DKFZ000098</IRI>
+        <Literal>https://library.cdisc.org/browser</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DKFZ000098</IRI>
+        <Literal>Procedure_Category</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>DKFZ000098</IRI>
+        <Literal>PRCAT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DKFZ000098</IRI>
+        <Literal>Used to define a category of procedure values.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>DKFZ000099</IRI>
+        <Literal>OGiraldo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>DKFZ000099</IRI>
+        <Literal>https://library.cdisc.org/browser</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DKFZ000099</IRI>
+        <Literal>Procedure_Subcategory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>DKFZ000099</IRI>
+        <Literal>PRSCAT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DKFZ000099</IRI>
+        <Literal>Used to define a further categorization of PRCAT values.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>DKFZ000100</IRI>
+        <Literal>OGiraldo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>DKFZ000100</IRI>
+        <Literal>https://library.cdisc.org/browser</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DKFZ000100</IRI>
+        <Literal>Porcedure_Prespecified</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>DKFZ000100</IRI>
+        <Literal>PRPRESP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DKFZ000100</IRI>
+        <Literal>Used when a specific procedure is pre-specified on a CRF. Values should be &quot;Y&quot; or null.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>DKFZ000101</IRI>
+        <Literal>OGiraldo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>DKFZ000101</IRI>
+        <Literal>https://library.cdisc.org/browser</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DKFZ000101</IRI>
+        <Literal>Procedure_Occurrence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>DKFZ000101</IRI>
+        <Literal>PROCCUR</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DKFZ000101</IRI>
+        <Literal>Used to record whether a prespecified procedure occurred when information about the occurrence of a specific procedure is solicited.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>DKFZ000102</IRI>
+        <Literal>OGiraldo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>DKFZ000102</IRI>
+        <Literal>https://library.cdisc.org/browser</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DKFZ000102</IRI>
+        <Literal>Procedure_Dose</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>DKFZ000102</IRI>
+        <Literal>PRDOSE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DKFZ000102</IRI>
+        <Literal>Amount of PRTRT administered. Not populated when PRDOSTXT is populated.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>DKFZ000103</IRI>
+        <Literal>OGiraldo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>DKFZ000103</IRI>
+        <Literal>https://library.cdisc.org/browser</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DKFZ000103</IRI>
+        <Literal>Procedure_Dose_Units</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>DKFZ000103</IRI>
+        <Literal>PRDOSU</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DKFZ000103</IRI>
+        <Literal>Units for PRDOSE, PRDOSTOT, or PRDOSTXT.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>DKFZ000104</IRI>
+        <Literal>OGiraldo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>DKFZ000104</IRI>
+        <Literal>https://library.cdisc.org/browser</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DKFZ000104</IRI>
+        <Literal>Procedure_Dosing_Frequency_per_Interval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>DKFZ000104</IRI>
+        <Literal>PRDOSFRQ</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DKFZ000104</IRI>
+        <Literal>Usually expressed as the number of doses given per a specific interval.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>DKFZ000105</IRI>
+        <Literal>OGiraldo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>DKFZ000105</IRI>
+        <Literal>https://library.cdisc.org/browser</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DKFZ000105</IRI>
+        <Literal>Location_of_Procedure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>DKFZ000105</IRI>
+        <Literal>PRLOC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DKFZ000105</IRI>
+        <Literal>Anatomical location of a procedure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>DKFZ000106</IRI>
+        <Literal>OGiraldo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>DKFZ000106</IRI>
+        <Literal>https://library.cdisc.org/browser</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DKFZ000106</IRI>
+        <Literal>Procedure_Laterality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>DKFZ000106</IRI>
+        <Literal>PRLAT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DKFZ000106</IRI>
+        <Literal>Qualifier for anatomical location or specimen further detailing laterality.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>DKFZ000107</IRI>
+        <Literal>OGiraldo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>DKFZ000107</IRI>
+        <Literal>https://library.cdisc.org/browser</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DKFZ000107</IRI>
+        <Literal>Procedure_Directionality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>DKFZ000107</IRI>
+        <Literal>PRDIR</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DKFZ000107</IRI>
+        <Literal>Qualifier for anatomical location or specimen further detailing directionality.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>DKFZ000108</IRI>
+        <Literal>OGiraldo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>DKFZ000108</IRI>
+        <Literal>https://library.cdisc.org/browser</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DKFZ000108</IRI>
+        <Literal>Procedure_Portion_or_Totality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>DKFZ000108</IRI>
+        <Literal>PRPORTOT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DKFZ000108</IRI>
+        <Literal>Qualifier for anatomical location or specimen further detailing the distribution, which means arrangement of, apportioning of.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>DKFZ000109</IRI>
+        <Literal>OGiraldo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>DKFZ000109</IRI>
+        <Literal>https://library.cdisc.org/browser</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DKFZ000109</IRI>
+        <Literal>Start_Date/Time_of_Procedure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>DKFZ000109</IRI>
+        <Literal>PRSTDTC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DKFZ000109</IRI>
+        <Literal>Start date/time of the procedure represented in ISO 8601 character format.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>DKFZ000110</IRI>
+        <Literal>OGiraldo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>DKFZ000110</IRI>
+        <Literal>https://library.cdisc.org/browser</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DKFZ000110</IRI>
+        <Literal>End_Date/Time_of_Procedure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>DKFZ000110</IRI>
+        <Literal>PRENDTC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DKFZ000110</IRI>
+        <Literal>End date/time of the procedure represented in ISO 8601 character format.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>DKFZ000111</IRI>
+        <Literal>OGiraldo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>DKFZ000111</IRI>
+        <Literal>https://library.cdisc.org/browser</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DKFZ000111</IRI>
+        <Literal>Study_Day_of_Start_of_Procedure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>DKFZ000111</IRI>
+        <Literal>PRSTDY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DKFZ000111</IRI>
+        <Literal>Study day of start of procedure expressed in integer days relative to the sponsor-defined RFSTDTC in Demographics.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>DKFZ000112</IRI>
+        <Literal>OGiraldo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>DKFZ000112</IRI>
+        <Literal>https://library.cdisc.org/browser</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DKFZ000112</IRI>
+        <Literal>Study_Day_of_End_of_Procedure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>DKFZ000112</IRI>
+        <Literal>PRENDY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DKFZ000112</IRI>
+        <Literal>Study day of end of procedure expressed in integer days relative to the sponsor-defined RFSTDTC in Demographics.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>DKFZ000113</IRI>
+        <Literal>OGiraldo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>DKFZ000113</IRI>
+        <Literal>https://library.cdisc.org/browser</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DKFZ000113</IRI>
+        <Literal>Duration_of_Procedure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>DKFZ000113</IRI>
+        <Literal>PRDUR</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DKFZ000113</IRI>
+        <Literal>Collected duration of a procedure represented in ISO 8601 character format. Used only if collected on the CRF and not derived from start and end date/times.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>DKFZ000114</IRI>
+        <Literal>OGiraldo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DKFZ000114</IRI>
+        <Literal>Project Unique Identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>DKFZ000114</IRI>
+        <Literal>A unique alphanumeric identifier assigned to a project to ensure its distinct identification within a given system, organization, or dataset.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>DKFZ000115</IRI>
+        <Literal>This attribute is not part of the CDISC standard; it was defined by our DKFZ working group (E220).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>DKFZ000115</IRI>
+        <Literal>E220</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DKFZ000115</IRI>
+        <Literal>Project_Unique_Identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>DKFZ000115</IRI>
+        <Literal>PUID</Literal>
     </AnnotationAssertion>
     <SubAnnotationPropertyOf>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
