@@ -1,5 +1,5 @@
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
-@prefix : <http://www.cancerdata.org/roo/> .
+@prefix : <http://www.radplanbio.org/ptro/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix gn: <http://www.geonames.org/ontology#> .
 @prefix dcm: <http://semantic-dicom.org/dcm#> .
@@ -8,6 +8,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rcd: <http://purl.bioontology.org/ontology/RCD/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix roo: <http://www.cancerdata.org/roo/> .
 @prefix sty: <http://purl.bioontology.org/ontology/STY/> .
 @prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -15,7 +16,6 @@
 @prefix ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> .
 @prefix obda: <https://w3id.org/obda/vocabulary#> .
 @prefix ocre: <http://purl.org/net/OCRe/statistics.owl#> .
-@prefix ptro: <http://www.radplanbio.org/ptro/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ctcae: <http://ncicb.nci.nih.gov/xml/owl/EVS/ctcae.owl#> .
@@ -24,671 +24,65 @@
 @prefix metadata: <http://data.bioontology.org/metadata/> .
 @prefix bioportal: <http://bioportal.bioontology.org#> .
 
-<urn:mapping--2100355329> a rr:TriplesMap;
-  rr:logicalTable [ a rr:R2RMLView;
-      rr:sqlQuery """SELECT \"participantid\", \"bwnomlbl\", \"bwdy\", \"bworres\", \"bwtestcd\", \"bworresu\", \"bwtest\"
-FROM \"studydataset\".\"c70d1686_a4_bw_n150_30f6wo_nacl_plus_cispl_54gy\""""
-    ];
-  rr:predicateObjectMap [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:column "bworres";
-          rr:termType rr:Literal;
-          rr:datatype xsd:decimal
-        ];
-      rr:predicate ptro:DKFZ000017
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000016;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:column "bwtest";
-          rr:datatype xsd:string;
-          rr:termType rr:Literal
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:column "bworresu";
-          rr:datatype xsd:string;
-          rr:termType rr:Literal
-        ];
-      rr:predicate ptro:DKFZ000046
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000083;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:termType rr:Literal;
-          rr:datatype xsd:string;
-          rr:column "bwnomlbl"
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:column "bwdy";
-          rr:termType rr:Literal;
-          rr:datatype xsd:decimal
-        ];
-      rr:predicate ptro:DKFZ000018
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:termType rr:Literal;
-          rr:column "bwtestcd";
-          rr:datatype xsd:string
-        ];
-      rr:predicate ptro:DKFZ000015
-    ];
-  rr:subjectMap [ a rr:TermMap, rr:SubjectMap;
-      rr:template "http://www.cancerdata.org/roo/c70d1699_a2_ex_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}";
-      rr:termType rr:IRI
-    ] .
-
-<urn:mapping--993339175> a rr:TriplesMap;
-  rr:subjectMap [ a rr:TermMap, rr:SubjectMap;
-      rr:termType rr:IRI;
-      rr:template "http://www.cancerdata.org/roo/c70d1687_a5_dd_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}"
-    ];
-  rr:logicalTable [ a rr:R2RMLView;
-      rr:sqlQuery """SELECT \"participantid\", \"extrt\"
-FROM \"studydataset\".\"c70d1699_a2_ex_n150_30f6wo_nacl_plus_cispl_54gy\""""
-    ];
-  rr:predicateObjectMap [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:datatype xsd:string;
-          rr:column "extrt";
-          rr:termType rr:Literal
-        ];
-      rr:predicate ptro:DKFZ000013
-    ] .
-
-<urn:mapping--137198338> a rr:TriplesMap;
-  rr:predicateObjectMap [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000008;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:column "studyid";
-          rr:datatype xsd:string;
-          rr:termType rr:Literal
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:termType rr:Literal;
-          rr:datatype xsd:string;
-          rr:column "extrtv"
-        ];
-      rr:predicate ptro:DKFZ000012
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:datatype xsd:string;
-          rr:termType rr:Literal;
-          rr:column "subjid"
-        ];
-      rr:predicate ptro:DKFZ000010
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000011;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:datatype xsd:string;
-          rr:column "exroute";
-          rr:termType rr:Literal
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:column "exendy";
-          rr:datatype xsd:decimal;
-          rr:termType rr:Literal
-        ];
-      rr:predicate ptro:DKFZ000057
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:termType rr:Literal;
-          rr:column "exdur";
-          rr:datatype xsd:decimal
-        ];
-      rr:predicate ptro:DKFZ000058
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000053;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:datatype xsd:decimal;
-          rr:termType rr:Literal;
-          rr:column "exdose"
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:column "exstdy";
-          rr:datatype xsd:decimal;
-          rr:termType rr:Literal
-        ];
-      rr:predicate ptro:DKFZ000044
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:column "exvamt";
-          rr:datatype xsd:decimal;
-          rr:termType rr:Literal
-        ];
-      rr:predicate ptro:DKFZ000055
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:column "exvamtu";
-          rr:termType rr:Literal;
-          rr:datatype xsd:string
-        ];
-      rr:predicate ptro:DKFZ000056
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000054;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:datatype xsd:string;
-          rr:termType rr:Literal;
-          rr:column "exdosu"
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:datatype xsd:string;
-          rr:termType rr:Literal;
-          rr:column "extrt"
-        ];
-      rr:predicate ptro:DKFZ000013
-    ];
-  rr:logicalTable [ a rr:R2RMLView;
-      rr:sqlQuery """SELECT *
-FROM \"studydataset\".\"c70d1699_a2_ex_n150_30f6wo_nacl_plus_cispl_54gy\""""
-    ];
-  rr:subjectMap [ a rr:TermMap, rr:SubjectMap;
-      rr:template "http://www.cancerdata.org/roo/c70d1699_a2_ex_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}";
-      rr:class ncit:C69256;
-      rr:termType rr:IRI
-    ] .
-
-<urn:mapping-960609599> a rr:TriplesMap;
-  rr:predicateObjectMap [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000043;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:datatype xsd:string;
-          rr:termType rr:Literal;
-          rr:column "agetxt"
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000033;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:column "age";
-          rr:datatype xsd:decimal;
-          rr:termType rr:Literal
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:column "strain";
-          rr:datatype xsd:string;
-          rr:termType rr:Literal
-        ];
-      rr:predicate ptro:DKFZ000041
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000040;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:datatype xsd:integer;
-          rr:termType rr:Literal;
-          rr:column "sex"
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:datatype xsd:string;
-          rr:column "ageu";
-          rr:termType rr:Literal
-        ];
-      rr:predicate ptro:DKFZ000034
-    ];
-  rr:logicalTable [ a rr:R2RMLView;
-      rr:sqlQuery """SELECT \"participantid\", \"age\", \"agetxt\", \"ageu\", \"sex\", \"strain\"
-FROM \"studydataset\".\"c70d1869_a1_dm_n150_30f6wo_nacl_plus_cispl_54gy\""""
-    ];
-  rr:subjectMap [ a rr:TermMap, rr:SubjectMap;
-      rr:template "http://www.cancerdata.org/roo/c70d1833_a7_lb_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}";
-      rr:termType rr:IRI
-    ] .
-
-<urn:mapping-136853558> a rr:TriplesMap;
-  rr:predicateObjectMap [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000018;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:datatype xsd:decimal;
-          rr:termType rr:Literal;
-          rr:column "bwdy"
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:column "bworres";
-          rr:datatype xsd:decimal;
-          rr:termType rr:Literal
-        ];
-      rr:predicate ptro:DKFZ000017
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:datatype xsd:string;
-          rr:termType rr:Literal;
-          rr:column "bworresu"
-        ];
-      rr:predicate ptro:DKFZ000046
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:datatype xsd:string;
-          rr:column "studyid";
-          rr:termType rr:Literal
-        ];
-      rr:predicate ptro:DKFZ000008
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000016;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:termType rr:Literal;
-          rr:datatype xsd:string;
-          rr:column "bwtest"
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000083;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:datatype xsd:string;
-          rr:termType rr:Literal;
-          rr:column "bwnomlbl"
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000015;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:column "bwtestcd";
-          rr:datatype xsd:string;
-          rr:termType rr:Literal
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:column "subjid";
-          rr:datatype xsd:string;
-          rr:termType rr:Literal
-        ];
-      rr:predicate ptro:DKFZ000010
-    ];
-  rr:logicalTable [ a rr:R2RMLView;
-      rr:sqlQuery """SELECT *
-FROM \"studydataset\".\"c70d1686_a4_bw_n150_30f6wo_nacl_plus_cispl_54gy\""""
-    ];
-  rr:subjectMap [ a rr:TermMap, rr:SubjectMap;
-      rr:class ncit:C69256;
-      rr:termType rr:IRI;
-      rr:template "http://www.cancerdata.org/roo/c70d1686_a4_bw_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}"
-    ] .
-
-<urn:mapping-1630375219> a rr:TriplesMap;
-  rr:logicalTable [ a rr:R2RMLView;
-      rr:sqlQuery """SELECT \"participantid\", \"age\", \"agetxt\", \"ageu\", \"sex\", \"strain\"
-FROM \"studydataset\".\"c70d1869_a1_dm_n150_30f6wo_nacl_plus_cispl_54gy\""""
-    ];
-  rr:subjectMap [ a rr:TermMap, rr:SubjectMap;
-      rr:template "http://www.cancerdata.org/roo/c70d1686_a4_bw_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}";
-      rr:termType rr:IRI
-    ];
-  rr:predicateObjectMap [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:column "sex";
-          rr:datatype xsd:integer;
-          rr:termType rr:Literal
-        ];
-      rr:predicate ptro:DKFZ000040
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:column "strain";
-          rr:datatype xsd:string;
-          rr:termType rr:Literal
-        ];
-      rr:predicate ptro:DKFZ000041
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:termType rr:Literal;
-          rr:column "ageu";
-          rr:datatype xsd:string
-        ];
-      rr:predicate ptro:DKFZ000034
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:column "agetxt";
-          rr:datatype xsd:string;
-          rr:termType rr:Literal
-        ];
-      rr:predicate ptro:DKFZ000043
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:termType rr:Literal;
-          rr:column "age";
-          rr:datatype xsd:decimal
-        ];
-      rr:predicate ptro:DKFZ000033
-    ] .
-
-<urn:mapping-875658081> a rr:TriplesMap;
-  rr:logicalTable [ a rr:R2RMLView;
-      rr:sqlQuery """SELECT \"participantid\", \"bwnomlbl\", \"bwdy\", \"bworres\", \"bwtestcd\", \"bworresu\", \"bwtest\"
-FROM \"studydataset\".\"c70d1686_a4_bw_n150_30f6wo_nacl_plus_cispl_54gy\""""
-    ];
-  rr:subjectMap [ a rr:TermMap, rr:SubjectMap;
-      rr:template "http://www.cancerdata.org/roo/c70d1833_a7_lb_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}";
-      rr:termType rr:IRI
-    ];
-  rr:predicateObjectMap [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:termType rr:Literal;
-          rr:datatype xsd:decimal;
-          rr:column "bworres"
-        ];
-      rr:predicate ptro:DKFZ000017
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000015;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:column "bwtestcd";
-          rr:datatype xsd:string;
-          rr:termType rr:Literal
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:column "bworresu";
-          rr:datatype xsd:string;
-          rr:termType rr:Literal
-        ];
-      rr:predicate ptro:DKFZ000046
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000018;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:column "bwdy";
-          rr:termType rr:Literal;
-          rr:datatype xsd:decimal
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000083;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:column "bwnomlbl";
-          rr:datatype xsd:string;
-          rr:termType rr:Literal
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:datatype xsd:string;
-          rr:termType rr:Literal;
-          rr:column "bwtest"
-        ];
-      rr:predicate ptro:DKFZ000016
-    ] .
-
-<urn:mapping-951015854> a rr:TriplesMap;
+<urn:A7LB_A5DD> a rr:TriplesMap;
   rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
       rr:termType rr:IRI;
-      rr:template "http://www.cancerdata.org/roo/c70d1699_a2_ex_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}"
-    ];
-  rr:logicalTable [ a rr:R2RMLView;
-      rr:sqlQuery """SELECT \"participantid\", \"ddtest\", \"ddrescat\", \"ddtestcd\", \"ddeval\", \"dddy\"
-FROM \"studydataset\".\"c70d1687_a5_dd_n150_30f6wo_nacl_plus_cispl_54gy\""""
+      rr:template "http://www.cancerdata.org/roo/c70d1833_a7_lb_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}"
     ];
   rr:predicateObjectMap [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000021;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:column "ddrescat";
+      rr:predicate :DKFZ000023;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:termType rr:Literal;
           rr:datatype xsd:string;
-          rr:termType rr:Literal
+          rr:column "dddy"
         ]
     ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000019;
       rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:termType rr:Literal;
           rr:column "ddtestcd";
-          rr:termType rr:Literal;
           rr:datatype xsd:string
-        ];
-      rr:predicate ptro:DKFZ000019
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000020;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:datatype xsd:string;
-          rr:column "ddtest";
-          rr:termType rr:Literal
         ]
     ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
           rr:termType rr:Literal;
-          rr:column "dddy";
-          rr:datatype xsd:string
+          rr:datatype xsd:string;
+          rr:column "ddtest"
         ];
-      rr:predicate ptro:DKFZ000023
+      rr:predicate :DKFZ000020
     ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000022;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+      rr:predicate :DKFZ000022;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
           rr:column "ddeval";
           rr:datatype xsd:string;
           rr:termType rr:Literal
         ]
-    ] .
-
-<urn:mapping--986926155> a rr:TriplesMap;
-  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
-      rr:template "http://www.cancerdata.org/roo/c70d1833_a7_lb_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}";
-      rr:termType rr:IRI
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:termType rr:Literal;
+          rr:datatype xsd:string;
+          rr:column "ddrescat"
+        ];
+      rr:predicate :DKFZ000021
     ];
   rr:logicalTable [ a rr:R2RMLView;
-      rr:sqlQuery """SELECT \"participantid\", \"exdosu\", \"exendy\", \"exdose\", \"exstdy\", \"exvamt\", \"exroute\", \"extrt\", \"exdur\", \"exvamtu\", \"extrtv\"
-FROM \"studydataset\".\"c70d1699_a2_ex_n150_30f6wo_nacl_plus_cispl_54gy\""""
-    ];
-  rr:predicateObjectMap [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000057;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:datatype xsd:decimal;
-          rr:termType rr:Literal;
-          rr:column "exendy"
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000011;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:column "exroute";
-          rr:termType rr:Literal;
-          rr:datatype xsd:string
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:datatype xsd:string;
-          rr:column "extrt";
-          rr:termType rr:Literal
-        ];
-      rr:predicate ptro:DKFZ000013
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:column "exdose";
-          rr:termType rr:Literal;
-          rr:datatype xsd:decimal
-        ];
-      rr:predicate ptro:DKFZ000053
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000012;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:termType rr:Literal;
-          rr:datatype xsd:string;
-          rr:column "extrtv"
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000058;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:datatype xsd:decimal;
-          rr:column "exdur";
-          rr:termType rr:Literal
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:datatype xsd:decimal;
-          rr:termType rr:Literal;
-          rr:column "exstdy"
-        ];
-      rr:predicate ptro:DKFZ000044
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:termType rr:Literal;
-          rr:column "exvamt";
-          rr:datatype xsd:decimal
-        ];
-      rr:predicate ptro:DKFZ000055
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000056;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:termType rr:Literal;
-          rr:column "exvamtu";
-          rr:datatype xsd:string
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000054;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:column "exdosu";
-          rr:datatype xsd:string;
-          rr:termType rr:Literal
-        ]
-    ] .
-
-<urn:mapping-760904055> a rr:TriplesMap;
-  rr:predicateObjectMap [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:column "lbspccnd";
-          rr:termType rr:Literal;
-          rr:datatype xsd:string
-        ];
-      rr:predicate ptro:DKFZ000066
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000064;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:termType rr:Literal;
-          rr:datatype xsd:string;
-          rr:column "lbnam"
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000065;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:column "lbantreg";
-          rr:termType rr:Literal;
-          rr:datatype xsd:string
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000069;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:termType rr:Literal;
-          rr:datatype xsd:string;
-          rr:column "lbmethod"
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:datatype xsd:decimal;
-          rr:termType rr:Literal;
-          rr:column "lbdy"
-        ];
-      rr:predicate ptro:DKFZ000071
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:column "lbtest";
-          rr:datatype xsd:string;
-          rr:termType rr:Literal
-        ];
-      rr:predicate ptro:DKFZ000061
-    ];
-  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
-      rr:termType rr:IRI;
-      rr:template "http://www.cancerdata.org/roo/c70d1699_a2_ex_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}"
-    ];
-  rr:logicalTable [ a rr:R2RMLView;
-      rr:sqlQuery """SELECT \"participantid\", \"lbtest\", \"lbnam\", \"lbantreg\", \"lbspccnd\", \"lbmethod\", \"lbdy\"
-FROM \"studydataset\".\"c70d1833_a7_lb_n150_30f6wo_nacl_plus_cispl_54gy\""""
-    ] .
-
-<urn:mapping-2115059452> a rr:TriplesMap;
-  rr:predicateObjectMap [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000018;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:column "bwdy";
-          rr:datatype xsd:decimal;
-          rr:termType rr:Literal
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:termType rr:Literal;
-          rr:column "bworres";
-          rr:datatype xsd:decimal
-        ];
-      rr:predicate ptro:DKFZ000017
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000015;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:termType rr:Literal;
-          rr:datatype xsd:string;
-          rr:column "bwtestcd"
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000083;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:column "bwnomlbl";
-          rr:termType rr:Literal;
-          rr:datatype xsd:string
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000016;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:termType rr:Literal;
-          rr:column "bwtest";
-          rr:datatype xsd:string
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:termType rr:Literal;
-          rr:datatype xsd:string;
-          rr:column "bworresu"
-        ];
-      rr:predicate ptro:DKFZ000046
-    ];
-  rr:logicalTable [ a rr:R2RMLView;
-      rr:sqlQuery """SELECT \"participantid\", \"bwnomlbl\", \"bwdy\", \"bworres\", \"bwtestcd\", \"bworresu\", \"bwtest\"
-FROM \"studydataset\".\"c70d1686_a4_bw_n150_30f6wo_nacl_plus_cispl_54gy\""""
-    ];
-  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
-      rr:template "http://www.cancerdata.org/roo/c70d1687_a5_dd_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}";
-      rr:termType rr:IRI
-    ] .
-
-<urn:mapping--733348090> a rr:TriplesMap;
-  rr:logicalTable [ a rr:R2RMLView;
-      rr:sqlQuery """SELECT \"participantid\", \"ddrescat\"
+      rr:sqlQuery """SELECT \"participantid\", \"ddtest\", \"ddrescat\", \"ddtestcd\", \"ddeval\", \"dddy\"
 FROM \"studydataset\".\"c70d1687_a5_dd_n150_30f6wo_nacl_plus_cispl_54gy\""""
-    ];
-  rr:subjectMap [ a rr:TermMap, rr:SubjectMap;
-      rr:template "http://www.cancerdata.org/roo/c70d1869_a1_dm_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}";
-      rr:termType rr:IRI
-    ];
-  rr:predicateObjectMap [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:termType rr:Literal;
-          rr:column "ddrescat";
-          rr:datatype xsd:string
-        ];
-      rr:predicate ptro:DKFZ000021
     ] .
 
-<urn:mapping-126665313> a rr:TriplesMap;
+<urn:A5DD_A7LB> a rr:TriplesMap;
   rr:predicateObjectMap [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:datatype xsd:decimal;
-          rr:termType rr:Literal;
-          rr:column "lbdy"
-        ];
-      rr:predicate ptro:DKFZ000071
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000065;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:datatype xsd:string;
-          rr:termType rr:Literal;
-          rr:column "lbantreg"
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:column "lbspccnd";
-          rr:termType rr:Literal;
-          rr:datatype xsd:string
-        ];
-      rr:predicate ptro:DKFZ000066
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000069;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:datatype xsd:string;
-          rr:termType rr:Literal;
-          rr:column "lbmethod"
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000064;
+      rr:predicate :DKFZ000064;
       rr:objectMap [ a rr:TermMap, rr:ObjectMap;
           rr:datatype xsd:string;
           rr:column "lbnam";
+          rr:termType rr:Literal
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000065;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "lbantreg";
+          rr:datatype xsd:string;
           rr:termType rr:Literal
         ]
     ], [ a rr:PredicateObjectMap;
@@ -697,698 +91,544 @@ FROM \"studydataset\".\"c70d1687_a5_dd_n150_30f6wo_nacl_plus_cispl_54gy\""""
           rr:datatype xsd:string;
           rr:column "lbtest"
         ];
-      rr:predicate ptro:DKFZ000061
-    ];
-  rr:logicalTable [ a rr:R2RMLView;
-      rr:sqlQuery """SELECT \"participantid\", \"lbtest\", \"lbnam\", \"lbantreg\", \"lbspccnd\", \"lbmethod\", \"lbdy\"
-FROM \"studydataset\".\"c70d1833_a7_lb_n150_30f6wo_nacl_plus_cispl_54gy\""""
-    ];
-  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
-      rr:template "http://www.cancerdata.org/roo/c70d1869_a1_dm_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}";
-      rr:termType rr:IRI
-    ] .
-
-<urn:mapping-1820179237> a rr:TriplesMap;
-  rr:subjectMap [ a rr:TermMap, rr:SubjectMap;
-      rr:template "http://www.cancerdata.org/roo/c70d1869_a1_dm_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}";
-      rr:termType rr:IRI
-    ];
-  rr:logicalTable [ a rr:R2RMLView;
-      rr:sqlQuery """SELECT \"participantid\", \"bwnomlbl\", \"bwdy\", \"bworres\", \"bwtestcd\", \"bworresu\", \"bwtest\"
-FROM \"studydataset\".\"c70d1686_a4_bw_n150_30f6wo_nacl_plus_cispl_54gy\""""
-    ];
-  rr:predicateObjectMap [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000046;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:column "bworresu";
-          rr:termType rr:Literal;
-          rr:datatype xsd:string
-        ]
+      rr:predicate :DKFZ000061
     ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000071;
       rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:termType rr:Literal;
-          rr:datatype xsd:string;
-          rr:column "bwnomlbl"
-        ];
-      rr:predicate ptro:DKFZ000083
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:termType rr:Literal;
-          rr:column "bwdy";
-          rr:datatype xsd:decimal
-        ];
-      rr:predicate ptro:DKFZ000018
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
           rr:termType rr:Literal;
           rr:datatype xsd:decimal;
-          rr:column "bworres"
-        ];
-      rr:predicate ptro:DKFZ000017
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000015;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:column "bwtestcd";
-          rr:datatype xsd:string;
-          rr:termType rr:Literal
+          rr:column "lbdy"
         ]
     ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000016;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:datatype xsd:string;
-          rr:column "bwtest";
-          rr:termType rr:Literal
-        ]
-    ] .
-
-<urn:mapping--91559116> a rr:TriplesMap;
-  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
-      rr:template "http://www.cancerdata.org/roo/c70d1869_a1_dm_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}";
-      rr:class ncit:C69256;
-      rr:termType rr:IRI
-    ];
-  rr:predicateObjectMap [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:datatype xsd:decimal;
-          rr:column "age";
-          rr:termType rr:Literal
-        ];
-      rr:predicate ptro:DKFZ000033
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000043;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:column "agetxt";
-          rr:termType rr:Literal;
-          rr:datatype xsd:string
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000040;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:datatype xsd:integer;
-          rr:termType rr:Literal;
-          rr:column "sex"
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000041;
+      rr:predicate :DKFZ000066;
       rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:column "strain";
-          rr:datatype xsd:string;
-          rr:termType rr:Literal
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000010;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:termType rr:Literal;
-          rr:datatype xsd:string;
-          rr:column "subjid"
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:datatype xsd:string;
-          rr:column "ageu";
-          rr:termType rr:Literal
-        ];
-      rr:predicate ptro:DKFZ000034
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000008;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:column "studyid";
-          rr:termType rr:Literal;
-          rr:datatype xsd:string
-        ]
-    ];
-  rr:logicalTable [ a rr:R2RMLView;
-      rr:sqlQuery """SELECT *
-FROM \"studydataset\".\"c70d1869_a1_dm_n150_30f6wo_nacl_plus_cispl_54gy\""""
-    ] .
-
-<urn:mapping--975225802> a rr:TriplesMap;
-  rr:subjectMap [ a rr:TermMap, rr:SubjectMap;
-      rr:template "http://www.cancerdata.org/roo/c70d1687_a5_dd_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}";
-      rr:termType rr:IRI
-    ];
-  rr:predicateObjectMap [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000071;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:termType rr:Literal;
-          rr:column "lbdy";
-          rr:datatype xsd:decimal
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:datatype xsd:string;
           rr:column "lbspccnd";
-          rr:termType rr:Literal
-        ];
-      rr:predicate ptro:DKFZ000066
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:termType rr:Literal;
           rr:datatype xsd:string;
-          rr:column "lbnam"
-        ];
-      rr:predicate ptro:DKFZ000064
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000065;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:datatype xsd:string;
-          rr:column "lbantreg";
           rr:termType rr:Literal
         ]
     ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
           rr:termType rr:Literal;
           rr:datatype xsd:string;
           rr:column "lbmethod"
         ];
-      rr:predicate ptro:DKFZ000069
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:datatype xsd:string;
-          rr:column "lbtest";
-          rr:termType rr:Literal
-        ];
-      rr:predicate ptro:DKFZ000061
+      rr:predicate :DKFZ000069
     ];
   rr:logicalTable [ a rr:R2RMLView;
       rr:sqlQuery """SELECT \"participantid\", \"lbtest\", \"lbnam\", \"lbantreg\", \"lbspccnd\", \"lbmethod\", \"lbdy\"
 FROM \"studydataset\".\"c70d1833_a7_lb_n150_30f6wo_nacl_plus_cispl_54gy\""""
-    ] .
-
-<urn:mapping-1689758950> a rr:TriplesMap;
-  rr:predicateObjectMap [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:column "studyid";
-          rr:termType rr:Literal;
-          rr:datatype xsd:string
-        ];
-      rr:predicate ptro:DKFZ000008
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000022;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:datatype xsd:string;
-          rr:column "ddeval";
-          rr:termType rr:Literal
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:column "ddtestcd";
-          rr:termType rr:Literal;
-          rr:datatype xsd:string
-        ];
-      rr:predicate ptro:DKFZ000019
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000010;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:termType rr:Literal;
-          rr:column "subjid";
-          rr:datatype xsd:string
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000021;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:column "ddrescat";
-          rr:datatype xsd:string;
-          rr:termType rr:Literal
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000023;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:column "dddy";
-          rr:termType rr:Literal;
-          rr:datatype xsd:string
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:datatype xsd:string;
-          rr:column "ddtest";
-          rr:termType rr:Literal
-        ];
-      rr:predicate ptro:DKFZ000020
-    ];
-  rr:subjectMap [ a rr:TermMap, rr:SubjectMap;
-      rr:template "http://www.cancerdata.org/roo/c70d1687_a5_dd_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}";
-      rr:termType rr:IRI;
-      rr:class ncit:C69256
-    ];
-  rr:logicalTable [ a rr:R2RMLView;
-      rr:sqlQuery """SELECT *
-FROM \"studydataset\".\"c70d1687_a5_dd_n150_30f6wo_nacl_plus_cispl_54gy\""""
-    ] .
-
-<urn:mapping-419116464> a rr:TriplesMap;
-  rr:predicateObjectMap [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:column "age";
-          rr:termType rr:Literal;
-          rr:datatype xsd:decimal
-        ];
-      rr:predicate ptro:DKFZ000033
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000040;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:column "sex";
-          rr:termType rr:Literal;
-          rr:datatype xsd:integer
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000041;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:column "strain";
-          rr:datatype xsd:string;
-          rr:termType rr:Literal
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:datatype xsd:string;
-          rr:termType rr:Literal;
-          rr:column "agetxt"
-        ];
-      rr:predicate ptro:DKFZ000043
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000034;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:datatype xsd:string;
-          rr:column "ageu";
-          rr:termType rr:Literal
-        ]
-    ];
-  rr:logicalTable [ a rr:R2RMLView;
-      rr:sqlQuery """SELECT \"participantid\", \"age\", \"agetxt\", \"ageu\", \"sex\", \"strain\"
-FROM \"studydataset\".\"c70d1869_a1_dm_n150_30f6wo_nacl_plus_cispl_54gy\""""
     ];
   rr:subjectMap [ a rr:TermMap, rr:SubjectMap;
       rr:template "http://www.cancerdata.org/roo/c70d1687_a5_dd_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}";
       rr:termType rr:IRI
     ] .
 
-<urn:mapping--535326913> a rr:TriplesMap;
-  rr:subjectMap [ a rr:TermMap, rr:SubjectMap;
-      rr:termType rr:IRI;
-      rr:template "http://www.cancerdata.org/roo/c70d1833_a7_lb_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}"
-    ];
-  rr:logicalTable [ a rr:R2RMLView;
-      rr:sqlQuery """SELECT \"participantid\", \"ddtest\", \"ddrescat\", \"ddtestcd\", \"ddeval\", \"dddy\"
-FROM \"studydataset\".\"c70d1687_a5_dd_n150_30f6wo_nacl_plus_cispl_54gy\""""
-    ];
+<urn:A1DM_A2EX> a rr:TriplesMap;
   rr:predicateObjectMap [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000019;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:datatype xsd:string;
-          rr:termType rr:Literal;
-          rr:column "ddtestcd"
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000020;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:termType rr:Literal;
-          rr:column "ddtest";
-          rr:datatype xsd:string
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000022;
+      rr:predicate :DKFZ000054;
       rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:column "ddeval";
-          rr:datatype xsd:string;
-          rr:termType rr:Literal
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000023;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:column "dddy";
+          rr:column "exdosu";
           rr:datatype xsd:string;
           rr:termType rr:Literal
         ]
     ], [ a rr:PredicateObjectMap;
       rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:column "ddrescat";
-          rr:datatype xsd:string;
-          rr:termType rr:Literal
-        ];
-      rr:predicate ptro:DKFZ000021
-    ] .
-
-<urn:mapping--530939559> a rr:TriplesMap;
-  rr:predicateObjectMap [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:datatype xsd:string;
-          rr:column "subjid";
-          rr:termType rr:Literal
-        ];
-      rr:predicate ptro:DKFZ000010
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000030;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
           rr:datatype xsd:string;
           rr:termType rr:Literal;
-          rr:column "clcat"
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000008;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:datatype xsd:string;
-          rr:termType rr:Literal;
-          rr:column "studyid"
-        ]
+          rr:column "extrt"
+        ];
+      rr:predicate :DKFZ000013
     ], [ a rr:PredicateObjectMap;
       rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:column "clbodsys";
-          rr:termType rr:Literal;
-          rr:datatype xsd:string
-        ];
-      rr:predicate ptro:DKFZ000035
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:datatype xsd:string;
-          rr:termType rr:Literal;
-          rr:column "cltest"
-        ];
-      rr:predicate ptro:DKFZ000029
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000028;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:column "cltestcd";
-          rr:datatype xsd:string;
-          rr:termType rr:Literal
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000037;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:datatype xsd:string;
-          rr:termType rr:Literal;
-          rr:column "clstat"
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:datatype xsd:string;
-          rr:termType rr:Literal;
-          rr:column "clrescat"
-        ];
-      rr:predicate ptro:DKFZ000036
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000038;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:termType rr:Literal;
-          rr:column "cleval";
-          rr:datatype xsd:string
-        ]
-    ];
-  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
-      rr:class ncit:C69256;
-      rr:template "http://www.cancerdata.org/roo/c70d1688_a6_cl_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}";
-      rr:termType rr:IRI
-    ];
-  rr:logicalTable [ a rr:R2RMLView;
-      rr:sqlQuery """SELECT *
-FROM \"studydataset\".\"c70d1688_a6_cl_n150_30f6wo_nacl_plus_cispl_54gy\""""
-    ] .
-
-<urn:mapping--335561670> a rr:TriplesMap;
-  rr:predicateObjectMap [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:termType rr:Literal;
-          rr:datatype xsd:string;
-          rr:column "exdosu"
-        ];
-      rr:predicate ptro:DKFZ000054
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:termType rr:Literal;
           rr:datatype xsd:decimal;
+          rr:termType rr:Literal;
           rr:column "exdose"
         ];
-      rr:predicate ptro:DKFZ000053
+      rr:predicate :DKFZ000053
     ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:termType rr:Literal;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
           rr:datatype xsd:string;
+          rr:termType rr:Literal;
           rr:column "exroute"
         ];
-      rr:predicate ptro:DKFZ000011
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000013;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:column "extrt";
-          rr:termType rr:Literal;
-          rr:datatype xsd:string
-        ]
+      rr:predicate :DKFZ000011
     ];
   rr:subjectMap [ a rr:TermMap, rr:SubjectMap;
-      rr:template "http://www.cancerdata.org/roo/c70d1869_a1_dm_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}";
-      rr:termType rr:IRI
+      rr:termType rr:IRI;
+      rr:template "http://www.cancerdata.org/roo/c70d1869_a1_dm_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}"
     ];
   rr:logicalTable [ a rr:R2RMLView;
       rr:sqlQuery """SELECT \"participantid\", \"exdosu\", \"exdose\", \"extrt\", \"exroute\"
 FROM \"studydataset\".\"c70d1699_a2_ex_n150_30f6wo_nacl_plus_cispl_54gy\""""
     ] .
 
-<urn:mapping-249679321> a rr:TriplesMap;
+<urn:A6CL> a rr:TriplesMap;
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class ncit:C69256;
+      rr:termType rr:IRI;
+      rr:template "http://www.cancerdata.org/roo/c70d1688_a6_cl_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}"
+    ];
   rr:predicateObjectMap [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000040;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:column "sex";
+      rr:predicate :DKFZ000029;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:datatype xsd:string;
           rr:termType rr:Literal;
-          rr:datatype xsd:integer
+          rr:column "cltest"
         ]
     ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000041;
+      rr:predicate :DKFZ000030;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:datatype xsd:string;
+          rr:termType rr:Literal;
+          rr:column "clcat"
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000028;
       rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:column "strain";
+          rr:column "cltestcd";
           rr:datatype xsd:string;
           rr:termType rr:Literal
         ]
     ], [ a rr:PredicateObjectMap;
       rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:termType rr:Literal;
-          rr:column "ageu";
-          rr:datatype xsd:string
-        ];
-      rr:predicate ptro:DKFZ000034
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000033;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:column "age";
-          rr:datatype xsd:decimal;
+          rr:column "subjid";
+          rr:datatype xsd:string;
           rr:termType rr:Literal
-        ]
+        ];
+      rr:predicate :DKFZ000010
     ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000043;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "clrescat";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ];
+      rr:predicate :DKFZ000036
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:datatype xsd:string;
+          rr:termType rr:Literal;
+          rr:column "clstat"
+        ];
+      rr:predicate :DKFZ000037
+    ], [ a rr:PredicateObjectMap;
       rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:column "agetxt";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal;
+          rr:column "studyid"
+        ];
+      rr:predicate :DKFZ000008
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:column "cleval";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ];
+      rr:predicate :DKFZ000038
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000035;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "clbodsys";
           rr:datatype xsd:string;
           rr:termType rr:Literal
         ]
     ];
   rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery """SELECT *
+FROM \"studydataset\".\"c70d1688_a6_cl_n150_30f6wo_nacl_plus_cispl_54gy\""""
+    ] .
+
+<urn:A7LB_A1DM> a rr:TriplesMap;
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000041;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "strain";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000033;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:datatype xsd:decimal;
+          rr:termType rr:Literal;
+          rr:column "age"
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:column "sex";
+          rr:datatype xsd:integer;
+          rr:termType rr:Literal
+        ];
+      rr:predicate :DKFZ000040
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000034;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:datatype xsd:string;
+          rr:termType rr:Literal;
+          rr:column "ageu"
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:datatype xsd:string;
+          rr:termType rr:Literal;
+          rr:column "agetxt"
+        ];
+      rr:predicate :DKFZ000043
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:termType rr:IRI;
+      rr:template "http://www.cancerdata.org/roo/c70d1833_a7_lb_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}"
+    ];
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery """SELECT \"participantid\", \"age\", \"agetxt\", \"ageu\", \"sex\", \"strain\"
+FROM \"studydataset\".\"c70d1869_a1_dm_n150_30f6wo_nacl_plus_cispl_54gy\""""
+    ] .
+
+<urn:A6CL_A5DD> a rr:TriplesMap;
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000019;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:datatype xsd:string;
+          rr:termType rr:Literal;
+          rr:column "ddtestcd"
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:termType rr:Literal;
+          rr:datatype xsd:string;
+          rr:column "dddy"
+        ];
+      rr:predicate :DKFZ000023
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:column "ddeval";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ];
+      rr:predicate :DKFZ000022
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:column "ddrescat";
+          rr:termType rr:Literal;
+          rr:datatype xsd:string
+        ];
+      rr:predicate :DKFZ000021
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000020;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:datatype xsd:string;
+          rr:column "ddtest";
+          rr:termType rr:Literal
+        ]
+    ];
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery """SELECT \"participantid\", \"ddtest\", \"ddrescat\", \"ddtestcd\", \"ddeval\", \"dddy\"
+FROM \"studydataset\".\"c70d1687_a5_dd_n150_30f6wo_nacl_plus_cispl_54gy\""""
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:termType rr:IRI;
+      rr:template "http://www.cancerdata.org/roo/c70d1688_a6_cl_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}"
+    ] .
+
+<urn:A2EX_A1DM> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
       rr:sqlQuery """SELECT \"participantid\", \"age\", \"agetxt\", \"ageu\", \"sex\", \"strain\"
 FROM \"studydataset\".\"c70d1869_a1_dm_n150_30f6wo_nacl_plus_cispl_54gy\""""
     ];
-  rr:subjectMap [ a rr:TermMap, rr:SubjectMap;
-      rr:template "http://www.cancerdata.org/roo/c70d1699_a2_ex_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}";
-      rr:termType rr:IRI
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:termType rr:IRI;
+      rr:template "http://www.cancerdata.org/roo/c70d1699_a2_ex_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "agetxt";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ];
+      rr:predicate :DKFZ000043
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:datatype xsd:string;
+          rr:termType rr:Literal;
+          rr:column "strain"
+        ];
+      rr:predicate :DKFZ000041
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000034;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:column "ageu";
+          rr:termType rr:Literal;
+          rr:datatype xsd:string
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:termType rr:Literal;
+          rr:datatype xsd:decimal;
+          rr:column "age"
+        ];
+      rr:predicate :DKFZ000033
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000040;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "sex";
+          rr:termType rr:Literal;
+          rr:datatype xsd:integer
+        ]
     ] .
 
-<urn:mapping--1891858932> a rr:TriplesMap;
+<urn:A2EX_A4BW> a rr:TriplesMap;
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:termType rr:IRI;
+      rr:template "http://www.cancerdata.org/roo/c70d1699_a2_ex_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000083;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "bwnomlbl";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000018;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:termType rr:Literal;
+          rr:datatype xsd:decimal;
+          rr:column "bwdy"
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000046;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:column "bworresu";
+          rr:termType rr:Literal;
+          rr:datatype xsd:string
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:datatype xsd:string;
+          rr:termType rr:Literal;
+          rr:column "bwtestcd"
+        ];
+      rr:predicate :DKFZ000015
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "bworres";
+          rr:datatype xsd:decimal;
+          rr:termType rr:Literal
+        ];
+      rr:predicate :DKFZ000017
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000016;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:column "bwtest";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ]
+    ];
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery """SELECT \"participantid\", \"bwnomlbl\", \"bwdy\", \"bworres\", \"bwtestcd\", \"bworresu\", \"bwtest\"
+FROM \"studydataset\".\"c70d1686_a4_bw_n150_30f6wo_nacl_plus_cispl_54gy\""""
+    ] .
+
+<urn:A7LB> a rr:TriplesMap;
+  rr:subjectMap [ a rr:TermMap, rr:SubjectMap;
+      rr:class ncit:C69256;
+      rr:template "http://www.cancerdata.org/roo/c70d1833_a7_lb_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}";
+      rr:termType rr:IRI
+    ];
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery """SELECT *
+FROM \"studydataset\".\"c70d1833_a7_lb_n150_30f6wo_nacl_plus_cispl_54gy\""""
+    ];
   rr:predicateObjectMap [ a rr:PredicateObjectMap;
       rr:objectMap [ a rr:ObjectMap, rr:TermMap;
           rr:datatype xsd:string;
-          rr:column "lbnam";
-          rr:termType rr:Literal
-        ];
-      rr:predicate ptro:DKFZ000064
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000070;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:datatype xsd:string;
           rr:termType rr:Literal;
           rr:column "lbblfl"
-        ]
+        ];
+      rr:predicate :DKFZ000070
     ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000073;
+      rr:predicate :DKFZ000066;
       rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:column "lbnomdy";
-          rr:datatype xsd:decimal;
+          rr:column "lbspccnd";
+          rr:termType rr:Literal;
+          rr:datatype xsd:string
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:termType rr:Literal;
+          rr:column "lbnam";
+          rr:datatype xsd:string
+        ];
+      rr:predicate :DKFZ000064
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000008;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:termType rr:Literal;
+          rr:datatype xsd:string;
+          rr:column "studyid"
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "lbportot";
+          rr:datatype xsd:string;
           rr:termType rr:Literal
-        ]
+        ];
+      rr:predicate :DKFZ000068
     ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000063;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:datatype xsd:decimal;
+          rr:column "lbnomdy";
+          rr:termType rr:Literal
+        ];
+      rr:predicate :DKFZ000073
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000071;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
           rr:termType rr:Literal;
-          rr:datatype xsd:string;
-          rr:column "lborresu"
+          rr:datatype xsd:decimal;
+          rr:column "lbdy"
         ]
     ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000067;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+      rr:predicate :DKFZ000061;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:datatype xsd:string;
           rr:termType rr:Literal;
-          rr:datatype xsd:string;
-          rr:column "lbspcufl"
+          rr:column "lbtest"
         ]
     ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000010;
+      rr:predicate :DKFZ000010;
       rr:objectMap [ a rr:ObjectMap, rr:TermMap;
           rr:column "subjid";
           rr:datatype xsd:string;
           rr:termType rr:Literal
         ]
     ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:column "studyid";
-          rr:datatype xsd:string;
-          rr:termType rr:Literal
-        ];
-      rr:predicate ptro:DKFZ000008
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000069;
       rr:objectMap [ a rr:TermMap, rr:ObjectMap;
           rr:termType rr:Literal;
-          rr:column "lbmethod";
-          rr:datatype xsd:string
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:column "lbantreg";
           rr:datatype xsd:string;
-          rr:termType rr:Literal
-        ];
-      rr:predicate ptro:DKFZ000065
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000060;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:datatype xsd:string;
-          rr:termType rr:Literal;
           rr:column "lbtestcd"
-        ]
+        ];
+      rr:predicate :DKFZ000060
     ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000068;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+      rr:predicate :DKFZ000074;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
           rr:termType rr:Literal;
           rr:datatype xsd:string;
-          rr:column "lbportot"
+          rr:column "lbnomlbl"
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000067;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "lbspcufl";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
         ]
     ], [ a rr:PredicateObjectMap;
       rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:datatype xsd:string;
+          rr:column "lbantreg";
+          rr:termType rr:Literal
+        ];
+      rr:predicate :DKFZ000065
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
           rr:termType rr:Literal;
-          rr:column "lbspccnd";
-          rr:datatype xsd:string
-        ];
-      rr:predicate ptro:DKFZ000066
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:datatype xsd:decimal;
-          rr:column "lbdy";
-          rr:termType rr:Literal
-        ];
-      rr:predicate ptro:DKFZ000071
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:column "lborres";
-          rr:datatype xsd:decimal;
-          rr:termType rr:Literal
-        ];
-      rr:predicate ptro:DKFZ000062
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
           rr:column "lbendy";
-          rr:termType rr:Literal;
           rr:datatype xsd:decimal
         ];
-      rr:predicate ptro:DKFZ000072
+      rr:predicate :DKFZ000072
     ], [ a rr:PredicateObjectMap;
       rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:termType rr:Literal;
           rr:datatype xsd:string;
-          rr:termType rr:Literal;
-          rr:column "lbnomlbl"
+          rr:column "lborresu"
         ];
-      rr:predicate ptro:DKFZ000074
+      rr:predicate :DKFZ000063
     ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000061;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:termType rr:Literal;
-          rr:column "lbtest";
-          rr:datatype xsd:string
+      rr:predicate :DKFZ000069;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:datatype xsd:string;
+          rr:column "lbmethod";
+          rr:termType rr:Literal
         ]
-    ];
-  rr:subjectMap [ a rr:TermMap, rr:SubjectMap;
-      rr:termType rr:IRI;
-      rr:template "http://www.cancerdata.org/roo/c70d1833_a7_lb_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}";
-      rr:class ncit:C69256
-    ];
-  rr:logicalTable [ a rr:R2RMLView;
-      rr:sqlQuery """SELECT *
-FROM \"studydataset\".\"c70d1833_a7_lb_n150_30f6wo_nacl_plus_cispl_54gy\""""
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:datatype xsd:decimal;
+          rr:column "lborres";
+          rr:termType rr:Literal
+        ];
+      rr:predicate :DKFZ000062
     ] .
 
-<urn:mapping--1750597720> a rr:TriplesMap;
+<urn:A4BW_A2EX> a rr:TriplesMap;
   rr:predicateObjectMap [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:termType rr:Literal;
-          rr:datatype xsd:decimal;
-          rr:column "exendy"
-        ];
-      rr:predicate ptro:DKFZ000057
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:datatype xsd:string;
-          rr:column "exdosu";
-          rr:termType rr:Literal
-        ];
-      rr:predicate ptro:DKFZ000054
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000013;
       rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:column "extrtv";
           rr:termType rr:Literal;
-          rr:datatype xsd:string;
-          rr:column "extrt"
-        ]
+          rr:datatype xsd:string
+        ];
+      rr:predicate :DKFZ000012
     ], [ a rr:PredicateObjectMap;
       rr:objectMap [ a rr:ObjectMap, rr:TermMap;
           rr:datatype xsd:decimal;
-          rr:column "exvamt";
+          rr:column "exendy";
           rr:termType rr:Literal
         ];
-      rr:predicate ptro:DKFZ000055
+      rr:predicate :DKFZ000057
     ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000044;
+      rr:predicate :DKFZ000053;
       rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "exdose";
           rr:termType rr:Literal;
-          rr:column "exstdy";
           rr:datatype xsd:decimal
         ]
     ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000056;
       rr:objectMap [ a rr:ObjectMap, rr:TermMap;
           rr:termType rr:Literal;
-          rr:datatype xsd:string;
-          rr:column "exvamtu"
-        ];
-      rr:predicate ptro:DKFZ000056
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:column "exdose";
-          rr:datatype xsd:decimal;
-          rr:termType rr:Literal
-        ];
-      rr:predicate ptro:DKFZ000053
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:datatype xsd:string;
-          rr:termType rr:Literal;
-          rr:column "extrtv"
-        ];
-      rr:predicate ptro:DKFZ000012
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000058;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:column "exdur";
-          rr:datatype xsd:decimal;
-          rr:termType rr:Literal
+          rr:column "exvamtu";
+          rr:datatype xsd:string
         ]
     ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000011;
+      rr:predicate :DKFZ000044;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:datatype xsd:decimal;
+          rr:termType rr:Literal;
+          rr:column "exstdy"
+        ]
+    ], [ a rr:PredicateObjectMap;
       rr:objectMap [ a rr:TermMap, rr:ObjectMap;
           rr:termType rr:Literal;
           rr:column "exroute";
           rr:datatype xsd:string
+        ];
+      rr:predicate :DKFZ000011
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000055;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:datatype xsd:decimal;
+          rr:termType rr:Literal;
+          rr:column "exvamt"
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000013;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:datatype xsd:string;
+          rr:column "extrt";
+          rr:termType rr:Literal
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000054;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:termType rr:Literal;
+          rr:column "exdosu";
+          rr:datatype xsd:string
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000058;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "exdur";
+          rr:datatype xsd:decimal;
+          rr:termType rr:Literal
         ]
     ];
   rr:subjectMap [ a rr:TermMap, rr:SubjectMap;
@@ -1400,66 +640,588 @@ FROM \"studydataset\".\"c70d1833_a7_lb_n150_30f6wo_nacl_plus_cispl_54gy\""""
 FROM \"studydataset\".\"c70d1699_a2_ex_n150_30f6wo_nacl_plus_cispl_54gy\""""
     ] .
 
-<urn:MAPID-3409569f86934412b97be0873018ad70> a rr:TriplesMap;
+<urn:A2EX> a rr:TriplesMap;
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:datatype xsd:decimal;
+          rr:termType rr:Literal;
+          rr:column "exstdy"
+        ];
+      rr:predicate :DKFZ000044
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:datatype xsd:string;
+          rr:column "subjid";
+          rr:termType rr:Literal
+        ];
+      rr:predicate :DKFZ000010
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000053;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:termType rr:Literal;
+          rr:column "exdose";
+          rr:datatype xsd:decimal
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:termType rr:Literal;
+          rr:column "extrtv";
+          rr:datatype xsd:string
+        ];
+      rr:predicate :DKFZ000012
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000013;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:termType rr:Literal;
+          rr:datatype xsd:string;
+          rr:column "extrt"
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:termType rr:Literal;
+          rr:column "studyid";
+          rr:datatype xsd:string
+        ];
+      rr:predicate :DKFZ000008
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000054;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:column "exdosu";
+          rr:termType rr:Literal;
+          rr:datatype xsd:string
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:datatype xsd:decimal;
+          rr:column "exdur";
+          rr:termType rr:Literal
+        ];
+      rr:predicate :DKFZ000058
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:termType rr:Literal;
+          rr:datatype xsd:string;
+          rr:column "exvamtu"
+        ];
+      rr:predicate :DKFZ000056
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "exendy";
+          rr:datatype xsd:decimal;
+          rr:termType rr:Literal
+        ];
+      rr:predicate :DKFZ000057
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000055;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:column "exvamt";
+          rr:termType rr:Literal;
+          rr:datatype xsd:decimal
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000011;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:datatype xsd:string;
+          rr:termType rr:Literal;
+          rr:column "exroute"
+        ]
+    ];
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery """SELECT *
+FROM \"studydataset\".\"c70d1699_a2_ex_n150_30f6wo_nacl_plus_cispl_54gy\""""
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class ncit:C69256;
+      rr:termType rr:IRI;
+      rr:template "http://www.cancerdata.org/roo/c70d1699_a2_ex_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}"
+    ] .
+
+<urn:A5DD> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery """SELECT *
+FROM \"studydataset\".\"c70d1687_a5_dd_n150_30f6wo_nacl_plus_cispl_54gy\""""
+    ];
   rr:subjectMap [ a rr:TermMap, rr:SubjectMap;
-      rr:template "http://www.cancerdata.org/roo/c70d1688_a6_cl_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}";
+      rr:class ncit:C69256;
+      rr:template "http://www.cancerdata.org/roo/c70d1687_a5_dd_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}";
       rr:termType rr:IRI
     ];
   rr:predicateObjectMap [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000033;
       rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:datatype xsd:decimal;
           rr:termType rr:Literal;
-          rr:column "age"
+          rr:column "subjid";
+          rr:datatype xsd:string
+        ];
+      rr:predicate :DKFZ000010
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000008;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:datatype xsd:string;
+          rr:termType rr:Literal;
+          rr:column "studyid"
         ]
     ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000041;
+      rr:predicate :DKFZ000021;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:column "ddrescat";
+          rr:termType rr:Literal;
+          rr:datatype xsd:string
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000023;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:datatype xsd:string;
+          rr:column "dddy";
+          rr:termType rr:Literal
+        ]
+    ], [ a rr:PredicateObjectMap;
       rr:objectMap [ a rr:ObjectMap, rr:TermMap;
           rr:termType rr:Literal;
           rr:datatype xsd:string;
-          rr:column "strain"
+          rr:column "ddeval"
+        ];
+      rr:predicate :DKFZ000022
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000020;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:datatype xsd:string;
+          rr:termType rr:Literal;
+          rr:column "ddtest"
         ]
     ], [ a rr:PredicateObjectMap;
       rr:objectMap [ a rr:TermMap, rr:ObjectMap;
-          rr:column "sex";
-          rr:datatype xsd:integer;
-          rr:termType rr:Literal
-        ];
-      rr:predicate ptro:DKFZ000040
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000034;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:datatype xsd:string;
           rr:termType rr:Literal;
-          rr:datatype xsd:string;
-          rr:column "ageu"
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:datatype xsd:string;
-          rr:column "agetxt";
-          rr:termType rr:Literal
+          rr:column "ddtestcd"
         ];
-      rr:predicate ptro:DKFZ000043
-    ];
-  rr:logicalTable [ a rr:R2RMLView;
-      rr:sqlQuery """SELECT \"participantid\", \"age\", \"agetxt\", \"ageu\", \"sex\", \"strain\"
-FROM \"studydataset\".\"c70d1869_a1_dm_n150_30f6wo_nacl_plus_cispl_54gy\""""
+      rr:predicate :DKFZ000019
     ] .
 
-<urn:MAPID-34b63d002ab443e0a15e43fbd80dcf97> a rr:TriplesMap;
+<urn:A5DD_A4BW> a rr:TriplesMap;
+  rr:subjectMap [ a rr:TermMap, rr:SubjectMap;
+      rr:template "http://www.cancerdata.org/roo/c70d1687_a5_dd_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}";
+      rr:termType rr:IRI
+    ];
   rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000016;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "bwtest";
+          rr:termType rr:Literal;
+          rr:datatype xsd:string
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:datatype xsd:string;
+          rr:termType rr:Literal;
+          rr:column "bwnomlbl"
+        ];
+      rr:predicate :DKFZ000083
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000015;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "bwtestcd";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:column "bworresu";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ];
+      rr:predicate :DKFZ000046
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000017;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:datatype xsd:decimal;
+          rr:column "bworres";
+          rr:termType rr:Literal
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000018;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "bwdy";
+          rr:termType rr:Literal;
+          rr:datatype xsd:decimal
+        ]
+    ];
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery """SELECT \"participantid\", \"bwnomlbl\", \"bwdy\", \"bworres\", \"bwtestcd\", \"bworresu\", \"bwtest\"
+FROM \"studydataset\".\"c70d1686_a4_bw_n150_30f6wo_nacl_plus_cispl_54gy\""""
+    ] .
+
+<urn:A5DD_A2EX> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery """SELECT \"participantid\", \"extrt\"
+FROM \"studydataset\".\"c70d1699_a2_ex_n150_30f6wo_nacl_plus_cispl_54gy\""""
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000013;
       rr:objectMap [ a rr:ObjectMap, rr:TermMap;
           rr:column "extrt";
           rr:termType rr:Literal;
           rr:datatype xsd:string
-        ];
-      rr:predicate ptro:DKFZ000013
+        ]
+    ];
+  rr:subjectMap [ a rr:TermMap, rr:SubjectMap;
+      rr:termType rr:IRI;
+      rr:template "http://www.cancerdata.org/roo/c70d1687_a5_dd_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}"
+    ] .
+
+<urn:A1DM> a rr:TriplesMap;
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000033;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:termType rr:Literal;
+          rr:column "age";
+          rr:datatype xsd:decimal
+        ]
     ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000058;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:datatype xsd:string;
+          rr:termType rr:Literal;
+          rr:column "agetxt"
+        ];
+      rr:predicate :DKFZ000043
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000010;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:termType rr:Literal;
+          rr:column "subjid";
+          rr:datatype xsd:string
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000041;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "strain";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:termType rr:Literal;
+          rr:column "sex";
+          rr:datatype xsd:integer
+        ];
+      rr:predicate :DKFZ000040
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "ageu";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ];
+      rr:predicate :DKFZ000034
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000008;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:column "studyid";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ]
+    ];
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery """SELECT *
+FROM \"studydataset\".\"c70d1869_a1_dm_n150_30f6wo_nacl_plus_cispl_54gy\""""
+    ];
+  rr:subjectMap [ a rr:TermMap, rr:SubjectMap;
+      rr:template "http://www.cancerdata.org/roo/c70d1869_a1_dm_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}";
+      rr:termType rr:IRI;
+      rr:class ncit:C69256
+    ] .
+
+<urn:A1DM_A4BW> a rr:TriplesMap;
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:datatype xsd:string;
+          rr:column "bwnomlbl";
+          rr:termType rr:Literal
+        ];
+      rr:predicate :DKFZ000083
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:termType rr:Literal;
+          rr:column "bwdy";
+          rr:datatype xsd:decimal
+        ];
+      rr:predicate :DKFZ000018
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000017;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:datatype xsd:decimal;
+          rr:column "bworres";
+          rr:termType rr:Literal
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:termType rr:Literal;
+          rr:column "bwtestcd";
+          rr:datatype xsd:string
+        ];
+      rr:predicate :DKFZ000015
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000016;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "bwtest";
+          rr:termType rr:Literal;
+          rr:datatype xsd:string
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:column "bworresu";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ];
+      rr:predicate :DKFZ000046
+    ];
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery """SELECT \"participantid\", \"bwnomlbl\", \"bwdy\", \"bworres\", \"bwtestcd\", \"bworresu\", \"bwtest\"
+FROM \"studydataset\".\"c70d1686_a4_bw_n150_30f6wo_nacl_plus_cispl_54gy\""""
+    ];
+  rr:subjectMap [ a rr:TermMap, rr:SubjectMap;
+      rr:template "http://www.cancerdata.org/roo/c70d1869_a1_dm_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:A7LB_A2EX> a rr:TriplesMap;
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery """SELECT \"participantid\", \"exdosu\", \"exendy\", \"exdose\", \"exstdy\", \"exvamt\", \"exroute\", \"extrt\", \"exdur\", \"exvamtu\", \"extrtv\"
+FROM \"studydataset\".\"c70d1699_a2_ex_n150_30f6wo_nacl_plus_cispl_54gy\""""
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:termType rr:IRI;
+      rr:template "http://www.cancerdata.org/roo/c70d1833_a7_lb_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:termType rr:Literal;
+          rr:column "extrt";
+          rr:datatype xsd:string
+        ];
+      rr:predicate :DKFZ000013
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000011;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:datatype xsd:string;
+          rr:termType rr:Literal;
+          rr:column "exroute"
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000044;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:termType rr:Literal;
+          rr:column "exstdy";
+          rr:datatype xsd:decimal
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000055;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:termType rr:Literal;
+          rr:column "exvamt";
+          rr:datatype xsd:decimal
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000057;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:termType rr:Literal;
+          rr:datatype xsd:decimal;
+          rr:column "exendy"
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000012;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:termType rr:Literal;
+          rr:datatype xsd:string;
+          rr:column "extrtv"
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000058;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:datatype xsd:decimal;
+          rr:column "exdur";
+          rr:termType rr:Literal
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000056;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:termType rr:Literal;
+          rr:column "exvamtu";
+          rr:datatype xsd:string
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:datatype xsd:string;
+          rr:column "exdosu";
+          rr:termType rr:Literal
+        ];
+      rr:predicate :DKFZ000054
+    ], [ a rr:PredicateObjectMap;
       rr:objectMap [ a rr:TermMap, rr:ObjectMap;
           rr:termType rr:Literal;
           rr:datatype xsd:decimal;
-          rr:column "exdur"
+          rr:column "exdose"
+        ];
+      rr:predicate :DKFZ000053
+    ] .
+
+<urn:A1DM_A7LB> a rr:TriplesMap;
+  rr:subjectMap [ a rr:TermMap, rr:SubjectMap;
+      rr:template "http://www.cancerdata.org/roo/c70d1869_a1_dm_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}";
+      rr:termType rr:IRI
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000061;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:termType rr:Literal;
+          rr:datatype xsd:string;
+          rr:column "lbtest"
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:termType rr:Literal;
+          rr:datatype xsd:string;
+          rr:column "lbnam"
+        ];
+      rr:predicate :DKFZ000064
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:datatype xsd:decimal;
+          rr:column "lbdy";
+          rr:termType rr:Literal
+        ];
+      rr:predicate :DKFZ000071
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000065;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:column "lbantreg";
+          rr:termType rr:Literal;
+          rr:datatype xsd:string
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:termType rr:Literal;
+          rr:datatype xsd:string;
+          rr:column "lbspccnd"
+        ];
+      rr:predicate :DKFZ000066
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000069;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:column "lbmethod";
+          rr:termType rr:Literal;
+          rr:datatype xsd:string
+        ]
+    ];
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery """SELECT \"participantid\", \"lbtest\", \"lbnam\", \"lbantreg\", \"lbspccnd\", \"lbmethod\", \"lbdy\"
+FROM \"studydataset\".\"c70d1833_a7_lb_n150_30f6wo_nacl_plus_cispl_54gy\""""
+    ] .
+
+<urn:A6CL_A1DM> a rr:TriplesMap;
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000033;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:termType rr:Literal;
+          rr:datatype xsd:decimal;
+          rr:column "age"
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:column "strain";
+          rr:termType rr:Literal;
+          rr:datatype xsd:string
+        ];
+      rr:predicate :DKFZ000041
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000040;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:datatype xsd:integer;
+          rr:termType rr:Literal;
+          rr:column "sex"
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "ageu";
+          rr:termType rr:Literal;
+          rr:datatype xsd:string
+        ];
+      rr:predicate :DKFZ000034
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:termType rr:Literal;
+          rr:datatype xsd:string;
+          rr:column "agetxt"
+        ];
+      rr:predicate :DKFZ000043
+    ];
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery """SELECT \"participantid\", \"age\", \"agetxt\", \"ageu\", \"sex\", \"strain\"
+FROM \"studydataset\".\"c70d1869_a1_dm_n150_30f6wo_nacl_plus_cispl_54gy\""""
+    ];
+  rr:subjectMap [ a rr:TermMap, rr:SubjectMap;
+      rr:termType rr:IRI;
+      rr:template "http://www.cancerdata.org/roo/c70d1688_a6_cl_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}"
+    ] .
+
+<urn:A2EX_A7LB> a rr:TriplesMap;
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000065;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:termType rr:Literal;
+          rr:datatype xsd:string;
+          rr:column "lbantreg"
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000069;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:termType rr:Literal;
+          rr:datatype xsd:string;
+          rr:column "lbmethod"
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:datatype xsd:decimal;
+          rr:termType rr:Literal;
+          rr:column "lbdy"
+        ];
+      rr:predicate :DKFZ000071
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:termType rr:Literal;
+          rr:datatype xsd:string;
+          rr:column "lbtest"
+        ];
+      rr:predicate :DKFZ000061
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000064;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:datatype xsd:string;
+          rr:column "lbnam";
+          rr:termType rr:Literal
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000066;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:column "lbspccnd";
+          rr:termType rr:Literal;
+          rr:datatype xsd:string
+        ]
+    ];
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery """SELECT \"participantid\", \"lbtest\", \"lbnam\", \"lbantreg\", \"lbspccnd\", \"lbmethod\", \"lbdy\"
+FROM \"studydataset\".\"c70d1833_a7_lb_n150_30f6wo_nacl_plus_cispl_54gy\""""
+    ];
+  rr:subjectMap [ a rr:TermMap, rr:SubjectMap;
+      rr:template "http://www.cancerdata.org/roo/c70d1699_a2_ex_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:A6CL_A2EX> a rr:TriplesMap;
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000057;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:termType rr:Literal;
+          rr:datatype xsd:decimal;
+          rr:column "exendy"
         ]
     ], [ a rr:PredicateObjectMap;
       rr:objectMap [ a rr:ObjectMap, rr:TermMap;
@@ -1467,85 +1229,373 @@ FROM \"studydataset\".\"c70d1869_a1_dm_n150_30f6wo_nacl_plus_cispl_54gy\""""
           rr:termType rr:Literal;
           rr:datatype xsd:string
         ];
-      rr:predicate ptro:DKFZ000011
+      rr:predicate :DKFZ000011
     ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000013;
       rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:datatype xsd:string;
           rr:termType rr:Literal;
-          rr:column "extrtv"
-        ];
-      rr:predicate ptro:DKFZ000012
+          rr:column "extrt";
+          rr:datatype xsd:string
+        ]
     ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000054;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:termType rr:Literal;
+          rr:datatype xsd:string;
+          rr:column "exdosu"
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000056;
       rr:objectMap [ a rr:ObjectMap, rr:TermMap;
           rr:datatype xsd:string;
           rr:column "exvamtu";
           rr:termType rr:Literal
-        ];
-      rr:predicate ptro:DKFZ000056
+        ]
     ], [ a rr:PredicateObjectMap;
       rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:termType rr:Literal;
           rr:datatype xsd:string;
-          rr:termType rr:Literal;
-          rr:column "exdosu"
+          rr:column "extrtv"
         ];
-      rr:predicate ptro:DKFZ000054
+      rr:predicate :DKFZ000012
     ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000053;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+      rr:predicate :DKFZ000053;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
           rr:termType rr:Literal;
-          rr:column "exdose";
+          rr:datatype xsd:decimal;
+          rr:column "exdose"
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000055;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "exvamt";
+          rr:termType rr:Literal;
           rr:datatype xsd:decimal
         ]
     ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000044;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:datatype xsd:decimal;
+          rr:column "exstdy";
+          rr:termType rr:Literal
+        ];
+      rr:predicate :DKFZ000044
+    ], [ a rr:PredicateObjectMap;
       rr:objectMap [ a rr:TermMap, rr:ObjectMap;
           rr:termType rr:Literal;
           rr:datatype xsd:decimal;
-          rr:column "exstdy"
-        ]
-    ], [ a rr:PredicateObjectMap;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:datatype xsd:decimal;
-          rr:termType rr:Literal;
-          rr:column "exvamt"
+          rr:column "exdur"
         ];
-      rr:predicate ptro:DKFZ000055
-    ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000057;
-      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:column "exendy";
-          rr:datatype xsd:decimal;
-          rr:termType rr:Literal
-        ]
-    ];
-  rr:logicalTable [ a rr:R2RMLView;
-      rr:sqlQuery """SELECT \"participantid\", \"exdosu\", \"exendy\", \"exdose\", \"exstdy\", \"exvamt\", \"exroute\", \"extrt\", \"exdur\", \"exvamtu\", \"extrtv\"
-FROM \"studydataset\".\"c70d1699_a2_ex_n150_30f6wo_nacl_plus_cispl_54gy\""""
+      rr:predicate :DKFZ000058
     ];
   rr:subjectMap [ a rr:TermMap, rr:SubjectMap;
       rr:template "http://www.cancerdata.org/roo/c70d1688_a6_cl_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}";
       rr:termType rr:IRI
+    ];
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery """SELECT \"participantid\", \"exdosu\", \"exendy\", \"exdose\", \"exstdy\", \"exvamt\", \"exroute\", \"extrt\", \"exdur\", \"exvamtu\", \"extrtv\"
+FROM \"studydataset\".\"c70d1699_a2_ex_n150_30f6wo_nacl_plus_cispl_54gy\""""
     ] .
 
-<urn:MAPID-325703e3e6bc4cbca480249e0cc27b76> a rr:TriplesMap;
+<urn:A2EX_A5DD> a rr:TriplesMap;
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000021;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:termType rr:Literal;
+          rr:column "ddrescat";
+          rr:datatype xsd:string
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000022;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:column "ddeval";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:datatype xsd:string;
+          rr:column "dddy";
+          rr:termType rr:Literal
+        ];
+      rr:predicate :DKFZ000023
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000019;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:datatype xsd:string;
+          rr:column "ddtestcd";
+          rr:termType rr:Literal
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000020;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:termType rr:Literal;
+          rr:column "ddtest";
+          rr:datatype xsd:string
+        ]
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:template "http://www.cancerdata.org/roo/c70d1699_a2_ex_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}";
+      rr:termType rr:IRI
+    ];
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery """SELECT \"participantid\", \"ddtest\", \"ddrescat\", \"ddtestcd\", \"ddeval\", \"dddy\"
+FROM \"studydataset\".\"c70d1687_a5_dd_n150_30f6wo_nacl_plus_cispl_54gy\""""
+    ] .
+
+<urn:A1DM_A5DD> a rr:TriplesMap;
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:datatype xsd:string;
+          rr:column "ddrescat";
+          rr:termType rr:Literal
+        ];
+      rr:predicate :DKFZ000021
+    ];
+  rr:subjectMap [ a rr:TermMap, rr:SubjectMap;
+      rr:template "http://www.cancerdata.org/roo/c70d1869_a1_dm_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}";
+      rr:termType rr:IRI
+    ];
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery """SELECT \"participantid\", \"ddrescat\"
+FROM \"studydataset\".\"c70d1687_a5_dd_n150_30f6wo_nacl_plus_cispl_54gy\""""
+    ] .
+
+<urn:A4BW_A1DM> a rr:TriplesMap;
+  rr:subjectMap [ a rr:TermMap, rr:SubjectMap;
+      rr:termType rr:IRI;
+      rr:template "http://www.cancerdata.org/roo/c70d1686_a4_bw_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}"
+    ];
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000043;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "agetxt";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000033;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:column "age";
+          rr:termType rr:Literal;
+          rr:datatype xsd:decimal
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000034;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:datatype xsd:string;
+          rr:termType rr:Literal;
+          rr:column "ageu"
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:datatype xsd:string;
+          rr:column "strain";
+          rr:termType rr:Literal
+        ];
+      rr:predicate :DKFZ000041
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000040;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:termType rr:Literal;
+          rr:datatype xsd:integer;
+          rr:column "sex"
+        ]
+    ];
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery """SELECT \"participantid\", \"age\", \"agetxt\", \"ageu\", \"sex\", \"strain\"
+FROM \"studydataset\".\"c70d1869_a1_dm_n150_30f6wo_nacl_plus_cispl_54gy\""""
+    ] .
+
+<urn:A7LB_A4BW> a rr:TriplesMap;
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000017;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:datatype xsd:decimal;
+          rr:termType rr:Literal;
+          rr:column "bworres"
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000015;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:datatype xsd:string;
+          rr:column "bwtestcd";
+          rr:termType rr:Literal
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000016;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "bwtest";
+          rr:termType rr:Literal;
+          rr:datatype xsd:string
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "bwnomlbl";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ];
+      rr:predicate :DKFZ000083
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000046;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:column "bworresu";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:termType rr:Literal;
+          rr:datatype xsd:decimal;
+          rr:column "bwdy"
+        ];
+      rr:predicate :DKFZ000018
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:template "http://www.cancerdata.org/roo/c70d1833_a7_lb_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}";
+      rr:termType rr:IRI
+    ];
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery """SELECT \"participantid\", \"bwnomlbl\", \"bwdy\", \"bworres\", \"bwtestcd\", \"bworresu\", \"bwtest\"
+FROM \"studydataset\".\"c70d1686_a4_bw_n150_30f6wo_nacl_plus_cispl_54gy\""""
+    ] .
+
+<urn:A5DD_A1DM> a rr:TriplesMap;
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000034;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:datatype xsd:string;
+          rr:termType rr:Literal;
+          rr:column "ageu"
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000040;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:termType rr:Literal;
+          rr:datatype xsd:integer;
+          rr:column "sex"
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "strain";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ];
+      rr:predicate :DKFZ000041
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000043;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:termType rr:Literal;
+          rr:datatype xsd:string;
+          rr:column "agetxt"
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000033;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:column "age";
+          rr:termType rr:Literal;
+          rr:datatype xsd:decimal
+        ]
+    ];
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery """SELECT \"participantid\", \"age\", \"agetxt\", \"ageu\", \"sex\", \"strain\"
+FROM \"studydataset\".\"c70d1869_a1_dm_n150_30f6wo_nacl_plus_cispl_54gy\""""
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:template "http://www.cancerdata.org/roo/c70d1687_a5_dd_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}";
+      rr:termType rr:IRI
+    ] .
+
+<urn:A4BW> a rr:TriplesMap;
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:datatype xsd:string;
+          rr:termType rr:Literal;
+          rr:column "subjid"
+        ];
+      rr:predicate :DKFZ000010
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000008;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:termType rr:Literal;
+          rr:column "studyid";
+          rr:datatype xsd:string
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000046;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:termType rr:Literal;
+          rr:datatype xsd:string;
+          rr:column "bworresu"
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000018;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:column "bwdy";
+          rr:termType rr:Literal;
+          rr:datatype xsd:decimal
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:datatype xsd:string;
+          rr:termType rr:Literal;
+          rr:column "bwtestcd"
+        ];
+      rr:predicate :DKFZ000015
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000083;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:termType rr:Literal;
+          rr:datatype xsd:string;
+          rr:column "bwnomlbl"
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "bwtest";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ];
+      rr:predicate :DKFZ000016
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:termType rr:Literal;
+          rr:datatype xsd:decimal;
+          rr:column "bworres"
+        ];
+      rr:predicate :DKFZ000017
+    ];
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery """SELECT *
+FROM \"studydataset\".\"c70d1686_a4_bw_n150_30f6wo_nacl_plus_cispl_54gy\""""
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class ncit:C69256;
+      rr:termType rr:IRI;
+      rr:template "http://www.cancerdata.org/roo/c70d1686_a4_bw_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}"
+    ] .
+
+<urn:A4BW_A5DD> a rr:TriplesMap;
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:termType rr:IRI;
+      rr:template "http://www.cancerdata.org/roo/c70d1686_a4_bw_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}"
+    ];
   rr:predicateObjectMap [ a rr:PredicateObjectMap;
       rr:objectMap [ a rr:ObjectMap, rr:TermMap;
           rr:termType rr:Literal;
           rr:datatype xsd:string;
-          rr:column "ddrescat"
+          rr:column "ddeval"
         ];
-      rr:predicate ptro:DKFZ000021
+      rr:predicate :DKFZ000022
     ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000023;
       rr:objectMap [ a rr:TermMap, rr:ObjectMap;
           rr:termType rr:Literal;
           rr:datatype xsd:string;
-          rr:column "ddtest"
-        ];
-      rr:predicate ptro:DKFZ000020
+          rr:column "dddy"
+        ]
     ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000022;
+      rr:predicate :DKFZ000021;
       rr:objectMap [ a rr:ObjectMap, rr:TermMap;
-          rr:column "ddeval";
+          rr:column "ddrescat";
           rr:datatype xsd:string;
           rr:termType rr:Literal
         ]
@@ -1555,20 +1605,236 @@ FROM \"studydataset\".\"c70d1699_a2_ex_n150_30f6wo_nacl_plus_cispl_54gy\""""
           rr:datatype xsd:string;
           rr:column "ddtestcd"
         ];
-      rr:predicate ptro:DKFZ000019
+      rr:predicate :DKFZ000019
     ], [ a rr:PredicateObjectMap;
-      rr:predicate ptro:DKFZ000023;
-      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
           rr:datatype xsd:string;
-          rr:column "dddy";
+          rr:column "ddtest";
           rr:termType rr:Literal
-        ]
-    ];
-  rr:subjectMap [ a rr:TermMap, rr:SubjectMap;
-      rr:template "http://www.cancerdata.org/roo/c70d1688_a6_cl_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}";
-      rr:termType rr:IRI
+        ];
+      rr:predicate :DKFZ000020
     ];
   rr:logicalTable [ a rr:R2RMLView;
       rr:sqlQuery """SELECT \"participantid\", \"ddtest\", \"ddrescat\", \"ddtestcd\", \"ddeval\", \"dddy\"
 FROM \"studydataset\".\"c70d1687_a5_dd_n150_30f6wo_nacl_plus_cispl_54gy\""""
+    ] .
+
+<urn:A3CO> a rr:TriplesMap;
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000094;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:termType rr:Literal;
+          rr:datatype xsd:string;
+          rr:column "coeval"
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:termType rr:Literal;
+          rr:column "codtc";
+          rr:datatype xsd:string
+        ];
+      rr:predicate :DKFZ000095
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:column "coval";
+          rr:termType rr:Literal;
+          rr:datatype xsd:string
+        ];
+      rr:predicate :DKFZ000093
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "cody";
+          rr:termType rr:Literal;
+          rr:datatype xsd:string
+        ];
+      rr:predicate :DKFZ000096
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:column "idvar";
+          rr:termType rr:Literal;
+          rr:datatype xsd:string
+        ];
+      rr:predicate :DKFZ000091
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:termType rr:Literal;
+          rr:datatype xsd:string;
+          rr:column "studyid"
+        ];
+      rr:predicate :DKFZ000008
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000010;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:termType rr:Literal;
+          rr:column "subjid";
+          rr:datatype xsd:string
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000092;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:termType rr:Literal;
+          rr:datatype xsd:string;
+          rr:column "idvarval"
+        ]
+    ];
+  rr:subjectMap [ a rr:SubjectMap, rr:TermMap;
+      rr:class ncit:C69256;
+      rr:termType rr:IRI;
+      rr:template "http://www.cancerdata.org/roo/:c70d1773_a3_co_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}"
+    ];
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery """SELECT *
+FROM \"studydataset\".\"c70d1773_a3_co_n150_30f6wo_nacl_plus_cispl_54gy\""""
+    ] .
+
+<urn:A8PR> a rr:TriplesMap;
+  rr:predicateObjectMap [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:datatype xsd:string;
+          rr:column "prtrt";
+          rr:termType rr:Literal
+        ];
+      rr:predicate :DKFZ000090
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:column "prdecod";
+          rr:termType rr:Literal;
+          rr:datatype xsd:string
+        ];
+      rr:predicate :DKFZ000097
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:termType rr:Literal;
+          rr:column "prcat";
+          rr:datatype xsd:string
+        ];
+      rr:predicate :DKFZ000098
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:termType rr:Literal;
+          rr:datatype xsd:string;
+          rr:column "studyid"
+        ];
+      rr:predicate :DKFZ000008
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000010;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:column "subjid";
+          rr:termType rr:Literal;
+          rr:datatype xsd:string
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000102;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:datatype xsd:decimal;
+          rr:termType rr:Literal;
+          rr:column "prdose"
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:termType rr:Literal;
+          rr:column "prdosu";
+          rr:datatype xsd:string
+        ];
+      rr:predicate :DKFZ000103
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000105;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:datatype xsd:string;
+          rr:column "prloc";
+          rr:termType rr:Literal
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:column "prdosfrq";
+          rr:termType rr:Literal;
+          rr:datatype xsd:string
+        ];
+      rr:predicate :DKFZ000104
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000100;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:column "prpresp";
+          rr:datatype xsd:string;
+          rr:termType rr:Literal
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000099;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:termType rr:Literal;
+          rr:datatype xsd:string;
+          rr:column "prscat"
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:predicate :DKFZ000101;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:datatype xsd:string;
+          rr:termType rr:Literal;
+          rr:column "proccur"
+        ]
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:column "prstdtc";
+          rr:termType rr:Literal;
+          rr:datatype xsd:dateTime
+        ];
+      rr:predicate :DKFZ000109
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:termType rr:Literal;
+          rr:datatype xsd:decimal;
+          rr:column "prstdy"
+        ];
+      rr:predicate :DKFZ000111
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:column "prendtc";
+          rr:termType rr:Literal;
+          rr:datatype xsd:dateTime
+        ];
+      rr:predicate :DKFZ000110
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:datatype xsd:string;
+          rr:termType rr:Literal;
+          rr:column "prlat"
+        ];
+      rr:predicate :DKFZ000106
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:termType rr:Literal;
+          rr:datatype xsd:string;
+          rr:column "prdir"
+        ];
+      rr:predicate :DKFZ000107
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:TermMap, rr:ObjectMap;
+          rr:termType rr:Literal;
+          rr:datatype xsd:string;
+          rr:column "prportot"
+        ];
+      rr:predicate :DKFZ000108
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:termType rr:Literal;
+          rr:column "prendy";
+          rr:datatype xsd:decimal
+        ];
+      rr:predicate :DKFZ000112
+    ], [ a rr:PredicateObjectMap;
+      rr:objectMap [ a rr:ObjectMap, rr:TermMap;
+          rr:termType rr:Literal;
+          rr:datatype xsd:string;
+          rr:column "prdur"
+        ];
+      rr:predicate :DKFZ000113
+    ];
+  rr:logicalTable [ a rr:R2RMLView;
+      rr:sqlQuery """SELECT *
+FROM \"studydataset\".\"c70d1961_a8_pr_n150_30f6wo_nacl_plus_cispl_54gy\""""
+    ];
+  rr:subjectMap [ a rr:TermMap, rr:SubjectMap;
+      rr:template "http://www.cancerdata.org/roo/c70d1961_a8_pr_n150_30f6wo_nacl_plus_cispl_54gy/{participantid}";
+      rr:class ncit:C69256;
+      rr:termType rr:IRI
     ] .
