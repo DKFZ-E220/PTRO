@@ -1,12 +1,13 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.radplanbio.org/ptro/"
+     xml:base="https://purls.helmholtz-metadaten.de/ptro"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.radplanbio.org/ptro/">
-    <Prefix name="" IRI="http://www.radplanbio.org/ptro/"/>
+     ontologyIRI="https://purls.helmholtz-metadaten.de/ptro"
+     versionIRI="https://purls.helmholtz-metadaten.de/ptro/2025-09-25">
+    <Prefix name="" IRI="https://purls.helmholtz-metadaten.de/ptro#"/>
     <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
     <Prefix name="gn" IRI="http://www.geonames.org/ontology#"/>
     <Prefix name="dcm" IRI="http://semantic-dicom.org/dcm#"/>
@@ -155,6 +156,9 @@
         <Class abbreviatedIRI="sty:T204"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="DKFZ000006"/>
     </Declaration>
     <Declaration>
@@ -170,10 +174,10 @@
         <Class IRI="DKFZ000087"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectProperty abbreviatedIRI="roo:P100040"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="roo:P100040"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="DKFZ000047"/>
@@ -204,9 +208,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="DKFZ000088"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="DKFZ000008"/>
