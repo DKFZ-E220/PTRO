@@ -24,7 +24,6 @@
     <Prefix name="ncit" IRI="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#"/>
     <Prefix name="obda" IRI="https://w3id.org/obda/vocabulary#"/>
     <Prefix name="ocre" IRI="http://purl.org/net/OCRe/statistics.owl#"/>
-    <Prefix name="ptro" IRI="http://www.radplanbio.org/ptro/"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
     <Prefix name="ctcae" IRI="http://ncicb.nci.nih.gov/xml/owl/EVS/ctcae.owl#"/>
