@@ -13,7 +13,7 @@ https://purls.helmholtz-metadaten.de/ptro
 DKFZ-E220
 
 **Download serialization:**  
-[![JSON-LD](https://img.shields.io/badge/Format-JSON_LD-blue.svg)](ontology.jsonld) [![RDF/XML](https://img.shields.io/badge/Format-RDF/XML-blue.svg)](PTRO.owl) [![N-Triples](https://img.shields.io/badge/Format-N_Triples-blue.svg)](ontology.nt) [![TTL](https://img.shields.io/badge/Format-TTL-blue.svg)](ontology.ttl)
+[![RDF/XML](https://img.shields.io/badge/Format-RDF/XML-blue.svg)](PTRO.owl)
 
 **License:**  
 [![License](https://img.shields.io/badge/License-CC_BY_4.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
