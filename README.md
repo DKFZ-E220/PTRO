@@ -18,8 +18,6 @@ DKFZ-E220
 **License:**  
 [![License](https://img.shields.io/badge/License-CC_BY_4.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-**Visualization:**  
-[![Visualize with WebVowl](https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg)](webvowl/index.html)
 
 **Cite as:**  
 DKFZ-E220. Revision: 0.1 alpha. Retrieved from: https://purls.helmholtz-metadaten.de/ptro/2025-11-25
@@ -76,16 +74,10 @@ The ontology covers several core domains:
 
 The ontology is available in multiple serialization formats:
 
-- **JSON-LD**: [ontology.jsonld](ontology.jsonld)
-- **RDF/XML**: [ontology.owl](ontology.owl)
-- **N-Triples**: [ontology.nt](ontology.nt)
-- **Turtle**: [ontology.ttl](ontology.ttl)
 
-## Visualization
+- **RDF/XML**: [ontology.owl](PTRO.owl)
 
-Explore the ontology structure visually:
 
-- **WebVOWL Visualization**: [View Interactive Diagram](webvowl/index.html)
 
 ## Key Features
 
