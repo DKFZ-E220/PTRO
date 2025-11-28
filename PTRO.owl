@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://purls.helmholtz-metadaten.de/ptro"
-     versionIRI="https://purls.helmholtz-metadaten.de/ptro/2025-09-25">
+     versionIRI="https://purls.helmholtz-metadaten.de/ptro/2025-11-25">
     <Prefix name="" IRI="https://purls.helmholtz-metadaten.de/ptro#"/>
     <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
     <Prefix name="gn" IRI="http://www.geonames.org/ontology#"/>
@@ -29,11 +29,16 @@
     <Prefix name="ctcae" IRI="http://ncicb.nci.nih.gov/xml/owl/EVS/ctcae.owl#"/>
     <Prefix name="icd10" IRI="http://purl.bioontology.org/ontology/ICD10/"/>
     <Prefix name="radlex" IRI="http://www.owl-ontologies.com/Ontology1415135201.owl#"/>
+    <Prefix name="dcterms" IRI="http://purl.org/dc/terms/"/>
     <Prefix name="metadata" IRI="http://data.bioontology.org/metadata/"/>
     <Prefix name="bioportal" IRI="http://bioportal.bioontology.org#"/>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:creator"/>
         <Literal>DKFZ-E220</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
+        <Literal>https://creativecommons.org/licenses/by/4.0/</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -462,6 +467,9 @@
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
