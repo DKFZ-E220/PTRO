@@ -124,6 +124,8 @@ ORDER BY ?subject ?studyDay
 ```
 
 ---
+### More Examples of Competency Questions: 
+- **SPARQL**: [ontop-SPARQL queries](https://github.com/DKFZ-E220/PTRO/blob/main/mapping_PTRO_Ontop/ontop-SPARQL%20queries.md)
 
 ## Ontology Structure Notes
 
