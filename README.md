@@ -38,7 +38,6 @@ PTRO is designed to:
 - [Introduction](#introduction)
 - [Ontology Overview](#ontology-overview)
 - [Download & Formats](#download--formats)
-- [Visualization](#visualization)
 - [Key Features](#key-features)
 - [Usage Examples](#usage-examples)
 - [Citation](#citation)
@@ -75,7 +74,7 @@ The ontology covers several core domains:
 The ontology is available in multiple serialization formats:
 
 
-- **RDF/XML**: [ontology.owl](PTRO.owl)
+- **RDF/XML**: [PTRO.owl](PTRO.owl)
 
 
 
@@ -101,39 +100,9 @@ PTRO is designed from the ground up to support FAIR data principles:
 
 PTRO enables powerful queries across preclinical datasets:
 
-- Cross-study comparisons
-- Cohort identification based on complex criteria
-- Temporal analysis of experimental outcomes
-- Integration with external data sources
-
 ## Usage Examples
 
-### Example 1: Querying Study Information
-
-```sparql
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-
-SELECT ?study ?studyId ?title
-WHERE {
-  ?study a ptro:Study ;
-         ptro:hasStudyIdentifier ?studyId ;
-         ptro:hasTitle ?title .
-}
-```
-
-### Example 2: Finding Radiation Protocols
-
-```sparql
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/>
-
-SELECT ?protocol ?dose ?fractions
-WHERE {
-  ?protocol a ptro:RadiationProtocol ;
-            ptro:hasDose ?dose ;
-            ptro:hasFractionation ?fractions .
-}
-```
+- **SPARQL**: [PTRO_Competency_Questions_Updated.md](PTRO_Competency_Questions_Updated.md)
 
 ## Citation
 
