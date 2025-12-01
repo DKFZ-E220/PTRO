@@ -1,0 +1,6008 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.cancerdata.org/roo", "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.radplanbio.org/ptro", "http://purl.bioontology.org/ontology/STY", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "iri" : "http://www.radplanbio.org/ptro/",
+    "version" : "0.1 alpha",
+    "author" : [ "DKFZ-E220" ],
+    "comments" : {
+      "undefined" : "The Ontology for Preclinical Trials in Radiation Oncology (PTRO), is a domain-specific ontology designed to integrate SEND-standardized preclinical data using semantic web technologies. PTRO incorporates the Semantic Types Ontology (STY) as a framework for broad concept categorization."
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "DKFZ-E220",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1 alpha",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "8",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "115",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  }, {
+    "id" : "117",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "119",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "138",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "144",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "132",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "140",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "142",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "136",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "134",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "168",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "164",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "166",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "160",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "156",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "158",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "154",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "190",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "150",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "152",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "192",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "194",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "184",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "178",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "180",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "186",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "188",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "124",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "113",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "182",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "230",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "231",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "232",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "233",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "234",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "235",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "236",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "223",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "225",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "237",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "238",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "205",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "207",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "227",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "229",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "170",
+    "type" : "owl:Class"
+  }, {
+    "id" : "172",
+    "type" : "owl:Class"
+  }, {
+    "id" : "174",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "176",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "211",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "201",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "209",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "217",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "162",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "203",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "219",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "105",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "121",
+    "type" : "owl:Class"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "107",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "36",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "34",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "249",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:Datatype"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000006",
+    "equivalent" : [ "10" ],
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "instances" : 0,
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Wahyu W. Hadiwikarta and Abumansur Sabyrrakhim",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "An identifier which is used to uniquely identify an animal in a certain context (cohort, hospital, trial). Can be a pseudonym.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000006",
+      "undefined" : "Animal Identifier"
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "8",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/STY/T204",
+    "baseIri" : "http://purl.bioontology.org/ontology/STY",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/STY",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "One of the three domains of life (the others being Bacteria and Archaea), also called Eukarya. These are organisms whose cells are enclosed in membranes and possess a nucleus. They comprise almost all multicellular and many unicellular organisms, and are traditionally divided into groups (sometimes called kingdoms) including Animals, Plants, Fungi, various Algae, and other taxa that were previously part of the old kingdom Protista.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "T204",
+      "en" : "Eukaryote"
+    },
+    "subClasses" : [ "15", "16", "17" ],
+    "attributes" : [ "external" ],
+    "id" : "13",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C54100",
+    "baseIri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/NCIT",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A 128 bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be different. Its relatively small size lends itself well to sorting, ordering, and hashing of all sorts, storing in databases, simple allocation, and ease of programming in general.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "C54100",
+      "en" : "Universally Unique Identifier"
+    },
+    "attributes" : [ "external" ],
+    "id" : "25",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000114",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "instances" : 0,
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A unique alphanumeric identifier assigned to a project to ensure its distinct identification within a given system, organization, or dataset.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000114",
+      "undefined" : "Project Unique Identifier"
+    },
+    "id" : "42",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49572",
+    "baseIri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+    "instances" : 0,
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/NCIT",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "Demographics, DM",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A subject domain utilized for the submission of information encompassing and representing data, vocabulary or records related to comments.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "C49572",
+      "undefined" : "Demographics Domain"
+    },
+    "attributes" : [ "external" ],
+    "id" : "64",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25364",
+    "baseIri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/NCIT",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "One or more characters used to identify, name, or characterize the nature, properties, or contents of a thing.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "C25364",
+      "en" : "Identifier"
+    },
+    "subClasses" : [ "82", "8", "26", "83", "84", "85", "10" ],
+    "attributes" : [ "external" ],
+    "id" : "9",
+    "superClasses" : [ "53" ]
+  }, {
+    "iri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14238",
+    "baseIri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+    "instances" : 0,
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/NCIT",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Any of numerous species of small rodents belonging to the genus Mus and various related genera of the family Muridae.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "C14238",
+      "undefined" : "Mouse"
+    },
+    "attributes" : [ "external" ],
+    "id" : "28",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49569",
+    "baseIri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+    "instances" : 0,
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/NCIT",
+        "type" : "label"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "A subject domain utilized for the submission of information encompassing and representing data, vocabulary or records related to comments.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "CO, Comments",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "C49569",
+      "undefined" : "Comment Domain"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49592",
+    "baseIri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+    "instances" : 0,
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/NCIT",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "Laboratory Test Results, LB",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A subject domain utilized for the submission of information encompassing and representing data, vocabulary or records related to laboratory data.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "C49592",
+      "undefined" : "Laboratory Data Domain"
+    },
+    "attributes" : [ "external" ],
+    "id" : "60",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C71160",
+    "baseIri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/NCIT",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Data type unique identifier within a particular context.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "C71160",
+      "en" : "Instance Unique Identifier"
+    },
+    "subClasses" : [ "121" ],
+    "attributes" : [ "external" ],
+    "id" : "44",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000050",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "instances" : 0,
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A sequence of characters used to identify a treatment session.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000050",
+      "undefined" : "Treatment Session Identifier"
+    },
+    "comment" : {
+      "undefined" : "Term created to represent data in EX template that follows a long table structure."
+    },
+    "id" : "83",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C49587",
+    "baseIri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+    "instances" : 0,
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/NCIT",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A subject domain utilized for the submission of information encompassing and representing data, vocabulary or records related to exposure.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "EX, Exposure",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "C49587",
+      "undefined" : "Exposure Domain"
+    },
+    "attributes" : [ "external" ],
+    "id" : "38",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/STY/T067",
+    "baseIri" : "http://purl.bioontology.org/ontology/STY",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/STY",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A process or state which occurs naturally or as a result of an activity.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "T067",
+      "en" : "Phenomenon or Process"
+    },
+    "attributes" : [ "external" ],
+    "id" : "51",
+    "superClasses" : [ "47" ]
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/STY/T194",
+    "baseIri" : "http://purl.bioontology.org/ontology/STY",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/STY",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A member of one of the three domains of life, formerly called Archaebacteria under the taxon Bacteria, but now considered separate and distinct. Archaea are characterized by: 1) the presence of characteristic tRNAs and ribosomal RNAs; 2) the absence of peptidoglycan cell walls; 3) the presence of ether-linked lipids built from branched-chain subunits; and 4) their occurrence in unusual habitats. While archaea resemble bacteria in morphology and genomic organization, they resemble eukarya in their method of genomic replication.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "T194",
+      "en" : "Archaeon"
+    },
+    "attributes" : [ "external" ],
+    "id" : "24",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/STY/T077",
+    "baseIri" : "http://purl.bioontology.org/ontology/STY",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/STY",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A broad type for grouping abstract entities or concepts.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "T077",
+      "en" : "Conceptual Entity"
+    },
+    "subClasses" : [ "53", "5" ],
+    "attributes" : [ "external" ],
+    "id" : "74",
+    "superClasses" : [ "75" ]
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000059",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "instances" : 0,
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A sequence of characters used to identify laboratory records.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000059",
+      "undefined" : "Laboratory Record Identifier"
+    },
+    "comment" : {
+      "undefined" : "Term created to represent data in LB template that follows a long table structure."
+    },
+    "id" : "85",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/STY/T071",
+    "baseIri" : "http://purl.bioontology.org/ontology/STY",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/STY",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A broad type for grouping physical and conceptual entities.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "T071",
+      "en" : "Entity"
+    },
+    "subClasses" : [ "72", "74" ],
+    "attributes" : [ "external" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/STY/T072",
+    "baseIri" : "http://purl.bioontology.org/ontology/STY",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/STY",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An object perceptible to the sense of vision or touch.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "T072",
+      "en" : "Physical Object"
+    },
+    "subClasses" : [ "14" ],
+    "attributes" : [ "external" ],
+    "id" : "72",
+    "superClasses" : [ "75" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "115",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000087",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "instances" : 0,
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A sequence of characters used to identify procedure records.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000087",
+      "undefined" : "Procedure Identifier"
+    },
+    "comment" : {
+      "undefined" : "Term created to represent data in PR template that follows a long table structure."
+    },
+    "id" : "84",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "117",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C70663",
+    "baseIri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/NCIT",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A set of characters used as a code that is unique in the context or the system for which it is created. It serves as a means of identification and reference (often instead of a name) for an entity, person, thing, function, procedure, activity, variable, or body of data.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "C70663",
+      "en" : "Unique Identifier"
+    },
+    "subClasses" : [ "1", "25", "42", "44" ],
+    "attributes" : [ "external" ],
+    "id" : "26",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "119",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "130",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "138",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "146",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "128",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "144",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "132",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "140",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "142",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/STY/T051",
+    "baseIri" : "http://purl.bioontology.org/ontology/STY",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/STY",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A broad type for grouping activities, processes and states.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "T051",
+      "en" : "Event"
+    },
+    "subClasses" : [ "46", "51" ],
+    "attributes" : [ "external" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/STY/T052",
+    "baseIri" : "http://purl.bioontology.org/ontology/STY",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/STY",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An operation or series of operations that an organism or machine carries out or participates in.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "T052",
+      "en" : "Activity"
+    },
+    "attributes" : [ "external" ],
+    "id" : "46",
+    "superClasses" : [ "47" ]
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000080",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "instances" : 0,
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A sequence of characters used to identify body weight records.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000080",
+      "undefined" : "Body Weight Identifier"
+    },
+    "comment" : {
+      "undefined" : "Term created to represent data in BW template that follows a long table structure."
+    },
+    "id" : "82",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "136",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "79",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/STY/T170",
+    "baseIri" : "http://purl.bioontology.org/ontology/STY",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/STY",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A conceptual entity resulting from human endeavor. Concepts assigned to this type generally refer to information created by humans for some purpose.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "T170",
+      "en" : "Intellectual Product"
+    },
+    "subClasses" : [ "9" ],
+    "attributes" : [ "external" ],
+    "id" : "53",
+    "superClasses" : [ "74" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "134",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "87",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "89",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "81",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "93",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25190",
+    "baseIri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/NCIT",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A human being.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "C25190",
+      "en" : "Person"
+    },
+    "subClasses" : [ "55" ],
+    "attributes" : [ "external" ],
+    "id" : "56",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "97",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "91",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "95",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "168",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "164",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "166",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "160",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "148",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "156",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "158",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "154",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "190",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "150",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "152",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "192",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "194",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "184",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "178",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "180",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "186",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "188",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "124",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "113",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "182",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "126",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/STY/T004",
+    "baseIri" : "http://purl.bioontology.org/ontology/STY",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/STY",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A eukaryotic organism characterized by the absence of chlorophyll and the presence of a rigid cell wall. Included here are both slime molds and true fungi such as yeasts, molds, mildews, and mushrooms.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "T004",
+      "en" : "Fungus"
+    },
+    "attributes" : [ "external" ],
+    "id" : "15",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "230",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/STY/T005",
+    "baseIri" : "http://purl.bioontology.org/ontology/STY",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/STY",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An organism consisting of a core of a single nucleic acid enclosed in a protective coat of protein. A virus may replicate only inside a host living cell. A virus exhibits some but not all of the usual characteristics of living things.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "T005",
+      "en" : "Virus"
+    },
+    "attributes" : [ "external" ],
+    "id" : "19",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "231",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "232",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/STY/T007",
+    "baseIri" : "http://purl.bioontology.org/ontology/STY",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/STY",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A small, typically one-celled, prokaryotic micro-organism.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "T007",
+      "en" : "Bacterium"
+    },
+    "attributes" : [ "external" ],
+    "id" : "21",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "233",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/STY/T008",
+    "baseIri" : "http://purl.bioontology.org/ontology/STY",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/STY",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An organism with eukaryotic cells, and lacking stiff cell walls, plastids and photosynthetic pigments.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "T008",
+      "en" : "Animal"
+    },
+    "subClasses" : [ "58" ],
+    "attributes" : [ "external" ],
+    "id" : "16",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "234",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C62289",
+    "baseIri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+    "instances" : 0,
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/NCIT",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "An area of knowledge considered as a discrete unit for some purpose.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "C62289",
+      "undefined" : "Domain"
+    },
+    "subClasses" : [ "60", "64", "38", "40", "4", "7", "12" ],
+    "attributes" : [ "external" ],
+    "id" : "5",
+    "superClasses" : [ "74" ]
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/STY/T001",
+    "baseIri" : "http://purl.bioontology.org/ontology/STY",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/STY",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Generally, a living individual, including all plants and animals.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "T001",
+      "en" : "Organism"
+    },
+    "subClasses" : [ "19", "21", "13", "24" ],
+    "attributes" : [ "external" ],
+    "id" : "14",
+    "superClasses" : [ "72" ]
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/STY/T002",
+    "baseIri" : "http://purl.bioontology.org/ontology/STY",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/STY",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An organism having cellulose cell walls, growing by synthesis of inorganic substances, generally distinguished by the presence of chlorophyll, and lacking the power of locomotion. Plant parts are included here as well.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "T002",
+      "en" : "Plant"
+    },
+    "attributes" : [ "external" ],
+    "id" : "17",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "235",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "236",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "223",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "225",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "237",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "238",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/STY/T015",
+    "baseIri" : "http://purl.bioontology.org/ontology/STY",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/STY",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A vertebrate having a constant body temperature and characterized by the presence of hair, mammary glands and sweat glands.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "T015",
+      "en" : "Mammal"
+    },
+    "subClasses" : [ "31", "28" ],
+    "attributes" : [ "external" ],
+    "id" : "32",
+    "superClasses" : [ "58" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "205",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/STY/T016",
+    "baseIri" : "http://purl.bioontology.org/ontology/STY",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/STY",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Modern man, the only remaining species of the Homo genus.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "T016",
+      "en" : "Human"
+    },
+    "subClasses" : [ "56" ],
+    "attributes" : [ "external" ],
+    "id" : "31",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "207",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "227",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "229",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C95087",
+    "baseIri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+    "instances" : 0,
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/NCIT",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "Death Diagnosis and Details, Death Details, DD",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A subject domain utilized for the submission of information encompassing and representing data, vocabulary or records related to death diagnosis.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "C95087",
+      "undefined" : "Death Diagnosis Domain"
+    },
+    "attributes" : [ "external" ],
+    "id" : "40",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/STY/T010",
+    "baseIri" : "http://purl.bioontology.org/ontology/STY",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/STY",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An animal which has a spinal column.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "T010",
+      "en" : "Vertebrate"
+    },
+    "subClasses" : [ "32", "170", "172", "174", "176" ],
+    "attributes" : [ "external" ],
+    "id" : "58",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/STY/T011",
+    "baseIri" : "http://purl.bioontology.org/ontology/STY",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/STY",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A cold-blooded, smooth-skinned vertebrate which characteristically hatches as an aquatic larva, breathing by gills. When mature, the amphibian breathes with lungs.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "T011",
+      "en" : "Amphibian"
+    },
+    "attributes" : [ "external" ],
+    "id" : "170",
+    "superClasses" : [ "58" ]
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/STY/T012",
+    "baseIri" : "http://purl.bioontology.org/ontology/STY",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/STY",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A vertebrate having a constant body temperature and characterized by the presence of feathers.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "T012",
+      "en" : "Bird"
+    },
+    "attributes" : [ "external" ],
+    "id" : "172",
+    "superClasses" : [ "58" ]
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/STY/T013",
+    "baseIri" : "http://purl.bioontology.org/ontology/STY",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/STY",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A cold-blooded aquatic vertebrate characterized by fins and breathing by gills. Included here are fishes having either a bony skeleton, such as a perch, or a cartilaginous skeleton, such as a shark, or those lacking a jaw, such as a lamprey or hagfish.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "T013",
+      "en" : "Fish"
+    },
+    "attributes" : [ "external" ],
+    "id" : "174",
+    "superClasses" : [ "58" ]
+  }, {
+    "iri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C95086",
+    "baseIri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+    "instances" : 0,
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/NCIT",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "Clinical Observation, CL",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A subject domain utilized for the submission of information encompassing and representing data, vocabulary or records related to clinical observations.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "C95086",
+      "undefined" : "Clinical Observation Domain"
+    },
+    "attributes" : [ "external" ],
+    "id" : "7",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C95085",
+    "baseIri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+    "instances" : 0,
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/NCIT",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "Body Weight, BW",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A subject domain utilized for the submission of information encompassing and representing data, vocabulary or records related to body weight.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "C95085",
+      "undefined" : "Body Weight Domain"
+    },
+    "attributes" : [ "external" ],
+    "id" : "12",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://purl.bioontology.org/ontology/STY/T014",
+    "baseIri" : "http://purl.bioontology.org/ontology/STY",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/STY",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A cold-blooded vertebrate having an external covering of scales or horny plates. Reptiles breathe by means of lungs and are generally egg-laying.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "T014",
+      "en" : "Reptile"
+    },
+    "attributes" : [ "external" ],
+    "id" : "176",
+    "superClasses" : [ "58" ]
+  }, {
+    "iri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16960",
+    "baseIri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/NCIT",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A person who receives medical attention, care, or treatment, or who is registered with medical professional or institution with the purpose to receive medical care when necessary.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "C16960",
+      "en" : "Patient"
+    },
+    "attributes" : [ "external" ],
+    "id" : "55",
+    "superClasses" : [ "56" ]
+  }, {
+    "iri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256",
+    "baseIri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/NCIT",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A unique identifier for a subject in a study.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "C69256",
+      "undefined" : "Subject Unique Identifier"
+    },
+    "comment" : {
+      "undefined" : "aka 'Unique Subject Identifier (USUBJID)' at CDISC; and 'Subject Id' at RPB."
+    },
+    "attributes" : [ "external" ],
+    "id" : "1",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "211",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "201",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "209",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "217",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "162",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "203",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "219",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "105",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "103",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "111",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69219",
+    "baseIri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/NCIT",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A unique identifier for series of images.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "C69219",
+      "en" : "Series Instance UID"
+    },
+    "attributes" : [ "external" ],
+    "id" : "121",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "109",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "107",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "101",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "99",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "36",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "34",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "66",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "62",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "249",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "68",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C83083",
+    "baseIri" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.bioontology.org/ontology/NCIT",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A sequence of characters used to identify, name, or characterize the study subject.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "Studynumber",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "C83083",
+      "undefined" : "Subject Identifier"
+    },
+    "comment" : {
+      "undefined" : "aka 'Subject Identifier for the Study (SUBJID)' at CDICS, and 'subject identification' at RPB."
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "10",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "70",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "48",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "61",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "65",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "88",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "90",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "100",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "102",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "106",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "108",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "110",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "112",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "116",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "118",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "120",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "123",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "125",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "127",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "129",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "131",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "133",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "135",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "137",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "139",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "141",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "143",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "145",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "147",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "149",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "151",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "153",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "155",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "157",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "159",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "161",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "163",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "165",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "167",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "169",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "171",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "173",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "175",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "177",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "179",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "181",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "183",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "185",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "187",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "189",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "191",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "193",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "195",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "196",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "197",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "198",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "199",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "200",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "202",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "204",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "206",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "208",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "210",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "212",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "214",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "216",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "213",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "215",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "218",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "220",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "221",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "222",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "224",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "226",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "228",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "239",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "240",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "241",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "242",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "243",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "244",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "245",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "246",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "247",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "248",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "250",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "251",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "252",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "253",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "254",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "255",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "256",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "257",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "258",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "259",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "260",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "261",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "262",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "263",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "264",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000008",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "2",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Unique identifier for a study.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "STUDYID",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000008",
+      "undefined" : "Study_Identifier"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "0"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "3"
+  }, {
+    "range" : "5",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "6"
+  }, {
+    "range" : "5",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "11"
+  }, {
+    "range" : "14",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "18"
+  }, {
+    "range" : "14",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "20"
+  }, {
+    "range" : "14",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "22"
+  }, {
+    "range" : "14",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000009",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "29",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "USUBJID",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Identifier used to uniquely identify a subject across all studies for all applications or submissions involving the product.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000009",
+      "undefined" : "Unique_Subject_Identifier"
+    },
+    "domain" : "28",
+    "comment" : {
+      "undefined" : "a.k.a 'Subject Id' at RPB."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "27"
+  }, {
+    "range" : "32",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "34",
+    "attributes" : [ "object", "external" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://www.cancerdata.org/roo/P100040",
+    "baseIri" : "http://www.cancerdata.org/roo",
+    "range" : "36",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Andre Dekker",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "has a significant or salient relationship to.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "P100040",
+      "en" : "associated_with"
+    },
+    "domain" : "10",
+    "attributes" : [ "object", "external" ],
+    "id" : "35"
+  }, {
+    "range" : "5",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "37"
+  }, {
+    "range" : "5",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "39"
+  }, {
+    "range" : "26",
+    "domain" : "42",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "41"
+  }, {
+    "range" : "26",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "43"
+  }, {
+    "range" : "47",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000115",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "49",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "E220",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "PUID",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000115",
+      "undefined" : "Project_Unique_Identifier"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "This attribute is not part of the CDISC standard; it was defined by our DKFZ working group (E220)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "48"
+  }, {
+    "range" : "47",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "50"
+  }, {
+    "range" : "53",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "52"
+  }, {
+    "range" : "56",
+    "domain" : "55",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "54"
+  }, {
+    "range" : "16",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "57"
+  }, {
+    "range" : "5",
+    "domain" : "60",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000110",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "62",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "End date/time of the procedure represented in ISO 8601 character format.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "PRENDTC",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000110",
+      "undefined" : "End_Date/Time_of_Procedure"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "61"
+  }, {
+    "range" : "5",
+    "domain" : "64",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000113",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "66",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "PRDUR",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Collected duration of a procedure represented in ISO 8601 character format. Used only if collected on the CRF and not derived from start and end date/times.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000113",
+      "undefined" : "Duration_of_Procedure"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000112",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "68",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "PRENDY",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Study day of end of procedure expressed in integer days relative to the sponsor-defined RFSTDTC in Demographics.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000112",
+      "undefined" : "Study_Day_of_End_of_Procedure"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000111",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "70",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Study day of start of procedure expressed in integer days relative to the sponsor-defined RFSTDTC in Demographics.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "PRSTDY",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000111",
+      "undefined" : "Study_Day_of_Start_of_Procedure"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "69"
+  }, {
+    "range" : "72",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "71"
+  }, {
+    "range" : "75",
+    "domain" : "74",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "73"
+  }, {
+    "range" : "26",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "76"
+  }, {
+    "range" : "26",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000029",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "79",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Long name for CLTESTCD. The value in CLTEST cannot be longer than 40 characters.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "CLTEST",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000029",
+      "undefined" : "Clinical_Observations_Test_Name"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000028",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "81",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Short name of the measurement, test, or examination described in CLTEST. It can be used as a column name when converting a dataset from a vertical to a horizontal format. The value in CLTESTCD cannot be longer than 8 characters, nor can it start with a number (e.g., \"1TEST\" is not valid). CLTESTCD cannot contain characters other than letters, numbers, or underscores.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "CLTESTCD",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000028",
+      "undefined" : "Clinical_Observations_Test_Short_Name"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000022",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "87",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "DDEVAL",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Role of the person who provided the evaluation. Examples: TOX PATHOLOGIST, PEER REVIEW, SPONSOR, VETERINARIAN.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000022",
+      "undefined" : "Death_Diagnosis_Evaluator"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000021",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "89",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "DDRESCAT",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Used to categorize the result of a finding. Examples: TREATMENT RELATED, NONTREATMENT RELATED, UNDETERMINED, ACCIDENTAL, etc.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000021",
+      "undefined" : "Death_Diagnosis_Result_Category"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "88"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000020",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "91",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000020",
+      "undefined" : "Death_Diagnosis_Name"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000023",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "93",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Study day of subject disposition, in integer days. The algorithm for calculations must be relative to the sponsor-defined RFSTDTC variable in the Demographics (DM) domain.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "DDDY",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000023",
+      "undefined" : "Study_day_Animal_Death"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "a.k.a study day in CDISC"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000019",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "95",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000019",
+      "undefined" : "Death_Diagnosis_Short_Name"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000018",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "97",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "BWDY",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Study day of body weight collection, in integer days. The algorithm for calculations must be relative to the sponsor-defined RFSTDTC variable in the Demographics (DM) domain.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000018",
+      "undefined" : "Study_Day_Animal_Weighed"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000017",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "99",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Result of the measurement or finding as originally received or collected.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "BWORRES",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000017",
+      "undefined" : "Body_Weight_Result_or_Findings_as_Collected"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000016",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "101",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "BWTEST",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Long name for BWTESTCD. The value in BWTEST cannot be longer than 40 characters.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000016",
+      "undefined" : "Body_Weight_Test_Name"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "100"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000011",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "103",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Route of administration for EXTRT. Examples: ORAL GAVAGE, DERMAL, INTRAVENOUS.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "EXROUTE",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000011",
+      "undefined" : "Route_of_Administration"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "102"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000010",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "105",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Subject (i.e., Animal) identifier used within the study.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000010",
+      "undefined" : "Subject_Identifier_for_the_Study"
+    },
+    "domain" : "28",
+    "comment" : {
+      "undefined" : "a.k.a 'subject identification' at RPB."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "104"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000015",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "107",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Short name of the measurement, test, or examination described in BWTEST. It can be used as a column name when converting a dataset from a vertical to a horizontal format. The value in BWTESTCD cannot be longer than 8 characters, nor can it start with a number (e.g., \"1TEST\" is not valid). BWTESTCD cannot contain characters other than letters, numbers, or underscores.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "BWTESTCD",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000015",
+      "undefined" : "Body_Weight_Test_Short_Name"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000013",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "109",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Name of the treatment, as defined by the protocol.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "EXTRT",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000013",
+      "undefined" : "Name_of_Actual_Treatment"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "108"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000012",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "111",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "EXTRTV",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Describes vehicle used for treatment. Example: SALINE.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000012",
+      "undefined" : "Treatment_Vehicle"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "110"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000044",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "113",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "EXSTDY",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Study day when administration of the treatment began, in integer days. The algorithm for calculations must be relative to the sponsor-defined RFSTDTC variable in the Demographics (DM) domain.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000044",
+      "undefined" : "Study_Day_of_Start_of_Treatment"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "112"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000043",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "115",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Used when the age is a range and the exact birthdate is not known. This variable is a character field for the purposes of defining age ranges, e.g., if the information available for the age of the subject is 6-8 and AGEU is WEEKS. Populate only when BRTHDTC or AGE is not specified. The format for AGETXT is \"number-number\" (e.g., 6-8).",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "AGETXT",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000043",
+      "undefined" : "Age_Range"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "114"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000042",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "117",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "DOMAIN",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Two-character abbreviation for the domain.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000042",
+      "undefined" : "Domain_Abbreviation"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000041",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "119",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "STRAIN",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Used to identify the vendor-supplied strain, substrain, or breed designation for the test system under study. It may combine the background strain, substrain, and associated genetic modifications as supplied by the vendor (e.g., C57BL/6, A/J, B6.129-Pparg<tm2Rev>/J, FISCHER 344, SPRAGUE-DAWLEY IGS, WISTAR Kyoto, BEAGLE, CYNOMOLGUS, and CHIMPANZEE). The SEND Controlled Terminology codelist consists of commonly used wild type strains. It is extensible to accommodate strains not listed and genetically modified substrains. If this variable is excluded in the DM domain, the information must be present at a higher level (either Trial Sets or Trial Summary). Country of origin for non-human primates should not go into STRAIN. In general, details related to coat color (e.g., White and Red designations for New Zealand Rabbits) should not go into STRAIN.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000041",
+      "undefined" : "Strain_Substrain"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "118"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000048",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "DKFZ000048",
+      "undefined" : "has_participant"
+    },
+    "domain" : "34",
+    "attributes" : [ "object" ],
+    "id" : "120"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000047",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "34",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Relation between an activity and  an entity,  at which the entity participates in some way in the activity or process.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000047",
+      "undefined" : "participates_in"
+    },
+    "domain" : "34",
+    "attributes" : [ "object" ],
+    "id" : "122"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000046",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "124",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "The unit for the original result. The unit of the original result should be mapped to a synonymous unit on the Controlled Terminology list.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "BWORRESU",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000046",
+      "undefined" : "Body_Weight_Unit_of_the_Original_Result"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "a.k.a Unit of the Original Result in CDISC Data Standards Browser"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "123"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000051",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "126",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Session identifier used within the EX template.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000051",
+      "undefined" : "Session_Identifier"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "125"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000039",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "128",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Study day of observation, in integer days. For measurements related to a continuous evaluation interval, CLDY can be used to indicate start day of that interval. The algorithm for calculations must be relative to the sponsor-defined RFSTDTC variable in the Demographics (DM) domain.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "CLDY",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000039",
+      "undefined" : "Study_Day_of_Clinical_Observation"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "127"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000038",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "130",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Role of the person who provided the evaluation. Example: TOX TECHNICIAN, OPHTHALMOLOGIST, VETERINARIAN.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "CLEVAL",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000038",
+      "undefined" : "Clinical_Observations_Evaluator"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "129"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000033",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "132",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "AGE",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "May be derived (RFSTDTC - BRTHDTC), but BRTHDTC may not be available in all cases. Age may also be collected.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000033",
+      "undefined" : "Age"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "131"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000031",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "134",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Used to further categorize a group of clinical observations within a category. For example \"Whole Body Appearance\" and \"Sensory Organ Appearance\" may be subcategories within Clinical Signs.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000031",
+      "undefined" : "Subcategory_for_Clinical_Observations"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "133"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000030",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "136",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Used to define a category of the clinical observation.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "CLCAT",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000030",
+      "undefined" : "Category_for_Clinical_Observations"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "135"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000037",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "138",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Used to indicate examination not done or result is missing. Should be null if a result exists in CLORRES.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "CLSTAT",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000037",
+      "undefined" : "Clinical_Observations_Completion_Status"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "137"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000036",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "140",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Used to categorize the result of a finding post collection. Examples: Color or Facial.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "CLRESCAT",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000036",
+      "undefined" : "Clinical_Observations_Result_Category"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "139"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000035",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "142",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Body system or organ class associated with the measurement performed.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "CLBODSYS",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000035",
+      "undefined" : "Body_System_or_Organ_Class"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "141"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000034",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "144",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "AGEU",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Units associated with AGE and AGETXT.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000034",
+      "undefined" : "Age_Unit"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "143"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000040",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "146",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "The sex of the subject.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "SEX",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000040",
+      "undefined" : "Sex"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "145"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000066",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "148",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "LBSPCCND",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Free or standardized text describing the condition of the specimen. Examples: HEMOLYZED, ICTERIC, LIPEMIC",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000066",
+      "undefined" : "Specimen_Condition"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "147"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000065",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "150",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "LBANTREG",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Defines the specific anatomical or biological region of a tissue, organ specimen, or the region from which the specimen was obtained, such as a section or part of what is defined in the LBSPEC variable. If the anatomical region is not included in the specimen description LBSPEC, it may be included in this variable. This field can be a combination of terms where needed. This field can be null if not applicable. Examples: CORTEX, MEDULLA, MUCOSA, SEROSA, ISLET, ZONA FASICULATA, ZONA RETICULARIS, CRANIAL, MEDIAN, ACCESSORY, SPINAL, LUMBAR, FRONTAL.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000065",
+      "undefined" : "Anatomical_Region_of_Specimen"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "149"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000064",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "152",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "LBNAM",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Name or identifier of the laboratory or vendor that provided the test results.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000064",
+      "undefined" : "Laboratory_Name"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "151"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000063",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "154",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "The unit for the original result. The unit of the original result should be mapped to a synonymous unit on the Controlled Terminology (http://www.cdisc.org/terminology) list.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "LBORRESU",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000063",
+      "undefined" : "Lab_Unit_of_the_Original_Result"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "153"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000069",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "156",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "LBMETHOD",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Method of the test or examination. Examples: EIA (Enzyme Immunoassay), ELECTROPHORESIS, DIPSTICK",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000069",
+      "undefined" : "Method_of_Test_or_Examination"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "155"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000068",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "158",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Qualifier for anatomical location or specimen further detailing the portion or totality, which means arrangement of, or apportioning of. Examples: ENTIRE, SINGLE, SEGMENT, MANY.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "LBPORTOT",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000068",
+      "undefined" : "Lab_Portion_or_Totality"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "157"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000067",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "160",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Describes the usability of the specimen for the test. Should be N if the specimen is not usable; otherwise it should be null.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "LBSPCUFL",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000067",
+      "undefined" : "Specimen_Usability_for_the_Test"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "159"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000073",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "162",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Nominal study day used for grouping records for specimen collections that may occur on different days into a single reported study day. Should be an integer.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "LBNOMDY",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000073",
+      "undefined" : "Nominal_Study_Day_for_Tabulations"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "161"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000072",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "164",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "LBENDY",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Study day of the end of specimen collection, in integer days. The algorithm for calculations must be relative to the sponsor-defined RFSTDTC variable in the Demographics (DM) domain.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000072",
+      "undefined" : "Study_Day_of_End_of_Specimen_Collection"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "163"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000071",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "166",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Study day of specimen collection, in integer days. The algorithm for calculations must be relative to the sponsor-defined RFSTDTC variable in the Demographics (DM) domain.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "LBDY",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000071",
+      "undefined" : "Study_Day_of_Specimen_Collection"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "165"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000070",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "168",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "LBBLFL",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A baseline indicator may be used to calculate differences or changes from baseline. Value should be Y or null. The baseline flag is sponsor defined.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000070",
+      "undefined" : "Baseline_Flag"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "167"
+  }, {
+    "range" : "58",
+    "domain" : "170",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "169"
+  }, {
+    "range" : "58",
+    "domain" : "172",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "171"
+  }, {
+    "range" : "58",
+    "domain" : "174",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "173"
+  }, {
+    "range" : "58",
+    "domain" : "176",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "175"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000055",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "178",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "The amount (volume or weight) of the treatment compound plus vehicle administered in a single dose. This is not to be confused with EXDOSE. EXDOSE refers to the amount of test material administered to the subject.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "EXVAMT",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000055",
+      "undefined" : "Amount_Administered"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "177"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000054",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "180",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "EXDOSU",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Units for EXDOSE or EXDOSTXT. Examples: ng, mg, or mg/kg.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000054",
+      "undefined" : "Dose_Units"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "179"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000053",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "182",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "EXDOSE",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Amount of treatment administered.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000053",
+      "undefined" : "Dose_per_Administration"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "181"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000058",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "184",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Duration and unit of time for a continuous treatment. This may be used to denote the length of an infusion (e.g., PT10M to indicate 10 minutes).",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "EXDUR",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000058",
+      "undefined" : "Duration_of_Treatment"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "183"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000057",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "186",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "EXENDY",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Study day when administration of the treatment ended, in integer days. The algorithm for calculations must be relative to the sponsor-defined RFSTDTC variable in the Demographics (DM) domain.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000057",
+      "undefined" : "Study_Day_of_End_Date_of_Treatment"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "185"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000056",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "188",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Units for EXVAMT (per dose administration).",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "EXVAMTU",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000056",
+      "undefined" : "Amount_Administered_Units"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "187"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000062",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "190",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "LBORRES",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Result of the measurement or finding as originally received or collected.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000062",
+      "undefined" : "Lab_Result_or_Findings_as_Collected"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "189"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000061",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "192",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "LBTEST",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Long name for LBTESTCD. The value in LBTEST cannot be longer than 40 characters. Examples: Alanine Aminotransferase, Lactate Dehydrogenase.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000061",
+      "undefined" : "Lab_Test_or_Examination_Name"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "191"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000060",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "194",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Short name of the measurement, test, or examination described in LBTEST. It can be used as a column name when converting a dataset from a vertical to a horizontal format. The value in LBTESTCD cannot be longer than 8 characters, nor can it start with a number (e.g., \"1TEST\" is not valid). LBTESTCD cannot contain characters other than letters, numbers, or underscores. Examples: ALT, LDH.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "LBTESTCD",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000060",
+      "undefined" : "Lab_Test_or_Examination_Short_Name"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "193"
+  }, {
+    "range" : "32",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "195"
+  }, {
+    "range" : "31",
+    "domain" : "56",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "196"
+  }, {
+    "range" : "58",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "197"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000088",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "DKFZ000088",
+      "undefined" : "is_procedure_id_of"
+    },
+    "domain" : "84",
+    "attributes" : [ "object" ],
+    "id" : "198"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000086",
+    "inverse" : "198",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "84",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "This property links a 'Subject Unique Identifier'  to a 'Procedure Identifier'",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000086",
+      "undefined" : "has_procedure_id"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "199"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000091",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "201",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "IDVAR",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Variable in the parent dataset that identifies the record(s) to which the comment applies, which is contained in IDVAR. Examples: BWSEQ or CLGRPID. Used only when individual comments are related to domain records.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000091",
+      "undefined" : "Identifying_Variable"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "200"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000090",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "203",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "PRTRT",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Name of procedure performed, either preprinted or collected on a CRF.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000090",
+      "undefined" : "Reported_Name_of_Procedure"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "202"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000095",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "205",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "CODTC",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Date/Time of the comment, in ISO 8601 format. May be null if this is a child record of another domain or if the comment date was not collected. In all other cases, this represents the date/time of the comment in ISO 8601 format.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000095",
+      "undefined" : "Date/Time_of_Comment"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "204"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000094",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "207",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "COEVAL",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Used to describe the originator of the comment. Examples: TECHNICIAN, STUDY DIRECTOR, VET.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000094",
+      "undefined" : "Comment_Evaluator"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "206"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000093",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "209",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "COVAL",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "The text of the comment. Text over 200 characters can be added to additional columns COVAL1-COVALn. See Assumption 4 in Section 5.2.1.1.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000093",
+      "undefined" : "Comment"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "208"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000092",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "211",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Value of identifying variable of the parent record(s). Used only when individual comments are related to domain records. Cannot be populated if IDVAR is null.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "IDVARVAL",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000092",
+      "undefined" : "Identifying_Variable_Value"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "210"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000077",
+    "inverse" : "213",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "83",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "This property links a 'Subject Unique Identifier'  to a 'Treatment Session Identifier'",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000077",
+      "undefined" : "has_session_id"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "212"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000076",
+    "inverse" : "215",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "85",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "This property links a 'Subject Unique Identifie'r  to a 'Laboratory Record Identifier'",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000076",
+      "undefined" : "has_lab_record_id"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "214"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000074",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "217",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "LBNOMLBL",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A label for a given value of LBNOMDY as presented in the study report. Examples: Week 4, Day 28, Terminal Sac.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000074",
+      "undefined" : "Laboratory_Label_for_Nominal_Study_Day"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "216"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000079",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "DKFZ000079",
+      "undefined" : "is_session_id_of"
+    },
+    "domain" : "83",
+    "attributes" : [ "object" ],
+    "id" : "213"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000078",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "DKFZ000078",
+      "undefined" : "is_lab_record_id_of"
+    },
+    "domain" : "85",
+    "attributes" : [ "object" ],
+    "id" : "215"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000083",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "219",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "BWNOMLBL",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "A label for a given value of BWNOMDY as presented in the study report. Examples: \"Week 4,\" \"Day 28,\" \"Terminal Sac\".",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000083",
+      "undefined" : "Body_Weight_Label_for_Nominal_Study_Day"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "218"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000082",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "DKFZ000082",
+      "undefined" : "is_body_weight_id_of"
+    },
+    "domain" : "82",
+    "attributes" : [ "object" ],
+    "id" : "220"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000081",
+    "inverse" : "220",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "82",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "This property links a 'Subject Unique Identifie'r  to a 'Body Weigh Identifier'",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000081",
+      "undefined" : "has_body_weight_id"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "221"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000099",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "223",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "PRSCAT",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Used to define a further categorization of PRCAT values.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000099",
+      "undefined" : "Procedure_Subcategory"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "222"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000098",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "225",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Used to define a category of procedure values.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "PRCAT",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000098",
+      "undefined" : "Procedure_Category"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "224"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000097",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "227",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Standardized or dictionary-derived name of PRTRT. If the codelist \"PROCEDUR\" is not used, the sponsor is expected to provide the dictionary name and version used to map the terms in the external codelist element in the Define-XML document. If an intervention term does not have a decode value, then PRDECOD will be null.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "PRDECOD",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000097",
+      "undefined" : "Standardized_Procedure_Name"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "226"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000096",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "229",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Study day of the comment, in integer days. May be null if this is a child record of another domain or if the comment date was not collected. The algorithm for calculations must be relative to the sponsor-defined RFSTDTC variable in the Demographics (DM) domain.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "CODY",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000096",
+      "undefined" : "Study_Day_of_Comment"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "228"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000107",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "233",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Qualifier for anatomical location or specimen further detailing directionality.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "PRDIR",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000107",
+      "undefined" : "Procedure_Directionality"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "239"
+  }, {
+    "range" : "74",
+    "domain" : "53",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "240"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000106",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "230",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "PRLAT",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Qualifier for anatomical location or specimen further detailing laterality.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000106",
+      "undefined" : "Procedure_Laterality"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "241"
+  }, {
+    "range" : "44",
+    "domain" : "121",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "242"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000105",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "231",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "PRLOC",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Anatomical location of a procedure.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000105",
+      "undefined" : "Location_of_Procedure"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "243"
+  }, {
+    "range" : "75",
+    "domain" : "72",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "244"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000104",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "234",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "PRDOSFRQ",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Usually expressed as the number of doses given per a specific interval.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000104",
+      "undefined" : "Procedure_Dosing_Frequency_per_Interval"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "245"
+  }, {
+    "range" : "74",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "246"
+  }, {
+    "range" : "9",
+    "domain" : "84",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "247"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000109",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "249",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Start date/time of the procedure represented in ISO 8601 character format.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "PRSTDTC",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000109",
+      "undefined" : "Start_Date/Time_of_Procedure"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "248"
+  }, {
+    "range" : "9",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "250"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000108",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "232",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "PRPORTOT",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Qualifier for anatomical location or specimen further detailing the distribution, which means arrangement of, apportioning of.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000108",
+      "undefined" : "Procedure_Portion_or_Totality"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "251"
+  }, {
+    "range" : "9",
+    "domain" : "85",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "252"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000103",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "235",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Units for PRDOSE, PRDOSTOT, or PRDOSTXT.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "PRDOSU",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000103",
+      "undefined" : "Procedure_Dose_Units"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "253"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000102",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "236",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Amount of PRTRT administered. Not populated when PRDOSTXT is populated.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "PRDOSE",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000102",
+      "undefined" : "Procedure_Dose"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "254"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000101",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "237",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Used to record whether a prespecified procedure occurred when information about the occurrence of a specific procedure is solicited.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "PROCCUR",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000101",
+      "undefined" : "Procedure_Occurrence"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "255"
+  }, {
+    "iri" : "http://www.radplanbio.org/ptro/DKFZ000100",
+    "baseIri" : "http://www.radplanbio.org/ptro",
+    "range" : "238",
+    "annotations" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "OGiraldo",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://library.cdisc.org/browser",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "PRPRESP",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "Used when a specific procedure is pre-specified on a CRF. Values should be \"Y\" or null.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DKFZ000100",
+      "undefined" : "Porcedure_Prespecified"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "256"
+  }, {
+    "range" : "85",
+    "domain" : "83",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "257"
+  }, {
+    "range" : "9",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "258"
+  }, {
+    "range" : "9",
+    "domain" : "82",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "259"
+  }, {
+    "range" : "9",
+    "domain" : "83",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "260"
+  }, {
+    "range" : "9",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "261"
+  }, {
+    "range" : "13",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "262"
+  }, {
+    "range" : "13",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "263"
+  }, {
+    "range" : "13",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "264"
+  } ]
+}
