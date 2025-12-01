@@ -71,11 +71,7 @@ The ontology covers several core domains:
 
 ## Download & Formats
 
-The ontology is available in multiple serialization formats:
-
-
 - **RDF/XML**: [PTRO.owl](PTRO.owl)
-
 
 
 ## Key Features
@@ -102,7 +98,7 @@ PTRO enables powerful queries across preclinical datasets:
 
 ## Usage Examples
 
-- **SPARQL**: [PTRO_Competency_Questions_Updated.md](PTRO_Competency_Questions_Updated.md)
+- **SPARQL**: [ontop-SPARQL queries](https://github.com/DKFZ-E220/PTRO/blob/main/mapping_PTRO_Ontop/ontop-SPARQL%20queries.md)
 
 ## Citation
 
