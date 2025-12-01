@@ -23,6 +23,7 @@ PTRO focuses on preclinical data standardized according to SEND, with emphasis o
 - [Key Features](#key-features)
 - [Usage Examples](#usage-examples)
 - [Citation](#citation)
+- [Relevant sources](#relevant-sources)
 - [License](#license)
 
 
@@ -87,6 +88,9 @@ DKFZ-E220. (2025). Preclinical Trials in Radiation Oncology Ontology (PTRO).
 Revision: 0.1 alpha. Retrieved from: https://purls.helmholtz-metadaten.de/ptro/2025-11-25
 ```
 
+## Relevant sources
+* For background information, please refer to our [ICBO-2024 conference paper]( https://ceur-ws.org/Vol-3939/short2.pdf)
+* [RadPlanBio platform](https://helmholtz.software/software/radplanbio)
 
 ## License
 
