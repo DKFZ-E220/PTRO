@@ -1,13 +1,10 @@
 # PTRO - Preclinical Trials in Radiation Oncology Ontology
 
 **This version:**  
-https://purls.helmholtz-metadaten.de/ptro/2025-11-25
-
-**Latest version:**  
 https://purls.helmholtz-metadaten.de/ptro
 
 **Revision:**  
-0.1 alpha
+0.1 alpha (2025-11-25)
 
 **Authors:**  
 DKFZ-E220
@@ -20,7 +17,7 @@ DKFZ-E220
 
 
 **Cite as:**  
-DKFZ-E220. Revision: 0.1 alpha. Retrieved from: https://purls.helmholtz-metadaten.de/ptro/2025-11-25
+DKFZ-E220. Revision: 0.1 alpha. Retrieved from: https://purls.helmholtz-metadaten.de/ptro
 
 ## Abstract
 
@@ -155,5 +152,5 @@ Under the following terms:
 ---
 
 **Repository:** https://github.com/DKFZ-E220/PTRO/tree/main  
-**Documentation:** https://purls.helmholtz-metadaten.de/ptro  
+**Documentation:** [PTRO ontology documentation](README.md)
 **Contact:** DKFZ-E220
