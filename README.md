@@ -153,4 +153,3 @@ Under the following terms:
 
 **Repository:** https://github.com/DKFZ-E220/PTRO/tree/main  
 **Documentation:** [PTRO ontology documentation](README.md)
-**Contact:** DKFZ-E220
