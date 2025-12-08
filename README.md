@@ -57,7 +57,7 @@ PTRO is designed from the ground up to support FAIR data principles:
 ### Integration with Standards and Vocabularies
 
 - [**CDISC SEND**](https://www.cdisc.org/standards/foundational/send): Full alignment with SEND domain models
-- [***Radiation Oncology Ontology (ROO)**](https://doi.org/10.1002/mp.12879): Interoperability with clinical radiation data
+- [**Radiation Oncology Ontology (ROO)**](https://doi.org/10.1002/mp.12879): Interoperability with clinical radiation data
 - [**NCI Thesaurus (NCIt)**](https://ncithesaurus.nci.nih.gov/ncitbrowser/): Leverages standardized biomedical terminology
 - [**Semantic Types Ontology (STY)**](https://bioportal.bioontology.org/ontologies/STY): Semantic categorization of concepts
 
@@ -90,6 +90,7 @@ Revision: 0.1 alpha. Retrieved from: https://purls.helmholtz-metadaten.de/ptro/2
 
 ## Relevant sources
 * For background information, please refer to our [ICBO-2024 conference paper]( https://ceur-ws.org/Vol-3939/short2.pdf)
+* [PTRO documentation](https://dkfz-e220.github.io/PTRO/)
 * [RadPlanBio platform](https://helmholtz.software/software/radplanbio)
 
 ## License
