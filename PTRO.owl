@@ -1,13 +1,12 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="https://purls.helmholtz-metadaten.de/ptro"
+     xml:base="https://purls.helmholtz-metadaten.de/ptro/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="https://purls.helmholtz-metadaten.de/ptro"
+     ontologyIRI="https://purls.helmholtz-metadaten.de/ptro/"
      versionIRI="https://purls.helmholtz-metadaten.de/ptro/2025-11-25">
-    <Prefix name="" IRI="https://purls.helmholtz-metadaten.de/ptro#"/>
     <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
     <Prefix name="gn" IRI="http://www.geonames.org/ontology#"/>
     <Prefix name="dcm" IRI="http://semantic-dicom.org/dcm#"/>
@@ -24,6 +23,7 @@
     <Prefix name="ncit" IRI="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#"/>
     <Prefix name="obda" IRI="https://w3id.org/obda/vocabulary#"/>
     <Prefix name="ocre" IRI="http://purl.org/net/OCRe/statistics.owl#"/>
+    <Prefix name="ptro" IRI="https://purls.helmholtz-metadaten.de/ptro/"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
     <Prefix name="ctcae" IRI="http://ncicb.nci.nih.gov/xml/owl/EVS/ctcae.owl#"/>
@@ -1444,11 +1444,6 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <AbbreviatedIRI>ncit:C49569</AbbreviatedIRI>
-        <Literal>A subject domain utilized for the submission of information encompassing and representing data, vocabulary or records related to comments.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <AbbreviatedIRI>ncit:C49569</AbbreviatedIRI>
         <Literal>http://purl.bioontology.org/ontology/NCIT</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1460,6 +1455,11 @@
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
         <AbbreviatedIRI>ncit:C49569</AbbreviatedIRI>
         <Literal>CO, Comments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <AbbreviatedIRI>ncit:C49569</AbbreviatedIRI>
+        <Literal>A subject domain utilized for the submission of information encompassing and representing data, vocabulary or records related to comments.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:creator"/>
