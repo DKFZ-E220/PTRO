@@ -1,7 +1,7 @@
 # PTRO - Preclinical Trials in Radiation Oncology Ontology
 
 **This version:**  
-https://purls.helmholtz-metadaten.de/ptro
+https://purls.helmholtz-metadaten.de/ptro/
 
 **Revision:**  
 0.1 alpha (2025-11-25)
