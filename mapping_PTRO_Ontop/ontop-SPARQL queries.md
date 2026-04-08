@@ -3,7 +3,7 @@
 1. The following query returns the Subject Identifier (a.k.a Subject Identification) of the subjects.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro>
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/>
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -19,7 +19,7 @@ WHERE {
 2. The following query returns the Unique Subject Identifier for the Study (a.k.a Subject Id) of the subjects. 
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -35,7 +35,7 @@ WHERE {
 3. The following query returns the Study Identifier where the subjects are part of. 
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -69,7 +69,7 @@ Demographics information
 5. The following query returns the Age of the subjects. 
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -85,7 +85,7 @@ where {
 6. The following query returns the Age unit of the subjects.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -101,7 +101,7 @@ where {
 7. The following query returns the Age range of the subjects.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -117,7 +117,7 @@ where {
 8. The following query returns the Sex of the subjects.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -133,7 +133,7 @@ where {
 9. The following query returns the strain/substrain of the subjects.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -149,7 +149,7 @@ where {
 10. Give me the list of female mice
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -166,7 +166,7 @@ WHERE
 11. Give me the list of male mice
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -183,7 +183,7 @@ WHERE
 12. Give me the mice with an age equal to or older than 67 days.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -200,7 +200,7 @@ WHERE
 13. Give me the mice older than 67 days. 
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -217,7 +217,7 @@ WHERE
 14. Give me the mice with an age equal to or younger than 74 days. 
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -234,7 +234,7 @@ WHERE
 15. Give me the mice younger than 74 days. 
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -251,7 +251,7 @@ WHERE
 16. Give me the list of male mice and 74.0 days old 
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -271,7 +271,7 @@ WHERE
 17. Give me the list of male mice and 67.0 days old 
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -293,7 +293,7 @@ Findings - Death Diagnosis and Details
 18. The following query returns the Death DIagnosis Short Name of the subjects
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -309,7 +309,7 @@ WHERE {
 19. The following query returns the Death Diagnosis Name of the subjects
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -325,7 +325,7 @@ WHERE {
 20. The following query returns the Death Diagnosis Result Category of the subjects
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -341,7 +341,7 @@ WHERE {
 21. The following query returns the Death Diagnosis evaluator of the subjects
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -357,7 +357,7 @@ WHERE {
 22. The following query returns the Study Day Animal Death of the subjects
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -373,7 +373,7 @@ WHERE {
 23. Give me the list of mice with a death diagnosis TERMINAL SACRIFICE
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -391,7 +391,7 @@ WHERE
 24. Give me the list of mice with a death diagnosis INTERIM SACRIFICE
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -409,7 +409,7 @@ WHERE
 25. Give me the evaluators of mice with a death diagnosis INTERIM SACRIFICE
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -428,7 +428,7 @@ WHERE
 26. Give me the study day of the mice with a death diagnosis result category TERMINAL SACRIFICE
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -449,7 +449,7 @@ Exposure information
 27. The following query returns the name of the actual treatment used in the treatment sessions.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -465,7 +465,7 @@ WHERE {
 28. The following query returns the dose used in the  treatment sessions.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -481,7 +481,7 @@ WHERE {
 29. The following query returns the dose units used in the  treatment sessions.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -497,7 +497,7 @@ WHERE {
 30. The following query returns the Route of Administration used in the  treatment sessions.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -513,7 +513,7 @@ WHERE {
 31. The following query returns the Treatment Vehicle used in the  treatment sessions.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -529,7 +529,7 @@ WHERE {
 32. The following query returns the Amount Administered used in the  treatment sessions.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -545,7 +545,7 @@ WHERE {
 33. The following query returns the Amount Administered Units used in the  treatment sessions.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -561,7 +561,7 @@ WHERE {
 34. The following query returns the Study Day of Start of Treatment used in the  treatment sessions.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -577,7 +577,7 @@ WHERE {
 35. The following query returns the Study Day of End of Treatment used in the  treatment sessions.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -593,7 +593,7 @@ WHERE {
 36. The following query returns the Duration of Treatment used in the  treatment sessions.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -611,7 +611,7 @@ Laboratory information
 37. The following query returns the data about Specimen Usability for the Test available in the lab records.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -627,7 +627,7 @@ WHERE {
 38. The following query returns the data about Portion or Totality available in the lab records.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -643,7 +643,7 @@ WHERE {
 39. The following query returns the data about Method of Test or Examination available in the lab records.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -659,7 +659,7 @@ WHERE {
 40. The following query returns the data about Specimen Condition available in the lab records.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -675,7 +675,7 @@ WHERE {
 41. The following query returns the data about the Anatomical Region of Specimen available in the lab records.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -691,7 +691,7 @@ WHERE {
 42. The following query returns the data about the Study Day of End of Specimen Collection available in the lab records.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -707,7 +707,7 @@ WHERE {
 43. The following query returns the data about the Study Day of Specimen Collection available in the lab records.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -723,7 +723,7 @@ WHERE {
 44. The following query returns the data about the Lab Result or Findings as Collected available in the lab records.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -739,7 +739,7 @@ WHERE {
 45. The following query returns the data about the Lab Test or Examination Name available in the lab records.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -755,7 +755,7 @@ WHERE {
 46. The following query returns the data about the Laboratory Name available in the lab records.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -771,7 +771,7 @@ WHERE {
 47. The following query returns the data about the Label for Nominal Study Day available in the lab records.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -787,7 +787,7 @@ WHERE {
 48. The following query returns the data about the Baseline Flag available in the lab records.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -803,7 +803,7 @@ WHERE {
 49. The following query returns the data about the Lab Test or Examination Short Name available in the lab records.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -819,7 +819,7 @@ WHERE {
 50. The following query returns the data about the Nominal Study Day for Tabulations available in the lab records.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -835,7 +835,7 @@ WHERE {
 51. The following query returns the data about the Lab Unit of the Original Result available in the lab records.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -851,7 +851,7 @@ WHERE {
 52. The following query returns the data about the Laboratory name available in the lab records.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -867,7 +867,7 @@ WHERE {
 53. The following query returns the data about the Specimen Condition available in the lab records.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -883,7 +883,7 @@ WHERE {
 54. The following query returns the data about the Specimen Usability for the Test available in the lab records.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -899,7 +899,7 @@ WHERE {
 55. The following query returns the data about the Portion or Totality available in the lab records.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -915,7 +915,7 @@ WHERE {
 56. The following query returns the data about the Method of Test or Examination available in the lab records.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -931,7 +931,7 @@ WHERE {
 57. The following query returns the data about the Study Day of Specimen Collection available in the lab records.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -947,7 +947,7 @@ WHERE {
 58. The following query returns the data about the Study Day of end of Specimen Collection available in the lab records.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -963,7 +963,7 @@ WHERE {
 59. The following query returns the data about the Nominal Study Day for Tabulations available in the lab records.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -979,7 +979,7 @@ WHERE {
 60. The following query returns the data about the Nominal Study Day for Tabulations available in the lab records.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -997,7 +997,7 @@ Body weights
 61. The following query return the test short names available in the Body weight templates
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -1013,7 +1013,7 @@ WHERE {
 62. The following query return the test names available in the Body weight templates
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -1029,7 +1029,7 @@ WHERE {
 63. The following query return the Body Weight Result or Findings as Collected available in the Body weight templates
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -1045,7 +1045,7 @@ WHERE {
 64. The following query return the units of the original result available in the Body weight templates
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -1061,7 +1061,7 @@ WHERE {
 65. The following query return the Study Day Animal Weighed available in the Body weight templates
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -1077,7 +1077,7 @@ WHERE {
 66. The following query return the Label for Nominal Study Day available in the Body weight templates
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -1096,7 +1096,7 @@ Queries retrieving information from DM and DD databases
 
 ```
 PREFIX roo: <http://www.cancerdata.org/roo/>
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -1116,7 +1116,7 @@ WHERE
 
 ```
 PREFIX roo: <http://www.cancerdata.org/roo/>
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -1136,7 +1136,7 @@ WHERE
 
 ```
 PREFIX roo: <http://www.cancerdata.org/roo/>
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro>
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/>
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -1158,7 +1158,7 @@ WHERE {
 
 ```
 PREFIX roo: <http://www.cancerdata.org/roo/>
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro>
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/>
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -1179,7 +1179,7 @@ WHERE
 
 ```
 PREFIX roo: <http://www.cancerdata.org/roo/>
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro>
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/>
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -1201,7 +1201,7 @@ WHERE
 
 ```
 PREFIX roo: <http://www.cancerdata.org/roo/>
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro>
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/>
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -1222,7 +1222,7 @@ WHERE {
 
 ```
 PREFIX roo: <http://www.cancerdata.org/roo/>
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro>
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/>
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -1242,7 +1242,7 @@ WHERE {
 74. The following query return male subjects, with a death diagnosis result category “TERMINAL SACRIFICE”, received a treatment “CISPLATIN” and participated in the lab test “Tumor Volume Measurement”
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro>
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/>
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -1265,7 +1265,7 @@ FILTER (?lbtest = "Tumor Volume Measurement")
 75. The following query returns the male mice, treated with “CISPLATIN” and its Body Weights at the week 20 of the study.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro>
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/>
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -1287,7 +1287,7 @@ FILTER (?bwnomlbl = "Week 20")
 76. The following query returns the study day ( on which the death was recorded), Death's result category and study day of specimen collection of the subjects weighing more than 30 g.
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro>
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/>
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
@@ -1307,7 +1307,7 @@ FILTER (?bworres > 30)
 77. Give me the male mice, treated with “CISPLATIN” and corresponding “test name”,  “body system”, “ result category of the clinical observation” and “death diagnosis result category”
 
 ```
-PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro>
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/>
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
