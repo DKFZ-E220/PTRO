@@ -51,7 +51,7 @@ WHERE {
 4. The following query returns the Project Unique Identifier where the subjects are part of.
 
 ```
-REFIX ptro: <https://purls.helmholtz-metadaten.de/ptro> 
+PREFIX ptro: <https://purls.helmholtz-metadaten.de/ptro/> 
 PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> 
 PREFIX uo: <http://purl.obolibrary.org/obo/UO> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
