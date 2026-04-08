@@ -6,7 +6,7 @@ https://purls.helmholtz-metadaten.de/ptro/
 **Revision:**  
 0.1 alpha (2025-11-25)
 
-**Documentation:** https://dkfz-e220.github.io/PTRO/
+**Documentation:** https://dkfz-e220.github.io/PTRO/doc/index-en.html
 
 **Authors:**  
 DKFZ-E220
