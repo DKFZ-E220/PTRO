@@ -1,0 +1,25 @@
+STUDYID,DOMAIN,USUBJID,PUID,COHORT,SUBJID,DMSEQ,RFSTDTC,RFENDTC,RFXSTDTC,RFXENDTC,SITEID,BRTHDTC,AGE,AGETXT,AGEU,SEX,SPECIES,STRAIN,SBSTRAIN,ARMCD,ARM,SETCD
+Xeno Nimo Hypox;FaDu,DM,N150a001,N150,a,1,1.0,2011-12-06,2012-07-05,2011-12-26,2012-02-03,DD,2011-09-23,74,,days,0,Mouse,Nude Mouse,,30f6Wo_NaCl+Cispl._54Gy, RT 30fx with NaCl + Cisplatin,A
+Xeno Nimo Hypox;FaDu,DM,N150a002,N150,a,2,1.0,2011-12-06,2012-05-07,2011-12-22,2012-02-01,DD,2011-09-23,1900-03-14 00:00:00,,days,0,Mouse,Nude Mouse,,30f6Wo_NaCl+Cispl._54Gy, RT 30fx with NaCl + Cisplatin,A
+Xeno Nimo Hypox;FaDu,DM,N150a003,N150,a,3,1.0,2011-12-06,2012-06-11,2011-12-22,2012-02-01,DD,2011-09-23,1900-03-14 00:00:00,,days,0,Mouse,Nude Mouse,,30f6Wo_NaCl+Cispl._54Gy, RT 30fx with NaCl + Cisplatin,A
+Xeno Nimo Hypox;FaDu,DM,N150a004,N150,a,4,1.0,2011-12-06,2012-07-05,2011-12-26,2012-02-03,DD,2011-09-23,1900-03-14 00:00:00,,days,0,Mouse,Nude Mouse,,30f6Wo_NaCl+Cispl._54Gy, RT 30fx with NaCl + Cisplatin,A
+Xeno Nimo Hypox;FaDu,DM,N150a027,N150,a,27,1.0,2011-12-06,2012-04-05,2011-12-26,2012-02-03,DD,2011-09-25,,68-72,days,0,Mouse,Nude Mouse,,30f6Wo_NaCl+Cispl._54Gy, RT 30fx with NaCl + Cisplatin,A
+Xeno Nimo Hypox;FaDu,DM,N150a028,N150,a,28,1.0,2011-12-06,2012-07-05,2012-01-09,2012-02-17,DD,2011-09-25,,68-72,days,0,Mouse,Nude Mouse,,30f6Wo_NaCl+Cispl._54Gy, RT 30fx with NaCl + Cisplatin,A
+Xeno Nimo Hypox;FaDu,DM,N150a029,N150,a,29,1.0,2011-12-06,2012-04-10,2012-01-02,2012-02-10,DD,2011-09-25,,68-72,days,0,Mouse,Nude Mouse,,30f6Wo_NaCl+Cispl._54Gy, RT 30fx with NaCl + Cisplatin,A
+Xeno Nimo Hypox;FaDu,DM,N150a030,N150,a,30,1.0,2011-12-06,2012-03-22,2011-12-22,2012-02-01,DD,2011-09-25,,68-72,days,0,Mouse,Nude Mouse,,30f6Wo_NaCl+Cispl._54Gy, RT 30fx with NaCl + Cisplatin,A
+Xeno Nimo Hypox;FaDu,DM,N150b053,N150,b,53,1.0,2012-01-31,2012-09-06,2012-02-27,2012-04-06,DD,2011-11-19,,72-73,days,0,Mouse,Nude Mouse,,30f6Wo_NaCl+Cispl._54Gy, RT 30fx with NaCl + Cisplatin,A
+Xeno Nimo Hypox;FaDu,DM,N150b056,N150,b,56,1.0,2012-01-31,2012-09-06,2012-03-01,2012-04-11,DD,2011-11-19,,72-73,days,0,Mouse,Nude Mouse,,30f6Wo_NaCl+Cispl._54Gy, RT 30fx with NaCl + Cisplatin,A
+Xeno Nimo Hypox;FaDu,DM,N150b058,N150,b,58,1.0,2012-01-31,2012-04-30,2012-02-16,2012-03-28,DD,2011-11-19,,72-73,days,0,Mouse,Nude Mouse,,30f6Wo_NaCl+Cispl._54Gy, RT 30fx with NaCl + Cisplatin,A
+Xeno Nimo Hypox;FaDu,DM,N150b069,N150,b,69,1.0,2012-01-31,2012-06-22,2012-02-16,2012-03-28,DD,2011-11-20,,71-72,days,0,Mouse,Nude Mouse,,30f6Wo_NaCl+Cispl._54Gy, RT 30fx with NaCl + Cisplatin,A
+Xeno Nimo Hypox;FaDu,DM,N150b070,N150,b,70,1.0,2012-01-31,2012-06-14,2012-02-20,2012-03-30,DD,2011-11-20,,71-72,days,0,Mouse,Nude Mouse,,30f6Wo_NaCl+Cispl._54Gy, RT 30fx with NaCl + Cisplatin,A
+Xeno Nimo Hypox;FaDu,DM,N150b071,N150,b,71,1.0,2012-01-31,2012-06-07,2012-02-23,2012-04-04,DD,2011-11-22,,67-70,days,0,Mouse,Nude Mouse,,30f6Wo_NaCl+Cispl._54Gy, RT 30fx with NaCl + Cisplatin,A
+Xeno Nimo Hypox;FaDu,DM,N150b072,N150,b,72,1.0,2012-01-31,2012-09-06,2012-02-27,2012-04-06,DD,2011-11-22,,67-70,days,0,Mouse,Nude Mouse,,30f6Wo_NaCl+Cispl._54Gy, RT 30fx with NaCl + Cisplatin,A
+Xeno Nimo Hypox;FaDu,DM,N150b087,N150,b,87,1.0,2012-01-31,2012-09-06,2012-02-23,2012-04-04,DD,2011-11-13,,75-79,days,1,Mouse,Nude Mouse,,30f6Wo_NaCl+Cispl._54Gy, RT 30fx with NaCl + Cisplatin,A
+Xeno Nimo Hypox;FaDu,DM,N150b088,N150,b,88,1.0,2012-01-31,2012-05-21,2012-02-27,2012-04-06,DD,2011-11-13,,75-79,days,1,Mouse,Nude Mouse,,30f6Wo_NaCl+Cispl._54Gy, RT 30fx with NaCl + Cisplatin,A
+Xeno Nimo Hypox;FaDu,DM,N150b089,N150,b,89,1.0,2012-01-31,2012-09-06,2012-02-27,2012-04-06,DD,2011-11-13,,75-79,days,1,Mouse,Nude Mouse,,30f6Wo_NaCl+Cispl._54Gy, RT 30fx with NaCl + Cisplatin,A
+Xeno Nimo Hypox;FaDu,DM,N150b090,N150,b,90,1.0,2012-01-31,2012-05-07,2012-02-27,2012-04-06,DD,2011-11-13,,75-79,days,1,Mouse,Nude Mouse,,30f6Wo_NaCl+Cispl._54Gy, RT 30fx with NaCl + Cisplatin,A
+Xeno Nimo Hypox;FaDu,DM,N150b120,N150,b,120,1.0,2012-01-31,2012-09-06,2012-03-05,2012-04-13,DD,2011-11-18,1900-03-14 00:00:00,,days,1,Mouse,Nude Mouse,,30f6Wo_NaCl+Cispl._54Gy, RT 30fx with NaCl + Cisplatin,A
+Xeno Nimo Hypox;FaDu,DM,N150b121,N150,b,121,1.0,2012-01-31,2012-09-06,2012-03-08,2012-04-18,DD,2011-11-26,,65-66,days,0,Mouse,Nude Mouse,,30f6Wo_NaCl+Cispl._54Gy, RT 30fx with NaCl + Cisplatin,A
+Xeno Nimo Hypox;FaDu,DM,N150b122,N150,b,122,1.0,2012-01-31,2012-05-24,2012-02-27,2012-04-06,DD,2011-11-26,,65-66,days,0,Mouse,Nude Mouse,,30f6Wo_NaCl+Cispl._54Gy, RT 30fx with NaCl + Cisplatin,A
+Xeno Nimo Hypox;FaDu,DM,N150b129,N150,b,129,1.0,2012-01-31,2012-09-06,2012-03-26,2012-05-04,DD,2011-11-26,,65-66,days,0,Mouse,Nude Mouse,,30f6Wo_NaCl+Cispl._54Gy, RT 30fx with NaCl + Cisplatin,A
+Xeno Nimo Hypox;FaDu,DM,N150b130,N150,b,130,1.0,2012-01-31,2012-05-14,2012-02-20,2012-03-30,DD,2011-11-26,,65-66,days,0,Mouse,Nude Mouse,,30f6Wo_NaCl+Cispl._54Gy, RT 30fx with NaCl + Cisplatin,A
