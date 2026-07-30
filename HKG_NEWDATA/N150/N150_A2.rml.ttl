@@ -141,6 +141,16 @@
   ];
 
   rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000144;
+    rr:objectMap [ rml:reference "EXTPTREF" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000145;
+    rr:objectMap [ rml:reference "EXRFTDTC" ];
+  ];
+
+  rr:predicateObjectMap [
     rr:predicate ptro:DKFZ000056;
     rr:objectMap [ rml:reference "EXVAMTU" ];
   ];
