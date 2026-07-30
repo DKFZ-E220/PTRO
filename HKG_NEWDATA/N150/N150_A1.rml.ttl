@@ -22,7 +22,7 @@
    
 	rr:predicateObjectMap [
     rr:predicate ptro:DKFZ000010;
-    rr:objectMap [ rml:reference "Subject Identification" ];
+    rr:objectMap [ rml:reference "SUBJID" ];
 	];
    
   rr:predicateObjectMap [
@@ -32,36 +32,110 @@
 
   rr:predicateObjectMap [
     rr:predicate ptro:DKFZ000009;
-    rr:objectMap [ rml:reference "Subject Id" ];
+    rr:objectMap [ rml:reference "USUBJID" ];
   ];
 
   rr:predicateObjectMap [
     rr:predicate ptro:DKFZ000008;
-    rr:objectMap [ rml:reference "Study Identifier" ];
+    rr:objectMap [ rml:reference "STUDYID" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000130;
+    rr:objectMap [ rml:reference "DOMAIN" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000115;
+    rr:objectMap [ rml:reference "PUID" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000120;
+    rr:objectMap [ rml:reference "Cohort" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000121;
+    rr:objectMap [ rml:reference "DMSEQ" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000122;
+    rr:objectMap [ rml:reference "RFSTDTC" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000123;
+    rr:objectMap [ rml:reference "RFENDTC" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000124;
+    rr:objectMap [ rml:reference "RFXSTDTC" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000125;
+    rr:objectMap [ rml:reference "RFXENDTC" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000126;
+    rr:objectMap [ rml:reference "SITEID" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000127;
+    rr:objectMap [ rml:reference "BIRTHDTC" ];
   ];
 
   rr:predicateObjectMap [
     rr:predicate ptro:DKFZ000033;
-    rr:objectMap [ rml:reference "Age" ];
+    rr:objectMap [ rml:reference "AGE" ];
   ];
 
   rr:predicateObjectMap [
     rr:predicate ptro:DKFZ000034;
-    rr:objectMap [ rml:reference "Age Unit" ];
+    rr:objectMap [ rml:reference "AGEU" ];
   ];
 
   rr:predicateObjectMap [
     rr:predicate ptro:DKFZ000043;
-    rr:objectMap [ rml:reference "Age Range" ];
+    rr:objectMap [ rml:reference "AGETXT" ];
   ];
 
   rr:predicateObjectMap [
     rr:predicate ptro:DKFZ000040;
-    rr:objectMap [ rml:reference "Sex" ];
+    rr:objectMap [ rml:reference "SEX" ];
   ];
 
   rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000128;
+    rr:objectMap [ rml:reference "SPECIES" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000116;
+    rr:objectMap [ rml:reference "ARMCD" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000117;
+    rr:objectMap [ rml:reference "ARM" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000118;
+    rr:objectMap [ rml:reference "SETCD" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000129;
+    rr:objectMap [ rml:reference "SBSTRAIN" ];
+  ];
+
     rr:predicate ptro:DKFZ000041;
-    rr:objectMap [ rml:reference "Strain/Substrain" ];
+    rr:objectMap [ rml:reference "STRAIN" ];
   ];
 .
