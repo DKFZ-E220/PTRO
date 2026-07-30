@@ -1,0 +1,154 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#>.
+@prefix ptro: <http://www.radplanbio.org/ptro/>.
+@prefix ro: <http://purl.obolibrary.org/obo/ro.owl>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@base <http://example.com/ns#>.
+
+<#TriplesMap1> a rr:TriplesMap;
+	
+  rml:logicalSource [ 
+		rml:source      "/data/B2_EX_full_data.csv";
+    rml:referenceFormulation ql:CSV
+  ];
+    
+	rr:subjectMap [
+		rr:template   "http://www.radplanbio.org/ptro/instance/{SessionID}";
+		rr:class ptro:DKFZ000050;
+		rr:termType rr:IRI;
+	];
+   
+	rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000010;
+    rr:objectMap [ rml:reference "Subject Identification" ];
+	];
+   
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [ rml:reference "SessionID" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000051;
+    rr:objectMap [ rml:reference "POOLID" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000042;
+    rr:objectMap [ rml:reference "DOMAIN" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000008;
+    rr:objectMap [ rml:reference "STUDYID" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000115;
+    rr:objectMap [ rml:reference "PUID" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000010;
+    rr:objectMap [ rml:reference "SUBJID" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000120;
+    rr:objectMap [ rml:reference "COHORT" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000130;
+    rr:objectMap [ rml:reference "EXSEQ" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000131;
+    rr:objectMap [ rml:reference "FOCID" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000053;
+    rr:objectMap [ rml:reference "EXDOSE" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000132;
+    rr:objectMap [ rml:reference "EXDOSTXT" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000133;
+    rr:objectMap [ rml:reference "EXDOSFRM" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000134;
+    rr:objectMap [ rml:reference "EXDOSFRQ" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000054;
+    rr:objectMap [ rml:reference "EXDOSU" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000135;
+    rr:objectMap [ rml:reference "EXLOT" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000136;
+    rr:objectMap [ rml:reference "EXLOC" ];
+  ];
+
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000058;
+    rr:objectMap [ rml:reference "EXDUR" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000056;
+    rr:objectMap [ rml:reference "EXVAMTU" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000012;
+    rr:objectMap [ rml:reference "EXTRTV" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000013;
+    rr:objectMap [ rml:reference "EXTRT" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000009;
+    rr:objectMap [ rml:reference "USUBJID" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000044;
+    rr:objectMap [ rml:reference "EXSTDY" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000011;
+    rr:objectMap [ rml:reference "EXROUTE" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000057;
+    rr:objectMap [ rml:reference "EXENDY" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000055;
+    rr:objectMap [ rml:reference "EXVAMT" ];
+  ];
+
+.
