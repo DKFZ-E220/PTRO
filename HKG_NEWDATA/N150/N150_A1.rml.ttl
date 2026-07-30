@@ -41,7 +41,7 @@
   ];
 
   rr:predicateObjectMap [
-    rr:predicate ptro:DKFZ000130;
+    rr:predicate ptro:DKFZ000042;
     rr:objectMap [ rml:reference "DOMAIN" ];
   ];
 
@@ -52,7 +52,7 @@
 
   rr:predicateObjectMap [
     rr:predicate ptro:DKFZ000120;
-    rr:objectMap [ rml:reference "Cohort" ];
+    rr:objectMap [ rml:reference "COHORT" ];
   ];
 
   rr:predicateObjectMap [
