@@ -20,14 +20,9 @@
 		rr:termType rr:IRI;
 	];
    
-	rr:predicateObjectMap [
-    rr:predicate ptro:DKFZ000010;
-    rr:objectMap [ rml:reference "Subject Identification" ];
-	];
-   
   rr:predicateObjectMap [
     rr:predicate rdfs:label;
-    rr:objectMap [ rml:reference "SessionID" ];
+    rr:objectMap [ rml:reference "SUBJID" ];
   ];
 
   rr:predicateObjectMap [
@@ -105,10 +100,44 @@
     rr:objectMap [ rml:reference "EXLOC" ];
   ];
 
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000137;
+    rr:objectMap [ rml:reference "EXMETHOD" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000138;
+    rr:objectMap [ rml:reference "EXADJ" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000139;
+    rr:objectMap [ rml:reference "EXSTDTC" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000140;
+    rr:objectMap [ rml:reference "EXENDTC" ];
+  ];
 
   rr:predicateObjectMap [
     rr:predicate ptro:DKFZ000058;
     rr:objectMap [ rml:reference "EXDUR" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000141;
+    rr:objectMap [ rml:reference "EXTPT" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000142;
+    rr:objectMap [ rml:reference "EXTPTNUM" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000143;
+    rr:objectMap [ rml:reference "EXELTM" ];
   ];
 
   rr:predicateObjectMap [
