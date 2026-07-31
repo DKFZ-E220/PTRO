@@ -27,7 +27,7 @@
    
   rr:predicateObjectMap [
     rr:predicate rdfs:label;
-    rr:objectMap [ rml:reference "Subject Id" ];
+    rr:objectMap [ rml:reference "SUBJID" ];
   ];
 
   rr:predicateObjectMap [
@@ -87,7 +87,7 @@
 
   rr:predicateObjectMap [
     rr:predicate ptro:DKFZ000127;
-    rr:objectMap [ rml:reference "BIRTHDTC" ];
+    rr:objectMap [ rml:reference "BRTHDTC" ];
   ];
 
   rr:predicateObjectMap [
