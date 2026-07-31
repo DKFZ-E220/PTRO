@@ -135,6 +135,7 @@
     rr:objectMap [ rml:reference "SBSTRAIN" ];
   ];
 
+  rr:predicateObjectMap [
     rr:predicate ptro:DKFZ000041;
     rr:objectMap [ rml:reference "STRAIN" ];
   ];
