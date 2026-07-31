@@ -1,0 +1,552 @@
+<http://www.radplanbio.org/ptro/instance/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256>.
+<http://www.radplanbio.org/ptro/instance/1> <http://www.radplanbio.org/ptro/DKFZ000042> "DM".
+<http://www.radplanbio.org/ptro/instance/1> <http://www.radplanbio.org/ptro/DKFZ000115> "N150".
+<http://www.radplanbio.org/ptro/instance/1> <http://www.radplanbio.org/ptro/DKFZ000120> "a".
+<http://www.radplanbio.org/ptro/instance/1> <http://www.radplanbio.org/ptro/DKFZ000121> "1.0".
+<http://www.radplanbio.org/ptro/instance/1> <http://www.radplanbio.org/ptro/DKFZ000122> "2011-12-06".
+<http://www.radplanbio.org/ptro/instance/1> <http://www.radplanbio.org/ptro/DKFZ000123> "2012-07-05".
+<http://www.radplanbio.org/ptro/instance/1> <http://www.radplanbio.org/ptro/DKFZ000124> "2011-12-26".
+<http://www.radplanbio.org/ptro/instance/1> <http://www.radplanbio.org/ptro/DKFZ000125> "2012-02-03".
+<http://www.radplanbio.org/ptro/instance/1> <http://www.radplanbio.org/ptro/DKFZ000126> "DD".
+<http://www.radplanbio.org/ptro/instance/1> <http://www.radplanbio.org/ptro/DKFZ000127> "2011-09-23".
+<http://www.radplanbio.org/ptro/instance/1> <http://www.radplanbio.org/ptro/DKFZ000010> "1".
+<http://www.radplanbio.org/ptro/instance/1> <http://www.radplanbio.org/ptro/DKFZ000033> "74.0".
+<http://www.radplanbio.org/ptro/instance/1> <http://www.radplanbio.org/ptro/DKFZ000034> "days".
+<http://www.radplanbio.org/ptro/instance/1> <http://www.radplanbio.org/ptro/DKFZ000040> "0".
+<http://www.radplanbio.org/ptro/instance/1> <http://www.radplanbio.org/ptro/DKFZ000128> "Mouse".
+<http://www.radplanbio.org/ptro/instance/1> <http://www.radplanbio.org/ptro/DKFZ000116> "30f6Wo_NaCl+Cispl._54Gy".
+<http://www.radplanbio.org/ptro/instance/1> <http://www.radplanbio.org/ptro/DKFZ000117> " RT 30fx with NaCl + Cisplatin".
+<http://www.radplanbio.org/ptro/instance/1> <http://www.radplanbio.org/ptro/DKFZ000118> "A".
+<http://www.radplanbio.org/ptro/instance/1> <http://www.radplanbio.org/ptro/DKFZ000041> "Nude Mouse".
+<http://www.radplanbio.org/ptro/instance/1> <http://www.w3.org/2000/01/rdf-schema#label> "1".
+<http://www.radplanbio.org/ptro/instance/1> <http://www.radplanbio.org/ptro/DKFZ000009> "N150a001".
+<http://www.radplanbio.org/ptro/instance/1> <http://www.radplanbio.org/ptro/DKFZ000008> "Xeno Nimo Hypox;FaDu".
+<http://www.radplanbio.org/ptro/instance/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256>.
+<http://www.radplanbio.org/ptro/instance/2> <http://www.radplanbio.org/ptro/DKFZ000042> "DM".
+<http://www.radplanbio.org/ptro/instance/2> <http://www.radplanbio.org/ptro/DKFZ000115> "N150".
+<http://www.radplanbio.org/ptro/instance/2> <http://www.radplanbio.org/ptro/DKFZ000120> "a".
+<http://www.radplanbio.org/ptro/instance/2> <http://www.radplanbio.org/ptro/DKFZ000121> "1.0".
+<http://www.radplanbio.org/ptro/instance/2> <http://www.radplanbio.org/ptro/DKFZ000122> "2011-12-06".
+<http://www.radplanbio.org/ptro/instance/2> <http://www.radplanbio.org/ptro/DKFZ000123> "2012-05-07".
+<http://www.radplanbio.org/ptro/instance/2> <http://www.radplanbio.org/ptro/DKFZ000124> "2011-12-22".
+<http://www.radplanbio.org/ptro/instance/2> <http://www.radplanbio.org/ptro/DKFZ000125> "2012-02-01".
+<http://www.radplanbio.org/ptro/instance/2> <http://www.radplanbio.org/ptro/DKFZ000126> "DD".
+<http://www.radplanbio.org/ptro/instance/2> <http://www.radplanbio.org/ptro/DKFZ000127> "2011-09-23".
+<http://www.radplanbio.org/ptro/instance/2> <http://www.radplanbio.org/ptro/DKFZ000010> "2".
+<http://www.radplanbio.org/ptro/instance/2> <http://www.radplanbio.org/ptro/DKFZ000033> "74.0".
+<http://www.radplanbio.org/ptro/instance/2> <http://www.radplanbio.org/ptro/DKFZ000034> "days".
+<http://www.radplanbio.org/ptro/instance/2> <http://www.radplanbio.org/ptro/DKFZ000040> "0".
+<http://www.radplanbio.org/ptro/instance/2> <http://www.radplanbio.org/ptro/DKFZ000128> "Mouse".
+<http://www.radplanbio.org/ptro/instance/2> <http://www.radplanbio.org/ptro/DKFZ000116> "30f6Wo_NaCl+Cispl._54Gy".
+<http://www.radplanbio.org/ptro/instance/2> <http://www.radplanbio.org/ptro/DKFZ000117> " RT 30fx with NaCl + Cisplatin".
+<http://www.radplanbio.org/ptro/instance/2> <http://www.radplanbio.org/ptro/DKFZ000118> "A".
+<http://www.radplanbio.org/ptro/instance/2> <http://www.radplanbio.org/ptro/DKFZ000041> "Nude Mouse".
+<http://www.radplanbio.org/ptro/instance/2> <http://www.w3.org/2000/01/rdf-schema#label> "2".
+<http://www.radplanbio.org/ptro/instance/2> <http://www.radplanbio.org/ptro/DKFZ000009> "N150a002".
+<http://www.radplanbio.org/ptro/instance/2> <http://www.radplanbio.org/ptro/DKFZ000008> "Xeno Nimo Hypox;FaDu".
+<http://www.radplanbio.org/ptro/instance/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256>.
+<http://www.radplanbio.org/ptro/instance/3> <http://www.radplanbio.org/ptro/DKFZ000042> "DM".
+<http://www.radplanbio.org/ptro/instance/3> <http://www.radplanbio.org/ptro/DKFZ000115> "N150".
+<http://www.radplanbio.org/ptro/instance/3> <http://www.radplanbio.org/ptro/DKFZ000120> "a".
+<http://www.radplanbio.org/ptro/instance/3> <http://www.radplanbio.org/ptro/DKFZ000121> "1.0".
+<http://www.radplanbio.org/ptro/instance/3> <http://www.radplanbio.org/ptro/DKFZ000122> "2011-12-06".
+<http://www.radplanbio.org/ptro/instance/3> <http://www.radplanbio.org/ptro/DKFZ000123> "2012-06-11".
+<http://www.radplanbio.org/ptro/instance/3> <http://www.radplanbio.org/ptro/DKFZ000124> "2011-12-22".
+<http://www.radplanbio.org/ptro/instance/3> <http://www.radplanbio.org/ptro/DKFZ000125> "2012-02-01".
+<http://www.radplanbio.org/ptro/instance/3> <http://www.radplanbio.org/ptro/DKFZ000126> "DD".
+<http://www.radplanbio.org/ptro/instance/3> <http://www.radplanbio.org/ptro/DKFZ000127> "2011-09-23".
+<http://www.radplanbio.org/ptro/instance/3> <http://www.radplanbio.org/ptro/DKFZ000010> "3".
+<http://www.radplanbio.org/ptro/instance/3> <http://www.radplanbio.org/ptro/DKFZ000033> "74.0".
+<http://www.radplanbio.org/ptro/instance/3> <http://www.radplanbio.org/ptro/DKFZ000034> "days".
+<http://www.radplanbio.org/ptro/instance/3> <http://www.radplanbio.org/ptro/DKFZ000040> "0".
+<http://www.radplanbio.org/ptro/instance/3> <http://www.radplanbio.org/ptro/DKFZ000128> "Mouse".
+<http://www.radplanbio.org/ptro/instance/3> <http://www.radplanbio.org/ptro/DKFZ000116> "30f6Wo_NaCl+Cispl._54Gy".
+<http://www.radplanbio.org/ptro/instance/3> <http://www.radplanbio.org/ptro/DKFZ000117> " RT 30fx with NaCl + Cisplatin".
+<http://www.radplanbio.org/ptro/instance/3> <http://www.radplanbio.org/ptro/DKFZ000118> "A".
+<http://www.radplanbio.org/ptro/instance/3> <http://www.radplanbio.org/ptro/DKFZ000041> "Nude Mouse".
+<http://www.radplanbio.org/ptro/instance/3> <http://www.w3.org/2000/01/rdf-schema#label> "3".
+<http://www.radplanbio.org/ptro/instance/3> <http://www.radplanbio.org/ptro/DKFZ000009> "N150a003".
+<http://www.radplanbio.org/ptro/instance/3> <http://www.radplanbio.org/ptro/DKFZ000008> "Xeno Nimo Hypox;FaDu".
+<http://www.radplanbio.org/ptro/instance/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256>.
+<http://www.radplanbio.org/ptro/instance/4> <http://www.radplanbio.org/ptro/DKFZ000042> "DM".
+<http://www.radplanbio.org/ptro/instance/4> <http://www.radplanbio.org/ptro/DKFZ000115> "N150".
+<http://www.radplanbio.org/ptro/instance/4> <http://www.radplanbio.org/ptro/DKFZ000120> "a".
+<http://www.radplanbio.org/ptro/instance/4> <http://www.radplanbio.org/ptro/DKFZ000121> "1.0".
+<http://www.radplanbio.org/ptro/instance/4> <http://www.radplanbio.org/ptro/DKFZ000122> "2011-12-06".
+<http://www.radplanbio.org/ptro/instance/4> <http://www.radplanbio.org/ptro/DKFZ000123> "2012-07-05".
+<http://www.radplanbio.org/ptro/instance/4> <http://www.radplanbio.org/ptro/DKFZ000124> "2011-12-26".
+<http://www.radplanbio.org/ptro/instance/4> <http://www.radplanbio.org/ptro/DKFZ000125> "2012-02-03".
+<http://www.radplanbio.org/ptro/instance/4> <http://www.radplanbio.org/ptro/DKFZ000126> "DD".
+<http://www.radplanbio.org/ptro/instance/4> <http://www.radplanbio.org/ptro/DKFZ000127> "2011-09-23".
+<http://www.radplanbio.org/ptro/instance/4> <http://www.radplanbio.org/ptro/DKFZ000010> "4".
+<http://www.radplanbio.org/ptro/instance/4> <http://www.radplanbio.org/ptro/DKFZ000033> "74.0".
+<http://www.radplanbio.org/ptro/instance/4> <http://www.radplanbio.org/ptro/DKFZ000034> "days".
+<http://www.radplanbio.org/ptro/instance/4> <http://www.radplanbio.org/ptro/DKFZ000040> "0".
+<http://www.radplanbio.org/ptro/instance/4> <http://www.radplanbio.org/ptro/DKFZ000128> "Mouse".
+<http://www.radplanbio.org/ptro/instance/4> <http://www.radplanbio.org/ptro/DKFZ000116> "30f6Wo_NaCl+Cispl._54Gy".
+<http://www.radplanbio.org/ptro/instance/4> <http://www.radplanbio.org/ptro/DKFZ000117> " RT 30fx with NaCl + Cisplatin".
+<http://www.radplanbio.org/ptro/instance/4> <http://www.radplanbio.org/ptro/DKFZ000118> "A".
+<http://www.radplanbio.org/ptro/instance/4> <http://www.radplanbio.org/ptro/DKFZ000041> "Nude Mouse".
+<http://www.radplanbio.org/ptro/instance/4> <http://www.w3.org/2000/01/rdf-schema#label> "4".
+<http://www.radplanbio.org/ptro/instance/4> <http://www.radplanbio.org/ptro/DKFZ000009> "N150a004".
+<http://www.radplanbio.org/ptro/instance/4> <http://www.radplanbio.org/ptro/DKFZ000008> "Xeno Nimo Hypox;FaDu".
+<http://www.radplanbio.org/ptro/instance/27> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256>.
+<http://www.radplanbio.org/ptro/instance/27> <http://www.radplanbio.org/ptro/DKFZ000042> "DM".
+<http://www.radplanbio.org/ptro/instance/27> <http://www.radplanbio.org/ptro/DKFZ000115> "N150".
+<http://www.radplanbio.org/ptro/instance/27> <http://www.radplanbio.org/ptro/DKFZ000120> "a".
+<http://www.radplanbio.org/ptro/instance/27> <http://www.radplanbio.org/ptro/DKFZ000121> "1.0".
+<http://www.radplanbio.org/ptro/instance/27> <http://www.radplanbio.org/ptro/DKFZ000122> "2011-12-06".
+<http://www.radplanbio.org/ptro/instance/27> <http://www.radplanbio.org/ptro/DKFZ000123> "2012-04-05".
+<http://www.radplanbio.org/ptro/instance/27> <http://www.radplanbio.org/ptro/DKFZ000124> "2011-12-26".
+<http://www.radplanbio.org/ptro/instance/27> <http://www.radplanbio.org/ptro/DKFZ000125> "2012-02-03".
+<http://www.radplanbio.org/ptro/instance/27> <http://www.radplanbio.org/ptro/DKFZ000126> "DD".
+<http://www.radplanbio.org/ptro/instance/27> <http://www.radplanbio.org/ptro/DKFZ000127> "2011-09-25".
+<http://www.radplanbio.org/ptro/instance/27> <http://www.radplanbio.org/ptro/DKFZ000010> "27".
+<http://www.radplanbio.org/ptro/instance/27> <http://www.radplanbio.org/ptro/DKFZ000034> "days".
+<http://www.radplanbio.org/ptro/instance/27> <http://www.radplanbio.org/ptro/DKFZ000043> "68-72".
+<http://www.radplanbio.org/ptro/instance/27> <http://www.radplanbio.org/ptro/DKFZ000040> "0".
+<http://www.radplanbio.org/ptro/instance/27> <http://www.radplanbio.org/ptro/DKFZ000128> "Mouse".
+<http://www.radplanbio.org/ptro/instance/27> <http://www.radplanbio.org/ptro/DKFZ000116> "30f6Wo_NaCl+Cispl._54Gy".
+<http://www.radplanbio.org/ptro/instance/27> <http://www.radplanbio.org/ptro/DKFZ000117> " RT 30fx with NaCl + Cisplatin".
+<http://www.radplanbio.org/ptro/instance/27> <http://www.radplanbio.org/ptro/DKFZ000118> "A".
+<http://www.radplanbio.org/ptro/instance/27> <http://www.radplanbio.org/ptro/DKFZ000041> "Nude Mouse".
+<http://www.radplanbio.org/ptro/instance/27> <http://www.w3.org/2000/01/rdf-schema#label> "27".
+<http://www.radplanbio.org/ptro/instance/27> <http://www.radplanbio.org/ptro/DKFZ000009> "N150a027".
+<http://www.radplanbio.org/ptro/instance/27> <http://www.radplanbio.org/ptro/DKFZ000008> "Xeno Nimo Hypox;FaDu".
+<http://www.radplanbio.org/ptro/instance/28> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256>.
+<http://www.radplanbio.org/ptro/instance/28> <http://www.radplanbio.org/ptro/DKFZ000042> "DM".
+<http://www.radplanbio.org/ptro/instance/28> <http://www.radplanbio.org/ptro/DKFZ000115> "N150".
+<http://www.radplanbio.org/ptro/instance/28> <http://www.radplanbio.org/ptro/DKFZ000120> "a".
+<http://www.radplanbio.org/ptro/instance/28> <http://www.radplanbio.org/ptro/DKFZ000121> "1.0".
+<http://www.radplanbio.org/ptro/instance/28> <http://www.radplanbio.org/ptro/DKFZ000122> "2011-12-06".
+<http://www.radplanbio.org/ptro/instance/28> <http://www.radplanbio.org/ptro/DKFZ000123> "2012-07-05".
+<http://www.radplanbio.org/ptro/instance/28> <http://www.radplanbio.org/ptro/DKFZ000124> "2012-01-09".
+<http://www.radplanbio.org/ptro/instance/28> <http://www.radplanbio.org/ptro/DKFZ000125> "2012-02-17".
+<http://www.radplanbio.org/ptro/instance/28> <http://www.radplanbio.org/ptro/DKFZ000126> "DD".
+<http://www.radplanbio.org/ptro/instance/28> <http://www.radplanbio.org/ptro/DKFZ000127> "2011-09-25".
+<http://www.radplanbio.org/ptro/instance/28> <http://www.radplanbio.org/ptro/DKFZ000010> "28".
+<http://www.radplanbio.org/ptro/instance/28> <http://www.radplanbio.org/ptro/DKFZ000034> "days".
+<http://www.radplanbio.org/ptro/instance/28> <http://www.radplanbio.org/ptro/DKFZ000043> "68-72".
+<http://www.radplanbio.org/ptro/instance/28> <http://www.radplanbio.org/ptro/DKFZ000040> "0".
+<http://www.radplanbio.org/ptro/instance/28> <http://www.radplanbio.org/ptro/DKFZ000128> "Mouse".
+<http://www.radplanbio.org/ptro/instance/28> <http://www.radplanbio.org/ptro/DKFZ000116> "30f6Wo_NaCl+Cispl._54Gy".
+<http://www.radplanbio.org/ptro/instance/28> <http://www.radplanbio.org/ptro/DKFZ000117> " RT 30fx with NaCl + Cisplatin".
+<http://www.radplanbio.org/ptro/instance/28> <http://www.radplanbio.org/ptro/DKFZ000118> "A".
+<http://www.radplanbio.org/ptro/instance/28> <http://www.radplanbio.org/ptro/DKFZ000041> "Nude Mouse".
+<http://www.radplanbio.org/ptro/instance/28> <http://www.w3.org/2000/01/rdf-schema#label> "28".
+<http://www.radplanbio.org/ptro/instance/28> <http://www.radplanbio.org/ptro/DKFZ000009> "N150a028".
+<http://www.radplanbio.org/ptro/instance/28> <http://www.radplanbio.org/ptro/DKFZ000008> "Xeno Nimo Hypox;FaDu".
+<http://www.radplanbio.org/ptro/instance/29> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256>.
+<http://www.radplanbio.org/ptro/instance/29> <http://www.radplanbio.org/ptro/DKFZ000042> "DM".
+<http://www.radplanbio.org/ptro/instance/29> <http://www.radplanbio.org/ptro/DKFZ000115> "N150".
+<http://www.radplanbio.org/ptro/instance/29> <http://www.radplanbio.org/ptro/DKFZ000120> "a".
+<http://www.radplanbio.org/ptro/instance/29> <http://www.radplanbio.org/ptro/DKFZ000121> "1.0".
+<http://www.radplanbio.org/ptro/instance/29> <http://www.radplanbio.org/ptro/DKFZ000122> "2011-12-06".
+<http://www.radplanbio.org/ptro/instance/29> <http://www.radplanbio.org/ptro/DKFZ000123> "2012-04-10".
+<http://www.radplanbio.org/ptro/instance/29> <http://www.radplanbio.org/ptro/DKFZ000124> "2012-01-02".
+<http://www.radplanbio.org/ptro/instance/29> <http://www.radplanbio.org/ptro/DKFZ000125> "2012-02-10".
+<http://www.radplanbio.org/ptro/instance/29> <http://www.radplanbio.org/ptro/DKFZ000126> "DD".
+<http://www.radplanbio.org/ptro/instance/29> <http://www.radplanbio.org/ptro/DKFZ000127> "2011-09-25".
+<http://www.radplanbio.org/ptro/instance/29> <http://www.radplanbio.org/ptro/DKFZ000010> "29".
+<http://www.radplanbio.org/ptro/instance/29> <http://www.radplanbio.org/ptro/DKFZ000034> "days".
+<http://www.radplanbio.org/ptro/instance/29> <http://www.radplanbio.org/ptro/DKFZ000043> "68-72".
+<http://www.radplanbio.org/ptro/instance/29> <http://www.radplanbio.org/ptro/DKFZ000040> "0".
+<http://www.radplanbio.org/ptro/instance/29> <http://www.radplanbio.org/ptro/DKFZ000128> "Mouse".
+<http://www.radplanbio.org/ptro/instance/29> <http://www.radplanbio.org/ptro/DKFZ000116> "30f6Wo_NaCl+Cispl._54Gy".
+<http://www.radplanbio.org/ptro/instance/29> <http://www.radplanbio.org/ptro/DKFZ000117> " RT 30fx with NaCl + Cisplatin".
+<http://www.radplanbio.org/ptro/instance/29> <http://www.radplanbio.org/ptro/DKFZ000118> "A".
+<http://www.radplanbio.org/ptro/instance/29> <http://www.radplanbio.org/ptro/DKFZ000041> "Nude Mouse".
+<http://www.radplanbio.org/ptro/instance/29> <http://www.w3.org/2000/01/rdf-schema#label> "29".
+<http://www.radplanbio.org/ptro/instance/29> <http://www.radplanbio.org/ptro/DKFZ000009> "N150a029".
+<http://www.radplanbio.org/ptro/instance/29> <http://www.radplanbio.org/ptro/DKFZ000008> "Xeno Nimo Hypox;FaDu".
+<http://www.radplanbio.org/ptro/instance/30> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256>.
+<http://www.radplanbio.org/ptro/instance/30> <http://www.radplanbio.org/ptro/DKFZ000042> "DM".
+<http://www.radplanbio.org/ptro/instance/30> <http://www.radplanbio.org/ptro/DKFZ000115> "N150".
+<http://www.radplanbio.org/ptro/instance/30> <http://www.radplanbio.org/ptro/DKFZ000120> "a".
+<http://www.radplanbio.org/ptro/instance/30> <http://www.radplanbio.org/ptro/DKFZ000121> "1.0".
+<http://www.radplanbio.org/ptro/instance/30> <http://www.radplanbio.org/ptro/DKFZ000122> "2011-12-06".
+<http://www.radplanbio.org/ptro/instance/30> <http://www.radplanbio.org/ptro/DKFZ000123> "2012-03-22".
+<http://www.radplanbio.org/ptro/instance/30> <http://www.radplanbio.org/ptro/DKFZ000124> "2011-12-22".
+<http://www.radplanbio.org/ptro/instance/30> <http://www.radplanbio.org/ptro/DKFZ000125> "2012-02-01".
+<http://www.radplanbio.org/ptro/instance/30> <http://www.radplanbio.org/ptro/DKFZ000126> "DD".
+<http://www.radplanbio.org/ptro/instance/30> <http://www.radplanbio.org/ptro/DKFZ000127> "2011-09-25".
+<http://www.radplanbio.org/ptro/instance/30> <http://www.radplanbio.org/ptro/DKFZ000010> "30".
+<http://www.radplanbio.org/ptro/instance/30> <http://www.radplanbio.org/ptro/DKFZ000034> "days".
+<http://www.radplanbio.org/ptro/instance/30> <http://www.radplanbio.org/ptro/DKFZ000043> "68-72".
+<http://www.radplanbio.org/ptro/instance/30> <http://www.radplanbio.org/ptro/DKFZ000040> "0".
+<http://www.radplanbio.org/ptro/instance/30> <http://www.radplanbio.org/ptro/DKFZ000128> "Mouse".
+<http://www.radplanbio.org/ptro/instance/30> <http://www.radplanbio.org/ptro/DKFZ000116> "30f6Wo_NaCl+Cispl._54Gy".
+<http://www.radplanbio.org/ptro/instance/30> <http://www.radplanbio.org/ptro/DKFZ000117> " RT 30fx with NaCl + Cisplatin".
+<http://www.radplanbio.org/ptro/instance/30> <http://www.radplanbio.org/ptro/DKFZ000118> "A".
+<http://www.radplanbio.org/ptro/instance/30> <http://www.radplanbio.org/ptro/DKFZ000041> "Nude Mouse".
+<http://www.radplanbio.org/ptro/instance/30> <http://www.w3.org/2000/01/rdf-schema#label> "30".
+<http://www.radplanbio.org/ptro/instance/30> <http://www.radplanbio.org/ptro/DKFZ000009> "N150a030".
+<http://www.radplanbio.org/ptro/instance/30> <http://www.radplanbio.org/ptro/DKFZ000008> "Xeno Nimo Hypox;FaDu".
+<http://www.radplanbio.org/ptro/instance/53> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256>.
+<http://www.radplanbio.org/ptro/instance/53> <http://www.radplanbio.org/ptro/DKFZ000042> "DM".
+<http://www.radplanbio.org/ptro/instance/53> <http://www.radplanbio.org/ptro/DKFZ000115> "N150".
+<http://www.radplanbio.org/ptro/instance/53> <http://www.radplanbio.org/ptro/DKFZ000120> "b".
+<http://www.radplanbio.org/ptro/instance/53> <http://www.radplanbio.org/ptro/DKFZ000121> "1.0".
+<http://www.radplanbio.org/ptro/instance/53> <http://www.radplanbio.org/ptro/DKFZ000122> "2012-01-31".
+<http://www.radplanbio.org/ptro/instance/53> <http://www.radplanbio.org/ptro/DKFZ000123> "2012-09-06".
+<http://www.radplanbio.org/ptro/instance/53> <http://www.radplanbio.org/ptro/DKFZ000124> "2012-02-27".
+<http://www.radplanbio.org/ptro/instance/53> <http://www.radplanbio.org/ptro/DKFZ000125> "2012-04-06".
+<http://www.radplanbio.org/ptro/instance/53> <http://www.radplanbio.org/ptro/DKFZ000126> "DD".
+<http://www.radplanbio.org/ptro/instance/53> <http://www.radplanbio.org/ptro/DKFZ000127> "2011-11-19".
+<http://www.radplanbio.org/ptro/instance/53> <http://www.radplanbio.org/ptro/DKFZ000010> "53".
+<http://www.radplanbio.org/ptro/instance/53> <http://www.radplanbio.org/ptro/DKFZ000034> "days".
+<http://www.radplanbio.org/ptro/instance/53> <http://www.radplanbio.org/ptro/DKFZ000043> "72-73".
+<http://www.radplanbio.org/ptro/instance/53> <http://www.radplanbio.org/ptro/DKFZ000040> "0".
+<http://www.radplanbio.org/ptro/instance/53> <http://www.radplanbio.org/ptro/DKFZ000128> "Mouse".
+<http://www.radplanbio.org/ptro/instance/53> <http://www.radplanbio.org/ptro/DKFZ000116> "30f6Wo_NaCl+Cispl._54Gy".
+<http://www.radplanbio.org/ptro/instance/53> <http://www.radplanbio.org/ptro/DKFZ000117> " RT 30fx with NaCl + Cisplatin".
+<http://www.radplanbio.org/ptro/instance/53> <http://www.radplanbio.org/ptro/DKFZ000118> "A".
+<http://www.radplanbio.org/ptro/instance/53> <http://www.radplanbio.org/ptro/DKFZ000041> "Nude Mouse".
+<http://www.radplanbio.org/ptro/instance/53> <http://www.w3.org/2000/01/rdf-schema#label> "53".
+<http://www.radplanbio.org/ptro/instance/53> <http://www.radplanbio.org/ptro/DKFZ000009> "N150b053".
+<http://www.radplanbio.org/ptro/instance/53> <http://www.radplanbio.org/ptro/DKFZ000008> "Xeno Nimo Hypox;FaDu".
+<http://www.radplanbio.org/ptro/instance/56> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256>.
+<http://www.radplanbio.org/ptro/instance/56> <http://www.radplanbio.org/ptro/DKFZ000042> "DM".
+<http://www.radplanbio.org/ptro/instance/56> <http://www.radplanbio.org/ptro/DKFZ000115> "N150".
+<http://www.radplanbio.org/ptro/instance/56> <http://www.radplanbio.org/ptro/DKFZ000120> "b".
+<http://www.radplanbio.org/ptro/instance/56> <http://www.radplanbio.org/ptro/DKFZ000121> "1.0".
+<http://www.radplanbio.org/ptro/instance/56> <http://www.radplanbio.org/ptro/DKFZ000122> "2012-01-31".
+<http://www.radplanbio.org/ptro/instance/56> <http://www.radplanbio.org/ptro/DKFZ000123> "2012-09-06".
+<http://www.radplanbio.org/ptro/instance/56> <http://www.radplanbio.org/ptro/DKFZ000124> "2012-03-01".
+<http://www.radplanbio.org/ptro/instance/56> <http://www.radplanbio.org/ptro/DKFZ000125> "2012-04-11".
+<http://www.radplanbio.org/ptro/instance/56> <http://www.radplanbio.org/ptro/DKFZ000126> "DD".
+<http://www.radplanbio.org/ptro/instance/56> <http://www.radplanbio.org/ptro/DKFZ000127> "2011-11-19".
+<http://www.radplanbio.org/ptro/instance/56> <http://www.radplanbio.org/ptro/DKFZ000010> "56".
+<http://www.radplanbio.org/ptro/instance/56> <http://www.radplanbio.org/ptro/DKFZ000034> "days".
+<http://www.radplanbio.org/ptro/instance/56> <http://www.radplanbio.org/ptro/DKFZ000043> "72-73".
+<http://www.radplanbio.org/ptro/instance/56> <http://www.radplanbio.org/ptro/DKFZ000040> "0".
+<http://www.radplanbio.org/ptro/instance/56> <http://www.radplanbio.org/ptro/DKFZ000128> "Mouse".
+<http://www.radplanbio.org/ptro/instance/56> <http://www.radplanbio.org/ptro/DKFZ000116> "30f6Wo_NaCl+Cispl._54Gy".
+<http://www.radplanbio.org/ptro/instance/56> <http://www.radplanbio.org/ptro/DKFZ000117> " RT 30fx with NaCl + Cisplatin".
+<http://www.radplanbio.org/ptro/instance/56> <http://www.radplanbio.org/ptro/DKFZ000118> "A".
+<http://www.radplanbio.org/ptro/instance/56> <http://www.radplanbio.org/ptro/DKFZ000041> "Nude Mouse".
+<http://www.radplanbio.org/ptro/instance/56> <http://www.w3.org/2000/01/rdf-schema#label> "56".
+<http://www.radplanbio.org/ptro/instance/56> <http://www.radplanbio.org/ptro/DKFZ000009> "N150b056".
+<http://www.radplanbio.org/ptro/instance/56> <http://www.radplanbio.org/ptro/DKFZ000008> "Xeno Nimo Hypox;FaDu".
+<http://www.radplanbio.org/ptro/instance/58> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256>.
+<http://www.radplanbio.org/ptro/instance/58> <http://www.radplanbio.org/ptro/DKFZ000042> "DM".
+<http://www.radplanbio.org/ptro/instance/58> <http://www.radplanbio.org/ptro/DKFZ000115> "N150".
+<http://www.radplanbio.org/ptro/instance/58> <http://www.radplanbio.org/ptro/DKFZ000120> "b".
+<http://www.radplanbio.org/ptro/instance/58> <http://www.radplanbio.org/ptro/DKFZ000121> "1.0".
+<http://www.radplanbio.org/ptro/instance/58> <http://www.radplanbio.org/ptro/DKFZ000122> "2012-01-31".
+<http://www.radplanbio.org/ptro/instance/58> <http://www.radplanbio.org/ptro/DKFZ000123> "2012-04-30".
+<http://www.radplanbio.org/ptro/instance/58> <http://www.radplanbio.org/ptro/DKFZ000124> "2012-02-16".
+<http://www.radplanbio.org/ptro/instance/58> <http://www.radplanbio.org/ptro/DKFZ000125> "2012-03-28".
+<http://www.radplanbio.org/ptro/instance/58> <http://www.radplanbio.org/ptro/DKFZ000126> "DD".
+<http://www.radplanbio.org/ptro/instance/58> <http://www.radplanbio.org/ptro/DKFZ000127> "2011-11-19".
+<http://www.radplanbio.org/ptro/instance/58> <http://www.radplanbio.org/ptro/DKFZ000010> "58".
+<http://www.radplanbio.org/ptro/instance/58> <http://www.radplanbio.org/ptro/DKFZ000034> "days".
+<http://www.radplanbio.org/ptro/instance/58> <http://www.radplanbio.org/ptro/DKFZ000043> "72-73".
+<http://www.radplanbio.org/ptro/instance/58> <http://www.radplanbio.org/ptro/DKFZ000040> "0".
+<http://www.radplanbio.org/ptro/instance/58> <http://www.radplanbio.org/ptro/DKFZ000128> "Mouse".
+<http://www.radplanbio.org/ptro/instance/58> <http://www.radplanbio.org/ptro/DKFZ000116> "30f6Wo_NaCl+Cispl._54Gy".
+<http://www.radplanbio.org/ptro/instance/58> <http://www.radplanbio.org/ptro/DKFZ000117> " RT 30fx with NaCl + Cisplatin".
+<http://www.radplanbio.org/ptro/instance/58> <http://www.radplanbio.org/ptro/DKFZ000118> "A".
+<http://www.radplanbio.org/ptro/instance/58> <http://www.radplanbio.org/ptro/DKFZ000041> "Nude Mouse".
+<http://www.radplanbio.org/ptro/instance/58> <http://www.w3.org/2000/01/rdf-schema#label> "58".
+<http://www.radplanbio.org/ptro/instance/58> <http://www.radplanbio.org/ptro/DKFZ000009> "N150b058".
+<http://www.radplanbio.org/ptro/instance/58> <http://www.radplanbio.org/ptro/DKFZ000008> "Xeno Nimo Hypox;FaDu".
+<http://www.radplanbio.org/ptro/instance/69> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256>.
+<http://www.radplanbio.org/ptro/instance/69> <http://www.radplanbio.org/ptro/DKFZ000042> "DM".
+<http://www.radplanbio.org/ptro/instance/69> <http://www.radplanbio.org/ptro/DKFZ000115> "N150".
+<http://www.radplanbio.org/ptro/instance/69> <http://www.radplanbio.org/ptro/DKFZ000120> "b".
+<http://www.radplanbio.org/ptro/instance/69> <http://www.radplanbio.org/ptro/DKFZ000121> "1.0".
+<http://www.radplanbio.org/ptro/instance/69> <http://www.radplanbio.org/ptro/DKFZ000122> "2012-01-31".
+<http://www.radplanbio.org/ptro/instance/69> <http://www.radplanbio.org/ptro/DKFZ000123> "2012-06-22".
+<http://www.radplanbio.org/ptro/instance/69> <http://www.radplanbio.org/ptro/DKFZ000124> "2012-02-16".
+<http://www.radplanbio.org/ptro/instance/69> <http://www.radplanbio.org/ptro/DKFZ000125> "2012-03-28".
+<http://www.radplanbio.org/ptro/instance/69> <http://www.radplanbio.org/ptro/DKFZ000126> "DD".
+<http://www.radplanbio.org/ptro/instance/69> <http://www.radplanbio.org/ptro/DKFZ000127> "2011-11-20".
+<http://www.radplanbio.org/ptro/instance/69> <http://www.radplanbio.org/ptro/DKFZ000010> "69".
+<http://www.radplanbio.org/ptro/instance/69> <http://www.radplanbio.org/ptro/DKFZ000034> "days".
+<http://www.radplanbio.org/ptro/instance/69> <http://www.radplanbio.org/ptro/DKFZ000043> "71-72".
+<http://www.radplanbio.org/ptro/instance/69> <http://www.radplanbio.org/ptro/DKFZ000040> "0".
+<http://www.radplanbio.org/ptro/instance/69> <http://www.radplanbio.org/ptro/DKFZ000128> "Mouse".
+<http://www.radplanbio.org/ptro/instance/69> <http://www.radplanbio.org/ptro/DKFZ000116> "30f6Wo_NaCl+Cispl._54Gy".
+<http://www.radplanbio.org/ptro/instance/69> <http://www.radplanbio.org/ptro/DKFZ000117> " RT 30fx with NaCl + Cisplatin".
+<http://www.radplanbio.org/ptro/instance/69> <http://www.radplanbio.org/ptro/DKFZ000118> "A".
+<http://www.radplanbio.org/ptro/instance/69> <http://www.radplanbio.org/ptro/DKFZ000041> "Nude Mouse".
+<http://www.radplanbio.org/ptro/instance/69> <http://www.w3.org/2000/01/rdf-schema#label> "69".
+<http://www.radplanbio.org/ptro/instance/69> <http://www.radplanbio.org/ptro/DKFZ000009> "N150b069".
+<http://www.radplanbio.org/ptro/instance/69> <http://www.radplanbio.org/ptro/DKFZ000008> "Xeno Nimo Hypox;FaDu".
+<http://www.radplanbio.org/ptro/instance/70> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256>.
+<http://www.radplanbio.org/ptro/instance/70> <http://www.radplanbio.org/ptro/DKFZ000042> "DM".
+<http://www.radplanbio.org/ptro/instance/70> <http://www.radplanbio.org/ptro/DKFZ000115> "N150".
+<http://www.radplanbio.org/ptro/instance/70> <http://www.radplanbio.org/ptro/DKFZ000120> "b".
+<http://www.radplanbio.org/ptro/instance/70> <http://www.radplanbio.org/ptro/DKFZ000121> "1.0".
+<http://www.radplanbio.org/ptro/instance/70> <http://www.radplanbio.org/ptro/DKFZ000122> "2012-01-31".
+<http://www.radplanbio.org/ptro/instance/70> <http://www.radplanbio.org/ptro/DKFZ000123> "2012-06-14".
+<http://www.radplanbio.org/ptro/instance/70> <http://www.radplanbio.org/ptro/DKFZ000124> "2012-02-20".
+<http://www.radplanbio.org/ptro/instance/70> <http://www.radplanbio.org/ptro/DKFZ000125> "2012-03-30".
+<http://www.radplanbio.org/ptro/instance/70> <http://www.radplanbio.org/ptro/DKFZ000126> "DD".
+<http://www.radplanbio.org/ptro/instance/70> <http://www.radplanbio.org/ptro/DKFZ000127> "2011-11-20".
+<http://www.radplanbio.org/ptro/instance/70> <http://www.radplanbio.org/ptro/DKFZ000010> "70".
+<http://www.radplanbio.org/ptro/instance/70> <http://www.radplanbio.org/ptro/DKFZ000034> "days".
+<http://www.radplanbio.org/ptro/instance/70> <http://www.radplanbio.org/ptro/DKFZ000043> "71-72".
+<http://www.radplanbio.org/ptro/instance/70> <http://www.radplanbio.org/ptro/DKFZ000040> "0".
+<http://www.radplanbio.org/ptro/instance/70> <http://www.radplanbio.org/ptro/DKFZ000128> "Mouse".
+<http://www.radplanbio.org/ptro/instance/70> <http://www.radplanbio.org/ptro/DKFZ000116> "30f6Wo_NaCl+Cispl._54Gy".
+<http://www.radplanbio.org/ptro/instance/70> <http://www.radplanbio.org/ptro/DKFZ000117> " RT 30fx with NaCl + Cisplatin".
+<http://www.radplanbio.org/ptro/instance/70> <http://www.radplanbio.org/ptro/DKFZ000118> "A".
+<http://www.radplanbio.org/ptro/instance/70> <http://www.radplanbio.org/ptro/DKFZ000041> "Nude Mouse".
+<http://www.radplanbio.org/ptro/instance/70> <http://www.w3.org/2000/01/rdf-schema#label> "70".
+<http://www.radplanbio.org/ptro/instance/70> <http://www.radplanbio.org/ptro/DKFZ000009> "N150b070".
+<http://www.radplanbio.org/ptro/instance/70> <http://www.radplanbio.org/ptro/DKFZ000008> "Xeno Nimo Hypox;FaDu".
+<http://www.radplanbio.org/ptro/instance/71> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256>.
+<http://www.radplanbio.org/ptro/instance/71> <http://www.radplanbio.org/ptro/DKFZ000042> "DM".
+<http://www.radplanbio.org/ptro/instance/71> <http://www.radplanbio.org/ptro/DKFZ000115> "N150".
+<http://www.radplanbio.org/ptro/instance/71> <http://www.radplanbio.org/ptro/DKFZ000120> "b".
+<http://www.radplanbio.org/ptro/instance/71> <http://www.radplanbio.org/ptro/DKFZ000121> "1.0".
+<http://www.radplanbio.org/ptro/instance/71> <http://www.radplanbio.org/ptro/DKFZ000122> "2012-01-31".
+<http://www.radplanbio.org/ptro/instance/71> <http://www.radplanbio.org/ptro/DKFZ000123> "2012-06-07".
+<http://www.radplanbio.org/ptro/instance/71> <http://www.radplanbio.org/ptro/DKFZ000124> "2012-02-23".
+<http://www.radplanbio.org/ptro/instance/71> <http://www.radplanbio.org/ptro/DKFZ000125> "2012-04-04".
+<http://www.radplanbio.org/ptro/instance/71> <http://www.radplanbio.org/ptro/DKFZ000126> "DD".
+<http://www.radplanbio.org/ptro/instance/71> <http://www.radplanbio.org/ptro/DKFZ000127> "2011-11-22".
+<http://www.radplanbio.org/ptro/instance/71> <http://www.radplanbio.org/ptro/DKFZ000010> "71".
+<http://www.radplanbio.org/ptro/instance/71> <http://www.radplanbio.org/ptro/DKFZ000034> "days".
+<http://www.radplanbio.org/ptro/instance/71> <http://www.radplanbio.org/ptro/DKFZ000043> "67-70".
+<http://www.radplanbio.org/ptro/instance/71> <http://www.radplanbio.org/ptro/DKFZ000040> "0".
+<http://www.radplanbio.org/ptro/instance/71> <http://www.radplanbio.org/ptro/DKFZ000128> "Mouse".
+<http://www.radplanbio.org/ptro/instance/71> <http://www.radplanbio.org/ptro/DKFZ000116> "30f6Wo_NaCl+Cispl._54Gy".
+<http://www.radplanbio.org/ptro/instance/71> <http://www.radplanbio.org/ptro/DKFZ000117> " RT 30fx with NaCl + Cisplatin".
+<http://www.radplanbio.org/ptro/instance/71> <http://www.radplanbio.org/ptro/DKFZ000118> "A".
+<http://www.radplanbio.org/ptro/instance/71> <http://www.radplanbio.org/ptro/DKFZ000041> "Nude Mouse".
+<http://www.radplanbio.org/ptro/instance/71> <http://www.w3.org/2000/01/rdf-schema#label> "71".
+<http://www.radplanbio.org/ptro/instance/71> <http://www.radplanbio.org/ptro/DKFZ000009> "N150b071".
+<http://www.radplanbio.org/ptro/instance/71> <http://www.radplanbio.org/ptro/DKFZ000008> "Xeno Nimo Hypox;FaDu".
+<http://www.radplanbio.org/ptro/instance/72> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256>.
+<http://www.radplanbio.org/ptro/instance/72> <http://www.radplanbio.org/ptro/DKFZ000042> "DM".
+<http://www.radplanbio.org/ptro/instance/72> <http://www.radplanbio.org/ptro/DKFZ000115> "N150".
+<http://www.radplanbio.org/ptro/instance/72> <http://www.radplanbio.org/ptro/DKFZ000120> "b".
+<http://www.radplanbio.org/ptro/instance/72> <http://www.radplanbio.org/ptro/DKFZ000121> "1.0".
+<http://www.radplanbio.org/ptro/instance/72> <http://www.radplanbio.org/ptro/DKFZ000122> "2012-01-31".
+<http://www.radplanbio.org/ptro/instance/72> <http://www.radplanbio.org/ptro/DKFZ000123> "2012-09-06".
+<http://www.radplanbio.org/ptro/instance/72> <http://www.radplanbio.org/ptro/DKFZ000124> "2012-02-27".
+<http://www.radplanbio.org/ptro/instance/72> <http://www.radplanbio.org/ptro/DKFZ000125> "2012-04-06".
+<http://www.radplanbio.org/ptro/instance/72> <http://www.radplanbio.org/ptro/DKFZ000126> "DD".
+<http://www.radplanbio.org/ptro/instance/72> <http://www.radplanbio.org/ptro/DKFZ000127> "2011-11-22".
+<http://www.radplanbio.org/ptro/instance/72> <http://www.radplanbio.org/ptro/DKFZ000010> "72".
+<http://www.radplanbio.org/ptro/instance/72> <http://www.radplanbio.org/ptro/DKFZ000034> "days".
+<http://www.radplanbio.org/ptro/instance/72> <http://www.radplanbio.org/ptro/DKFZ000043> "67-70".
+<http://www.radplanbio.org/ptro/instance/72> <http://www.radplanbio.org/ptro/DKFZ000040> "0".
+<http://www.radplanbio.org/ptro/instance/72> <http://www.radplanbio.org/ptro/DKFZ000128> "Mouse".
+<http://www.radplanbio.org/ptro/instance/72> <http://www.radplanbio.org/ptro/DKFZ000116> "30f6Wo_NaCl+Cispl._54Gy".
+<http://www.radplanbio.org/ptro/instance/72> <http://www.radplanbio.org/ptro/DKFZ000117> " RT 30fx with NaCl + Cisplatin".
+<http://www.radplanbio.org/ptro/instance/72> <http://www.radplanbio.org/ptro/DKFZ000118> "A".
+<http://www.radplanbio.org/ptro/instance/72> <http://www.radplanbio.org/ptro/DKFZ000041> "Nude Mouse".
+<http://www.radplanbio.org/ptro/instance/72> <http://www.w3.org/2000/01/rdf-schema#label> "72".
+<http://www.radplanbio.org/ptro/instance/72> <http://www.radplanbio.org/ptro/DKFZ000009> "N150b072".
+<http://www.radplanbio.org/ptro/instance/72> <http://www.radplanbio.org/ptro/DKFZ000008> "Xeno Nimo Hypox;FaDu".
+<http://www.radplanbio.org/ptro/instance/87> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256>.
+<http://www.radplanbio.org/ptro/instance/87> <http://www.radplanbio.org/ptro/DKFZ000042> "DM".
+<http://www.radplanbio.org/ptro/instance/87> <http://www.radplanbio.org/ptro/DKFZ000115> "N150".
+<http://www.radplanbio.org/ptro/instance/87> <http://www.radplanbio.org/ptro/DKFZ000120> "b".
+<http://www.radplanbio.org/ptro/instance/87> <http://www.radplanbio.org/ptro/DKFZ000121> "1.0".
+<http://www.radplanbio.org/ptro/instance/87> <http://www.radplanbio.org/ptro/DKFZ000122> "2012-01-31".
+<http://www.radplanbio.org/ptro/instance/87> <http://www.radplanbio.org/ptro/DKFZ000123> "2012-09-06".
+<http://www.radplanbio.org/ptro/instance/87> <http://www.radplanbio.org/ptro/DKFZ000124> "2012-02-23".
+<http://www.radplanbio.org/ptro/instance/87> <http://www.radplanbio.org/ptro/DKFZ000125> "2012-04-04".
+<http://www.radplanbio.org/ptro/instance/87> <http://www.radplanbio.org/ptro/DKFZ000126> "DD".
+<http://www.radplanbio.org/ptro/instance/87> <http://www.radplanbio.org/ptro/DKFZ000127> "2011-11-13".
+<http://www.radplanbio.org/ptro/instance/87> <http://www.radplanbio.org/ptro/DKFZ000010> "87".
+<http://www.radplanbio.org/ptro/instance/87> <http://www.radplanbio.org/ptro/DKFZ000034> "days".
+<http://www.radplanbio.org/ptro/instance/87> <http://www.radplanbio.org/ptro/DKFZ000043> "75-79".
+<http://www.radplanbio.org/ptro/instance/87> <http://www.radplanbio.org/ptro/DKFZ000040> "1".
+<http://www.radplanbio.org/ptro/instance/87> <http://www.radplanbio.org/ptro/DKFZ000128> "Mouse".
+<http://www.radplanbio.org/ptro/instance/87> <http://www.radplanbio.org/ptro/DKFZ000116> "30f6Wo_NaCl+Cispl._54Gy".
+<http://www.radplanbio.org/ptro/instance/87> <http://www.radplanbio.org/ptro/DKFZ000117> " RT 30fx with NaCl + Cisplatin".
+<http://www.radplanbio.org/ptro/instance/87> <http://www.radplanbio.org/ptro/DKFZ000118> "A".
+<http://www.radplanbio.org/ptro/instance/87> <http://www.radplanbio.org/ptro/DKFZ000041> "Nude Mouse".
+<http://www.radplanbio.org/ptro/instance/87> <http://www.w3.org/2000/01/rdf-schema#label> "87".
+<http://www.radplanbio.org/ptro/instance/87> <http://www.radplanbio.org/ptro/DKFZ000009> "N150b087".
+<http://www.radplanbio.org/ptro/instance/87> <http://www.radplanbio.org/ptro/DKFZ000008> "Xeno Nimo Hypox;FaDu".
+<http://www.radplanbio.org/ptro/instance/88> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256>.
+<http://www.radplanbio.org/ptro/instance/88> <http://www.radplanbio.org/ptro/DKFZ000042> "DM".
+<http://www.radplanbio.org/ptro/instance/88> <http://www.radplanbio.org/ptro/DKFZ000115> "N150".
+<http://www.radplanbio.org/ptro/instance/88> <http://www.radplanbio.org/ptro/DKFZ000120> "b".
+<http://www.radplanbio.org/ptro/instance/88> <http://www.radplanbio.org/ptro/DKFZ000121> "1.0".
+<http://www.radplanbio.org/ptro/instance/88> <http://www.radplanbio.org/ptro/DKFZ000122> "2012-01-31".
+<http://www.radplanbio.org/ptro/instance/88> <http://www.radplanbio.org/ptro/DKFZ000123> "2012-05-21".
+<http://www.radplanbio.org/ptro/instance/88> <http://www.radplanbio.org/ptro/DKFZ000124> "2012-02-27".
+<http://www.radplanbio.org/ptro/instance/88> <http://www.radplanbio.org/ptro/DKFZ000125> "2012-04-06".
+<http://www.radplanbio.org/ptro/instance/88> <http://www.radplanbio.org/ptro/DKFZ000126> "DD".
+<http://www.radplanbio.org/ptro/instance/88> <http://www.radplanbio.org/ptro/DKFZ000127> "2011-11-13".
+<http://www.radplanbio.org/ptro/instance/88> <http://www.radplanbio.org/ptro/DKFZ000010> "88".
+<http://www.radplanbio.org/ptro/instance/88> <http://www.radplanbio.org/ptro/DKFZ000034> "days".
+<http://www.radplanbio.org/ptro/instance/88> <http://www.radplanbio.org/ptro/DKFZ000043> "75-79".
+<http://www.radplanbio.org/ptro/instance/88> <http://www.radplanbio.org/ptro/DKFZ000040> "1".
+<http://www.radplanbio.org/ptro/instance/88> <http://www.radplanbio.org/ptro/DKFZ000128> "Mouse".
+<http://www.radplanbio.org/ptro/instance/88> <http://www.radplanbio.org/ptro/DKFZ000116> "30f6Wo_NaCl+Cispl._54Gy".
+<http://www.radplanbio.org/ptro/instance/88> <http://www.radplanbio.org/ptro/DKFZ000117> " RT 30fx with NaCl + Cisplatin".
+<http://www.radplanbio.org/ptro/instance/88> <http://www.radplanbio.org/ptro/DKFZ000118> "A".
+<http://www.radplanbio.org/ptro/instance/88> <http://www.radplanbio.org/ptro/DKFZ000041> "Nude Mouse".
+<http://www.radplanbio.org/ptro/instance/88> <http://www.w3.org/2000/01/rdf-schema#label> "88".
+<http://www.radplanbio.org/ptro/instance/88> <http://www.radplanbio.org/ptro/DKFZ000009> "N150b088".
+<http://www.radplanbio.org/ptro/instance/88> <http://www.radplanbio.org/ptro/DKFZ000008> "Xeno Nimo Hypox;FaDu".
+<http://www.radplanbio.org/ptro/instance/89> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256>.
+<http://www.radplanbio.org/ptro/instance/89> <http://www.radplanbio.org/ptro/DKFZ000042> "DM".
+<http://www.radplanbio.org/ptro/instance/89> <http://www.radplanbio.org/ptro/DKFZ000115> "N150".
+<http://www.radplanbio.org/ptro/instance/89> <http://www.radplanbio.org/ptro/DKFZ000120> "b".
+<http://www.radplanbio.org/ptro/instance/89> <http://www.radplanbio.org/ptro/DKFZ000121> "1.0".
+<http://www.radplanbio.org/ptro/instance/89> <http://www.radplanbio.org/ptro/DKFZ000122> "2012-01-31".
+<http://www.radplanbio.org/ptro/instance/89> <http://www.radplanbio.org/ptro/DKFZ000123> "2012-09-06".
+<http://www.radplanbio.org/ptro/instance/89> <http://www.radplanbio.org/ptro/DKFZ000124> "2012-02-27".
+<http://www.radplanbio.org/ptro/instance/89> <http://www.radplanbio.org/ptro/DKFZ000125> "2012-04-06".
+<http://www.radplanbio.org/ptro/instance/89> <http://www.radplanbio.org/ptro/DKFZ000126> "DD".
+<http://www.radplanbio.org/ptro/instance/89> <http://www.radplanbio.org/ptro/DKFZ000127> "2011-11-13".
+<http://www.radplanbio.org/ptro/instance/89> <http://www.radplanbio.org/ptro/DKFZ000010> "89".
+<http://www.radplanbio.org/ptro/instance/89> <http://www.radplanbio.org/ptro/DKFZ000034> "days".
+<http://www.radplanbio.org/ptro/instance/89> <http://www.radplanbio.org/ptro/DKFZ000043> "75-79".
+<http://www.radplanbio.org/ptro/instance/89> <http://www.radplanbio.org/ptro/DKFZ000040> "1".
+<http://www.radplanbio.org/ptro/instance/89> <http://www.radplanbio.org/ptro/DKFZ000128> "Mouse".
+<http://www.radplanbio.org/ptro/instance/89> <http://www.radplanbio.org/ptro/DKFZ000116> "30f6Wo_NaCl+Cispl._54Gy".
+<http://www.radplanbio.org/ptro/instance/89> <http://www.radplanbio.org/ptro/DKFZ000117> " RT 30fx with NaCl + Cisplatin".
+<http://www.radplanbio.org/ptro/instance/89> <http://www.radplanbio.org/ptro/DKFZ000118> "A".
+<http://www.radplanbio.org/ptro/instance/89> <http://www.radplanbio.org/ptro/DKFZ000041> "Nude Mouse".
+<http://www.radplanbio.org/ptro/instance/89> <http://www.w3.org/2000/01/rdf-schema#label> "89".
+<http://www.radplanbio.org/ptro/instance/89> <http://www.radplanbio.org/ptro/DKFZ000009> "N150b089".
+<http://www.radplanbio.org/ptro/instance/89> <http://www.radplanbio.org/ptro/DKFZ000008> "Xeno Nimo Hypox;FaDu".
+<http://www.radplanbio.org/ptro/instance/90> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256>.
+<http://www.radplanbio.org/ptro/instance/90> <http://www.radplanbio.org/ptro/DKFZ000042> "DM".
+<http://www.radplanbio.org/ptro/instance/90> <http://www.radplanbio.org/ptro/DKFZ000115> "N150".
+<http://www.radplanbio.org/ptro/instance/90> <http://www.radplanbio.org/ptro/DKFZ000120> "b".
+<http://www.radplanbio.org/ptro/instance/90> <http://www.radplanbio.org/ptro/DKFZ000121> "1.0".
+<http://www.radplanbio.org/ptro/instance/90> <http://www.radplanbio.org/ptro/DKFZ000122> "2012-01-31".
+<http://www.radplanbio.org/ptro/instance/90> <http://www.radplanbio.org/ptro/DKFZ000123> "2012-05-07".
+<http://www.radplanbio.org/ptro/instance/90> <http://www.radplanbio.org/ptro/DKFZ000124> "2012-02-27".
+<http://www.radplanbio.org/ptro/instance/90> <http://www.radplanbio.org/ptro/DKFZ000125> "2012-04-06".
+<http://www.radplanbio.org/ptro/instance/90> <http://www.radplanbio.org/ptro/DKFZ000126> "DD".
+<http://www.radplanbio.org/ptro/instance/90> <http://www.radplanbio.org/ptro/DKFZ000127> "2011-11-13".
+<http://www.radplanbio.org/ptro/instance/90> <http://www.radplanbio.org/ptro/DKFZ000010> "90".
+<http://www.radplanbio.org/ptro/instance/90> <http://www.radplanbio.org/ptro/DKFZ000034> "days".
+<http://www.radplanbio.org/ptro/instance/90> <http://www.radplanbio.org/ptro/DKFZ000043> "75-79".
+<http://www.radplanbio.org/ptro/instance/90> <http://www.radplanbio.org/ptro/DKFZ000040> "1".
+<http://www.radplanbio.org/ptro/instance/90> <http://www.radplanbio.org/ptro/DKFZ000128> "Mouse".
+<http://www.radplanbio.org/ptro/instance/90> <http://www.radplanbio.org/ptro/DKFZ000116> "30f6Wo_NaCl+Cispl._54Gy".
+<http://www.radplanbio.org/ptro/instance/90> <http://www.radplanbio.org/ptro/DKFZ000117> " RT 30fx with NaCl + Cisplatin".
+<http://www.radplanbio.org/ptro/instance/90> <http://www.radplanbio.org/ptro/DKFZ000118> "A".
+<http://www.radplanbio.org/ptro/instance/90> <http://www.radplanbio.org/ptro/DKFZ000041> "Nude Mouse".
+<http://www.radplanbio.org/ptro/instance/90> <http://www.w3.org/2000/01/rdf-schema#label> "90".
+<http://www.radplanbio.org/ptro/instance/90> <http://www.radplanbio.org/ptro/DKFZ000009> "N150b090".
+<http://www.radplanbio.org/ptro/instance/90> <http://www.radplanbio.org/ptro/DKFZ000008> "Xeno Nimo Hypox;FaDu".
+<http://www.radplanbio.org/ptro/instance/120> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256>.
+<http://www.radplanbio.org/ptro/instance/120> <http://www.radplanbio.org/ptro/DKFZ000042> "DM".
+<http://www.radplanbio.org/ptro/instance/120> <http://www.radplanbio.org/ptro/DKFZ000115> "N150".
+<http://www.radplanbio.org/ptro/instance/120> <http://www.radplanbio.org/ptro/DKFZ000120> "b".
+<http://www.radplanbio.org/ptro/instance/120> <http://www.radplanbio.org/ptro/DKFZ000121> "1.0".
+<http://www.radplanbio.org/ptro/instance/120> <http://www.radplanbio.org/ptro/DKFZ000122> "2012-01-31".
+<http://www.radplanbio.org/ptro/instance/120> <http://www.radplanbio.org/ptro/DKFZ000123> "2012-09-06".
+<http://www.radplanbio.org/ptro/instance/120> <http://www.radplanbio.org/ptro/DKFZ000124> "2012-03-05".
+<http://www.radplanbio.org/ptro/instance/120> <http://www.radplanbio.org/ptro/DKFZ000125> "2012-04-13".
+<http://www.radplanbio.org/ptro/instance/120> <http://www.radplanbio.org/ptro/DKFZ000126> "DD".
+<http://www.radplanbio.org/ptro/instance/120> <http://www.radplanbio.org/ptro/DKFZ000127> "2011-11-18".
+<http://www.radplanbio.org/ptro/instance/120> <http://www.radplanbio.org/ptro/DKFZ000010> "120".
+<http://www.radplanbio.org/ptro/instance/120> <http://www.radplanbio.org/ptro/DKFZ000033> "74.0".
+<http://www.radplanbio.org/ptro/instance/120> <http://www.radplanbio.org/ptro/DKFZ000034> "days".
+<http://www.radplanbio.org/ptro/instance/120> <http://www.radplanbio.org/ptro/DKFZ000040> "1".
+<http://www.radplanbio.org/ptro/instance/120> <http://www.radplanbio.org/ptro/DKFZ000128> "Mouse".
+<http://www.radplanbio.org/ptro/instance/120> <http://www.radplanbio.org/ptro/DKFZ000116> "30f6Wo_NaCl+Cispl._54Gy".
+<http://www.radplanbio.org/ptro/instance/120> <http://www.radplanbio.org/ptro/DKFZ000117> " RT 30fx with NaCl + Cisplatin".
+<http://www.radplanbio.org/ptro/instance/120> <http://www.radplanbio.org/ptro/DKFZ000118> "A".
+<http://www.radplanbio.org/ptro/instance/120> <http://www.radplanbio.org/ptro/DKFZ000041> "Nude Mouse".
+<http://www.radplanbio.org/ptro/instance/120> <http://www.w3.org/2000/01/rdf-schema#label> "120".
+<http://www.radplanbio.org/ptro/instance/120> <http://www.radplanbio.org/ptro/DKFZ000009> "N150b120".
+<http://www.radplanbio.org/ptro/instance/120> <http://www.radplanbio.org/ptro/DKFZ000008> "Xeno Nimo Hypox;FaDu".
+<http://www.radplanbio.org/ptro/instance/121> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256>.
+<http://www.radplanbio.org/ptro/instance/121> <http://www.radplanbio.org/ptro/DKFZ000042> "DM".
+<http://www.radplanbio.org/ptro/instance/121> <http://www.radplanbio.org/ptro/DKFZ000115> "N150".
+<http://www.radplanbio.org/ptro/instance/121> <http://www.radplanbio.org/ptro/DKFZ000120> "b".
+<http://www.radplanbio.org/ptro/instance/121> <http://www.radplanbio.org/ptro/DKFZ000121> "1.0".
+<http://www.radplanbio.org/ptro/instance/121> <http://www.radplanbio.org/ptro/DKFZ000122> "2012-01-31".
+<http://www.radplanbio.org/ptro/instance/121> <http://www.radplanbio.org/ptro/DKFZ000123> "2012-09-06".
+<http://www.radplanbio.org/ptro/instance/121> <http://www.radplanbio.org/ptro/DKFZ000124> "2012-03-08".
+<http://www.radplanbio.org/ptro/instance/121> <http://www.radplanbio.org/ptro/DKFZ000125> "2012-04-18".
+<http://www.radplanbio.org/ptro/instance/121> <http://www.radplanbio.org/ptro/DKFZ000126> "DD".
+<http://www.radplanbio.org/ptro/instance/121> <http://www.radplanbio.org/ptro/DKFZ000127> "2011-11-26".
+<http://www.radplanbio.org/ptro/instance/121> <http://www.radplanbio.org/ptro/DKFZ000010> "121".
+<http://www.radplanbio.org/ptro/instance/121> <http://www.radplanbio.org/ptro/DKFZ000034> "days".
+<http://www.radplanbio.org/ptro/instance/121> <http://www.radplanbio.org/ptro/DKFZ000043> "65-66".
+<http://www.radplanbio.org/ptro/instance/121> <http://www.radplanbio.org/ptro/DKFZ000040> "0".
+<http://www.radplanbio.org/ptro/instance/121> <http://www.radplanbio.org/ptro/DKFZ000128> "Mouse".
+<http://www.radplanbio.org/ptro/instance/121> <http://www.radplanbio.org/ptro/DKFZ000116> "30f6Wo_NaCl+Cispl._54Gy".
+<http://www.radplanbio.org/ptro/instance/121> <http://www.radplanbio.org/ptro/DKFZ000117> " RT 30fx with NaCl + Cisplatin".
+<http://www.radplanbio.org/ptro/instance/121> <http://www.radplanbio.org/ptro/DKFZ000118> "A".
+<http://www.radplanbio.org/ptro/instance/121> <http://www.radplanbio.org/ptro/DKFZ000041> "Nude Mouse".
+<http://www.radplanbio.org/ptro/instance/121> <http://www.w3.org/2000/01/rdf-schema#label> "121".
+<http://www.radplanbio.org/ptro/instance/121> <http://www.radplanbio.org/ptro/DKFZ000009> "N150b121".
+<http://www.radplanbio.org/ptro/instance/121> <http://www.radplanbio.org/ptro/DKFZ000008> "Xeno Nimo Hypox;FaDu".
+<http://www.radplanbio.org/ptro/instance/122> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256>.
+<http://www.radplanbio.org/ptro/instance/122> <http://www.radplanbio.org/ptro/DKFZ000042> "DM".
+<http://www.radplanbio.org/ptro/instance/122> <http://www.radplanbio.org/ptro/DKFZ000115> "N150".
+<http://www.radplanbio.org/ptro/instance/122> <http://www.radplanbio.org/ptro/DKFZ000120> "b".
+<http://www.radplanbio.org/ptro/instance/122> <http://www.radplanbio.org/ptro/DKFZ000121> "1.0".
+<http://www.radplanbio.org/ptro/instance/122> <http://www.radplanbio.org/ptro/DKFZ000122> "2012-01-31".
+<http://www.radplanbio.org/ptro/instance/122> <http://www.radplanbio.org/ptro/DKFZ000123> "2012-05-24".
+<http://www.radplanbio.org/ptro/instance/122> <http://www.radplanbio.org/ptro/DKFZ000124> "2012-02-27".
+<http://www.radplanbio.org/ptro/instance/122> <http://www.radplanbio.org/ptro/DKFZ000125> "2012-04-06".
+<http://www.radplanbio.org/ptro/instance/122> <http://www.radplanbio.org/ptro/DKFZ000126> "DD".
+<http://www.radplanbio.org/ptro/instance/122> <http://www.radplanbio.org/ptro/DKFZ000127> "2011-11-26".
+<http://www.radplanbio.org/ptro/instance/122> <http://www.radplanbio.org/ptro/DKFZ000010> "122".
+<http://www.radplanbio.org/ptro/instance/122> <http://www.radplanbio.org/ptro/DKFZ000034> "days".
+<http://www.radplanbio.org/ptro/instance/122> <http://www.radplanbio.org/ptro/DKFZ000043> "65-66".
+<http://www.radplanbio.org/ptro/instance/122> <http://www.radplanbio.org/ptro/DKFZ000040> "0".
+<http://www.radplanbio.org/ptro/instance/122> <http://www.radplanbio.org/ptro/DKFZ000128> "Mouse".
+<http://www.radplanbio.org/ptro/instance/122> <http://www.radplanbio.org/ptro/DKFZ000116> "30f6Wo_NaCl+Cispl._54Gy".
+<http://www.radplanbio.org/ptro/instance/122> <http://www.radplanbio.org/ptro/DKFZ000117> " RT 30fx with NaCl + Cisplatin".
+<http://www.radplanbio.org/ptro/instance/122> <http://www.radplanbio.org/ptro/DKFZ000118> "A".
+<http://www.radplanbio.org/ptro/instance/122> <http://www.radplanbio.org/ptro/DKFZ000041> "Nude Mouse".
+<http://www.radplanbio.org/ptro/instance/122> <http://www.w3.org/2000/01/rdf-schema#label> "122".
+<http://www.radplanbio.org/ptro/instance/122> <http://www.radplanbio.org/ptro/DKFZ000009> "N150b122".
+<http://www.radplanbio.org/ptro/instance/122> <http://www.radplanbio.org/ptro/DKFZ000008> "Xeno Nimo Hypox;FaDu".
+<http://www.radplanbio.org/ptro/instance/129> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256>.
+<http://www.radplanbio.org/ptro/instance/129> <http://www.radplanbio.org/ptro/DKFZ000042> "DM".
+<http://www.radplanbio.org/ptro/instance/129> <http://www.radplanbio.org/ptro/DKFZ000115> "N150".
+<http://www.radplanbio.org/ptro/instance/129> <http://www.radplanbio.org/ptro/DKFZ000120> "b".
+<http://www.radplanbio.org/ptro/instance/129> <http://www.radplanbio.org/ptro/DKFZ000121> "1.0".
+<http://www.radplanbio.org/ptro/instance/129> <http://www.radplanbio.org/ptro/DKFZ000122> "2012-01-31".
+<http://www.radplanbio.org/ptro/instance/129> <http://www.radplanbio.org/ptro/DKFZ000123> "2012-09-06".
+<http://www.radplanbio.org/ptro/instance/129> <http://www.radplanbio.org/ptro/DKFZ000124> "2012-03-26".
+<http://www.radplanbio.org/ptro/instance/129> <http://www.radplanbio.org/ptro/DKFZ000125> "2012-05-04".
+<http://www.radplanbio.org/ptro/instance/129> <http://www.radplanbio.org/ptro/DKFZ000126> "DD".
+<http://www.radplanbio.org/ptro/instance/129> <http://www.radplanbio.org/ptro/DKFZ000127> "2011-11-26".
+<http://www.radplanbio.org/ptro/instance/129> <http://www.radplanbio.org/ptro/DKFZ000010> "129".
+<http://www.radplanbio.org/ptro/instance/129> <http://www.radplanbio.org/ptro/DKFZ000034> "days".
+<http://www.radplanbio.org/ptro/instance/129> <http://www.radplanbio.org/ptro/DKFZ000043> "65-66".
+<http://www.radplanbio.org/ptro/instance/129> <http://www.radplanbio.org/ptro/DKFZ000040> "0".
+<http://www.radplanbio.org/ptro/instance/129> <http://www.radplanbio.org/ptro/DKFZ000128> "Mouse".
+<http://www.radplanbio.org/ptro/instance/129> <http://www.radplanbio.org/ptro/DKFZ000116> "30f6Wo_NaCl+Cispl._54Gy".
+<http://www.radplanbio.org/ptro/instance/129> <http://www.radplanbio.org/ptro/DKFZ000117> " RT 30fx with NaCl + Cisplatin".
+<http://www.radplanbio.org/ptro/instance/129> <http://www.radplanbio.org/ptro/DKFZ000118> "A".
+<http://www.radplanbio.org/ptro/instance/129> <http://www.radplanbio.org/ptro/DKFZ000041> "Nude Mouse".
+<http://www.radplanbio.org/ptro/instance/129> <http://www.w3.org/2000/01/rdf-schema#label> "129".
+<http://www.radplanbio.org/ptro/instance/129> <http://www.radplanbio.org/ptro/DKFZ000009> "N150b129".
+<http://www.radplanbio.org/ptro/instance/129> <http://www.radplanbio.org/ptro/DKFZ000008> "Xeno Nimo Hypox;FaDu".
+<http://www.radplanbio.org/ptro/instance/130> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256>.
+<http://www.radplanbio.org/ptro/instance/130> <http://www.radplanbio.org/ptro/DKFZ000042> "DM".
+<http://www.radplanbio.org/ptro/instance/130> <http://www.radplanbio.org/ptro/DKFZ000115> "N150".
+<http://www.radplanbio.org/ptro/instance/130> <http://www.radplanbio.org/ptro/DKFZ000120> "b".
+<http://www.radplanbio.org/ptro/instance/130> <http://www.radplanbio.org/ptro/DKFZ000121> "1.0".
+<http://www.radplanbio.org/ptro/instance/130> <http://www.radplanbio.org/ptro/DKFZ000122> "2012-01-31".
+<http://www.radplanbio.org/ptro/instance/130> <http://www.radplanbio.org/ptro/DKFZ000123> "2012-05-14".
+<http://www.radplanbio.org/ptro/instance/130> <http://www.radplanbio.org/ptro/DKFZ000124> "2012-02-20".
+<http://www.radplanbio.org/ptro/instance/130> <http://www.radplanbio.org/ptro/DKFZ000125> "2012-03-30".
+<http://www.radplanbio.org/ptro/instance/130> <http://www.radplanbio.org/ptro/DKFZ000126> "DD".
+<http://www.radplanbio.org/ptro/instance/130> <http://www.radplanbio.org/ptro/DKFZ000127> "2011-11-26".
+<http://www.radplanbio.org/ptro/instance/130> <http://www.radplanbio.org/ptro/DKFZ000010> "130".
+<http://www.radplanbio.org/ptro/instance/130> <http://www.radplanbio.org/ptro/DKFZ000034> "days".
+<http://www.radplanbio.org/ptro/instance/130> <http://www.radplanbio.org/ptro/DKFZ000043> "65-66".
+<http://www.radplanbio.org/ptro/instance/130> <http://www.radplanbio.org/ptro/DKFZ000040> "0".
+<http://www.radplanbio.org/ptro/instance/130> <http://www.radplanbio.org/ptro/DKFZ000128> "Mouse".
+<http://www.radplanbio.org/ptro/instance/130> <http://www.radplanbio.org/ptro/DKFZ000116> "30f6Wo_NaCl+Cispl._54Gy".
+<http://www.radplanbio.org/ptro/instance/130> <http://www.radplanbio.org/ptro/DKFZ000117> " RT 30fx with NaCl + Cisplatin".
+<http://www.radplanbio.org/ptro/instance/130> <http://www.radplanbio.org/ptro/DKFZ000118> "A".
+<http://www.radplanbio.org/ptro/instance/130> <http://www.radplanbio.org/ptro/DKFZ000041> "Nude Mouse".
+<http://www.radplanbio.org/ptro/instance/130> <http://www.w3.org/2000/01/rdf-schema#label> "130".
+<http://www.radplanbio.org/ptro/instance/130> <http://www.radplanbio.org/ptro/DKFZ000009> "N150b130".
+<http://www.radplanbio.org/ptro/instance/130> <http://www.radplanbio.org/ptro/DKFZ000008> "Xeno Nimo Hypox;FaDu".
