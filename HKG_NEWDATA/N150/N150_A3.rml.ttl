@@ -10,20 +10,36 @@
 <#TriplesMap1> a rr:TriplesMap;
 	
   rml:logicalSource [ 
-		rml:source      "/data/B4_BW_full_data.csv";
+		rml:source      "/data/A3_CO_N150_30f6Wo_NaCl,Cispl._54Gy.csv";
     rml:referenceFormulation ql:CSV
   ];
     
 	rr:subjectMap [
-		rr:template   "http://www.radplanbio.org/ptro/instance/{BodyWeighID}";
+		rr:template   "http://www.radplanbio.org/ptro/instance/{SUBJID}";
 		rr:class ptro:DKFZ000080;
 		rr:termType rr:IRI;
 	];
    
 	rr:predicateObjectMap [
     rr:predicate ptro:DKFZ000010;
-    rr:objectMap [ rml:reference "Subject Identification" ];
+    rr:objectMap [ rml:reference "SUBJID" ];
 	];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000042;
+    rr:objectMap [ rml:reference "DOMAIN" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000115;
+    rr:objectMap [ rml:reference "PUID" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000120;
+    rr:objectMap [ rml:reference "COHORT" ];
+  ];
+
    
   rr:predicateObjectMap [
     rr:predicate rdfs:label;
@@ -37,7 +53,7 @@
 
   rr:predicateObjectMap [
     rr:predicate ptro:DKFZ000008;
-    rr:objectMap [ rml:reference "Study Identifier" ];
+    rr:objectMap [ rml:reference "STUDYID" ];
   ];
 
   rr:predicateObjectMap [
@@ -72,7 +88,7 @@
 
   rr:predicateObjectMap [
     rr:predicate ptro:DKFZ000009;
-    rr:objectMap [ rml:reference "Subject Id" ];
+    rr:objectMap [ rml:reference "USUBJID" ];
   ];
 
 .
