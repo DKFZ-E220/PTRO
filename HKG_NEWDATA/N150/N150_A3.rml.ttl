@@ -40,15 +40,20 @@
     rr:objectMap [ rml:reference "COHORT" ];
   ];
 
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000051;
+    rr:objectMap [ rml:reference "POOLID" ];
+  ];
+
    
   rr:predicateObjectMap [
     rr:predicate rdfs:label;
-    rr:objectMap [ rml:reference "BodyWeighID" ];
+    rr:objectMap [ rml:reference "SUBJID" ];
   ];
 
   rr:predicateObjectMap [
-    rr:predicate ptro:DKFZ000084;
-    rr:objectMap [ rml:reference "BodyWeighID" ];
+    rr:predicate ptro:DKFZ000146;
+    rr:objectMap [ rml:reference "COSEQ" ];
   ];
 
   rr:predicateObjectMap [
@@ -57,33 +62,38 @@
   ];
 
   rr:predicateObjectMap [
-    rr:predicate ptro:DKFZ000018;
-    rr:objectMap [ rml:reference "Study Day Animal Weighed" ];
+    rr:predicate ptro:DKFZ000091;
+    rr:objectMap [ rml:reference "IDVAR" ];
   ];
 
   rr:predicateObjectMap [
-    rr:predicate ptro:DKFZ000083;
-    rr:objectMap [ rml:reference "Label for Nominal Study Day" ];
+    rr:predicate ptro:DKFZ000092;
+    rr:objectMap [ rml:reference "IDVARVAL" ];
   ];
 
   rr:predicateObjectMap [
-    rr:predicate ptro:DKFZ000017;
-    rr:objectMap [ rml:reference "Result or Findings as Collected" ];
+    rr:predicate ptro:DKFZ000147;
+    rr:objectMap [ rml:reference "COREF" ];
   ];
 
   rr:predicateObjectMap [
-    rr:predicate ptro:DKFZ000015;
-    rr:objectMap [ rml:reference "Test Short Name" ];
+    rr:predicate ptro:DKFZ000093;
+    rr:objectMap [ rml:reference "COVAL" ];
   ];
 
   rr:predicateObjectMap [
-    rr:predicate ptro:DKFZ000049;
-    rr:objectMap [ rml:reference "Unit of the Original Result" ];
+    rr:predicate ptro:DKFZ000094;
+    rr:objectMap [ rml:reference "COEVAL" ];
   ];
 
   rr:predicateObjectMap [
-    rr:predicate ptro:DKFZ000016;
-    rr:objectMap [ rml:reference "Test Name" ];
+    rr:predicate ptro:DKFZ000095;
+    rr:objectMap [ rml:reference "CODTC" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000096;
+    rr:objectMap [ rml:reference "CODY" ];
   ];
 
   rr:predicateObjectMap [
