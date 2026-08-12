@@ -5,3 +5,4 @@
 .Rhistory
 *.Rproj
 .DS_Store
+postgresql-42.7.9.jar
