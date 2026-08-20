@@ -1,0 +1,159 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#>.
+@prefix ptro: <http://www.radplanbio.org/ptro/>.
+@prefix ro: <http://purl.obolibrary.org/obo/ro.owl>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@base <http://example.com/ns#>.
+
+<#TriplesMap1> a rr:TriplesMap;
+	
+  rml:logicalSource [ 
+		rml:source      "/data/B4_BW_full_data.csv";
+    rml:referenceFormulation ql:CSV
+  ];
+    
+	rr:subjectMap [
+		rr:template   "http://www.radplanbio.org/ptro/instance/{BodyWeighID}";
+		rr:class ptro:DKFZ000080;
+		rr:termType rr:IRI;
+	];
+   
+	rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000010;
+    rr:objectMap [ rml:reference "SUBJID" ];
+	];
+   
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [ rml:reference "SUNJECTID" ];
+  ];
+
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000008;
+    rr:objectMap [ rml:reference "STUDYID" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000042;
+    rr:objectMap [ rml:reference "DOMAIN" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000115;
+    rr:objectMap [ rml:reference "PUID" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000120;
+    rr:objectMap [ rml:reference "COHORT" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000148;
+    rr:objectMap [ rml:reference "BWSEQ" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000149;
+    rr:objectMap [ rml:reference "BWSTRESC" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000150;
+    rr:objectMap [ rml:reference "BWSTRESN" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000151;
+    rr:objectMap [ rml:reference "BWSTRESU" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000152;
+    rr:objectMap [ rml:reference "BWSTAT" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000153;
+    rr:objectMap [ rml:reference "BWREASND" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000154;
+    rr:objectMap [ rml:reference "BWBLFL" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000155;
+    rr:objectMap [ rml:reference "BWFAST" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000156;
+    rr:objectMap [ rml:reference "BWEXCLFL" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000157;
+    rr:objectMap [ rml:reference "BWREASEX" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000158;
+    rr:objectMap [ rml:reference "BWUSCHFL" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000159;
+    rr:objectMap [ rml:reference "VISITDY" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000160;
+    rr:objectMap [ rml:reference "BWDTC" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000018;
+    rr:objectMap [ rml:reference "BWDY" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000083;
+    rr:objectMap [ rml:reference "BWNOMLBL" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000161;
+    rr:objectMap [ rml:reference "BWNOMDY" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000017;
+    rr:objectMap [ rml:reference "BWORRES" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000015;
+    rr:objectMap [ rml:reference "BWTESTCD" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000046;
+    rr:objectMap [ rml:reference "BWORRESU" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000016;
+    rr:objectMap [ rml:reference "BWTEST" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000009;
+    rr:objectMap [ rml:reference "USUBJID" ];
+  ];
+
+.
