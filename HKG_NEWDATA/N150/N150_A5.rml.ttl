@@ -10,13 +10,13 @@
 <#TriplesMap1> a rr:TriplesMap;
 	
   rml:logicalSource [ 
-		rml:source      "/data/B4_BW_full_data.csv";
+		rml:source      "/data/B5_DD_full_data.csv";
     rml:referenceFormulation ql:CSV
   ];
     
 	rr:subjectMap [
-		rr:template   "http://www.radplanbio.org/ptro/instance/{BodyWeighID}";
-		rr:class ptro:DKFZ000080;
+		rr:template   "http://www.radplanbio.org/ptro/instance/{Subject Id}";
+		rr:class ncit:C69256;
 		rr:termType rr:IRI;
 	];
    
@@ -27,9 +27,13 @@
    
   rr:predicateObjectMap [
     rr:predicate rdfs:label;
-    rr:objectMap [ rml:reference "SUNJECTID" ];
+    rr:objectMap [ rml:reference "SUBJID" ];
   ];
 
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000009;
+    rr:objectMap [ rml:reference "USUBJID" ];
+  ];
 
   rr:predicateObjectMap [
     rr:predicate ptro:DKFZ000008;
@@ -52,108 +56,48 @@
   ];
 
   rr:predicateObjectMap [
-    rr:predicate ptro:DKFZ000148;
-    rr:objectMap [ rml:reference "BWSEQ" ];
+    rr:predicate ptro:DKFZ000162;
+    rr:objectMap [ rml:reference "DDSEQ" ];
   ];
 
   rr:predicateObjectMap [
-    rr:predicate ptro:DKFZ000149;
-    rr:objectMap [ rml:reference "BWSTRESC" ];
+    rr:predicate ptro:DKFZ000163;
+    rr:objectMap [ rml:reference "DDORRES" ];
+  ];
+
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000019;
+    rr:objectMap [ rml:reference "DDTESTCD" ];
   ];
 
   rr:predicateObjectMap [
-    rr:predicate ptro:DKFZ000150;
-    rr:objectMap [ rml:reference "BWSTRESN" ];
+    rr:predicate ptro:DKFZ000020;
+    rr:objectMap [ rml:reference "DDTEST" ];
   ];
 
   rr:predicateObjectMap [
-    rr:predicate ptro:DKFZ000151;
-    rr:objectMap [ rml:reference "BWSTRESU" ];
+    rr:predicate ptro:DKFZ000164;
+    rr:objectMap [ rml:reference "DDSTRESC" ];
   ];
 
   rr:predicateObjectMap [
-    rr:predicate ptro:DKFZ000152;
-    rr:objectMap [ rml:reference "BWSTAT" ];
+    rr:predicate ptro:DKFZ000021;
+    rr:objectMap [ rml:reference "DDRESCAT" ];
   ];
 
   rr:predicateObjectMap [
-    rr:predicate ptro:DKFZ000153;
-    rr:objectMap [ rml:reference "BWREASND" ];
+    rr:predicate ptro:DKFZ000022;
+    rr:objectMap [ rml:reference "DDEVAL" ];
   ];
 
   rr:predicateObjectMap [
-    rr:predicate ptro:DKFZ000154;
-    rr:objectMap [ rml:reference "BWBLFL" ];
+    rr:predicate ptro:DKFZ000165;
+    rr:objectMap [ rml:reference "DDDTC" ];
   ];
 
   rr:predicateObjectMap [
-    rr:predicate ptro:DKFZ000155;
-    rr:objectMap [ rml:reference "BWFAST" ];
+    rr:predicate ptro:DKFZ000023;
+    rr:objectMap [ rml:reference "DDDY" ];
   ];
-
-  rr:predicateObjectMap [
-    rr:predicate ptro:DKFZ000156;
-    rr:objectMap [ rml:reference "BWEXCLFL" ];
-  ];
-
-  rr:predicateObjectMap [
-    rr:predicate ptro:DKFZ000157;
-    rr:objectMap [ rml:reference "BWREASEX" ];
-  ];
-
-  rr:predicateObjectMap [
-    rr:predicate ptro:DKFZ000158;
-    rr:objectMap [ rml:reference "BWUSCHFL" ];
-  ];
-
-  rr:predicateObjectMap [
-    rr:predicate ptro:DKFZ000159;
-    rr:objectMap [ rml:reference "VISITDY" ];
-  ];
-
-  rr:predicateObjectMap [
-    rr:predicate ptro:DKFZ000160;
-    rr:objectMap [ rml:reference "BWDTC" ];
-  ];
-
-  rr:predicateObjectMap [
-    rr:predicate ptro:DKFZ000018;
-    rr:objectMap [ rml:reference "BWDY" ];
-  ];
-
-  rr:predicateObjectMap [
-    rr:predicate ptro:DKFZ000083;
-    rr:objectMap [ rml:reference "BWNOMLBL" ];
-  ];
-
-  rr:predicateObjectMap [
-    rr:predicate ptro:DKFZ000161;
-    rr:objectMap [ rml:reference "BWNOMDY" ];
-  ];
-
-  rr:predicateObjectMap [
-    rr:predicate ptro:DKFZ000017;
-    rr:objectMap [ rml:reference "BWORRES" ];
-  ];
-
-  rr:predicateObjectMap [
-    rr:predicate ptro:DKFZ000015;
-    rr:objectMap [ rml:reference "BWTESTCD" ];
-  ];
-
-  rr:predicateObjectMap [
-    rr:predicate ptro:DKFZ000046;
-    rr:objectMap [ rml:reference "BWORRESU" ];
-  ];
-
-  rr:predicateObjectMap [
-    rr:predicate ptro:DKFZ000016;
-    rr:objectMap [ rml:reference "BWTEST" ];
-  ];
-
-  rr:predicateObjectMap [
-    rr:predicate ptro:DKFZ000009;
-    rr:objectMap [ rml:reference "USUBJID" ];
-  ];
-
 .
