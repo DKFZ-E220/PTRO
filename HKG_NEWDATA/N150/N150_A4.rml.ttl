@@ -27,7 +27,7 @@
    
   rr:predicateObjectMap [
     rr:predicate rdfs:label;
-    rr:objectMap [ rml:reference "SUNJECTID" ];
+    rr:objectMap [ rml:reference "SUBJID" ];
   ];
 
 
