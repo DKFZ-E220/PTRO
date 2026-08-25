@@ -56,24 +56,29 @@
   ];
 
   rr:predicateObjectMap [
-    rr:predicate ptro:DKFZ000162;
-    rr:objectMap [ rml:reference "DDSEQ" ];
+    rr:predicate ptro:DKFZ000051;
+    rr:objectMap [ rml:reference "POOLID" ];
   ];
 
   rr:predicateObjectMap [
-    rr:predicate ptro:DKFZ000163;
-    rr:objectMap [ rml:reference "DDORRES" ];
+    rr:predicate ptro:DKFZ000166;
+    rr:objectMap [ rml:reference "CLSEQ" ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ptro:DKFZ000131;
+    rr:objectMap [ rml:reference "FOCID" ];
   ];
 
 
   rr:predicateObjectMap [
-    rr:predicate ptro:DKFZ000019;
-    rr:objectMap [ rml:reference "DDTESTCD" ];
+    rr:predicate ptro:DKFZ000167;
+    rr:objectMap [ rml:reference "CLGRPID" ];
   ];
 
   rr:predicateObjectMap [
-    rr:predicate ptro:DKFZ000020;
-    rr:objectMap [ rml:reference "DDTEST" ];
+    rr:predicate ptro:DKFZ000168;
+    rr:objectMap [ rml:reference "CLSPID" ];
   ];
 
   rr:predicateObjectMap [
