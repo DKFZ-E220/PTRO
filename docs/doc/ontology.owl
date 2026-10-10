@@ -500,7 +500,7 @@
 
     <owl:DatatypeProperty rdf:about="https://purls.helmholtz-metadaten.de/ptro/DKFZ000023">
         <rdfs:domain rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <dc:creator>OGiraldo</dc:creator>
         <rdfs:comment>a.k.a study day in CDISC</rdfs:comment>
         <rdfs:isDefinedBy>https://library.cdisc.org/browser</rdfs:isDefinedBy>
@@ -693,7 +693,7 @@
 
     <owl:DatatypeProperty rdf:about="https://purls.helmholtz-metadaten.de/ptro/DKFZ000040">
         <rdfs:domain rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <dc:creator>OGiraldo</dc:creator>
         <rdfs:isDefinedBy>https://library.cdisc.org/browser</rdfs:isDefinedBy>
         <rdfs:label>Sex</rdfs:label>
@@ -1699,7 +1699,7 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <dc:creator>S.V.Ilango</dc:creator>
         <rdfs:label>Date_Time_of_Birth</rdfs:label>
-        <skos:altLabel>BIRTHDTC</skos:altLabel>
+        <skos:altLabel>BRTHDTC</skos:altLabel>
     </owl:DatatypeProperty>
     
 

@@ -327,7 +327,7 @@ owl:topObjectProperty rdf:type owl:ObjectProperty .
 ###  https://purls.helmholtz-metadaten.de/ptro/DKFZ000023
 :DKFZ000023 rdf:type owl:DatatypeProperty ;
             rdfs:domain <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256> ;
-            rdfs:range xsd:string ;
+            rdfs:range xsd:decimal ;
             <http://purl.org/dc/elements/1.1/creator> "OGiraldo" ;
             rdfs:comment "a.k.a study day in CDISC" ;
             rdfs:isDefinedBy "https://library.cdisc.org/browser" ;
@@ -472,7 +472,7 @@ owl:topObjectProperty rdf:type owl:ObjectProperty .
 ###  https://purls.helmholtz-metadaten.de/ptro/DKFZ000040
 :DKFZ000040 rdf:type owl:DatatypeProperty ;
             rdfs:domain <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256> ;
-            rdfs:range xsd:integer ;
+            rdfs:range xsd:string ;
             <http://purl.org/dc/elements/1.1/creator> "OGiraldo" ;
             rdfs:isDefinedBy "https://library.cdisc.org/browser" ;
             rdfs:label "Sex" ;
@@ -1222,7 +1222,7 @@ owl:topObjectProperty rdf:type owl:ObjectProperty .
             rdfs:range xsd:dateTime ;
             <http://purl.org/dc/elements/1.1/creator> "S.V.Ilango" ;
             rdfs:label "Date_Time_of_Birth" ;
-            <http://www.w3.org/2004/02/skos/core#altLabel> "BIRTHDTC" .
+            <http://www.w3.org/2004/02/skos/core#altLabel> "BRTHDTC" .
 
 
 ###  https://purls.helmholtz-metadaten.de/ptro/DKFZ000128

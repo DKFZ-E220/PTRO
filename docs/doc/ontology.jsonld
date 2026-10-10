@@ -1168,7 +1168,7 @@
     "@value" : "Study_day_Animal_Death"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@value" : "DDDY"
@@ -1492,7 +1492,7 @@
     "@value" : "Sex"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@value" : "SEX"
@@ -3367,7 +3367,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
-    "@value" : "BIRTHDTC"
+    "@value" : "BRTHDTC"
   } ]
 }, {
   "@id" : "https://purls.helmholtz-metadaten.de/ptro/DKFZ000128",

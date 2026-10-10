@@ -303,7 +303,7 @@
 # https://purls.helmholtz-metadaten.de/ptro/DKFZ000023
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000023> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000023> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256> .
-<https://purls.helmholtz-metadaten.de/ptro/DKFZ000023> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://purls.helmholtz-metadaten.de/ptro/DKFZ000023> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000023> <http://purl.org/dc/elements/1.1/creator> "OGiraldo" .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000023> <http://www.w3.org/2000/01/rdf-schema#comment> "a.k.a study day in CDISC" .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000023> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://library.cdisc.org/browser" .
@@ -436,7 +436,7 @@
 # https://purls.helmholtz-metadaten.de/ptro/DKFZ000040
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000040> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000040> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256> .
-<https://purls.helmholtz-metadaten.de/ptro/DKFZ000040> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://purls.helmholtz-metadaten.de/ptro/DKFZ000040> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000040> <http://purl.org/dc/elements/1.1/creator> "OGiraldo" .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000040> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://library.cdisc.org/browser" .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000040> <http://www.w3.org/2000/01/rdf-schema#label> "Sex" .
@@ -1122,7 +1122,7 @@
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000127> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000127> <http://purl.org/dc/elements/1.1/creator> "S.V.Ilango" .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000127> <http://www.w3.org/2000/01/rdf-schema#label> "Date_Time_of_Birth" .
-<https://purls.helmholtz-metadaten.de/ptro/DKFZ000127> <http://www.w3.org/2004/02/skos/core#altLabel> "BIRTHDTC" .
+<https://purls.helmholtz-metadaten.de/ptro/DKFZ000127> <http://www.w3.org/2004/02/skos/core#altLabel> "BRTHDTC" .
 # 
 # https://purls.helmholtz-metadaten.de/ptro/DKFZ000128
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000128> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
