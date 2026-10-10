@@ -2161,6 +2161,18 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="DKFZ000071"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000072"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="DKFZ000073"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="DKFZ000074"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
@@ -7253,7 +7265,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>DKFZ000179</IRI>
-        <Literal>Study day of the end of observation. Can be populated when CLENDTC represents the start day of a continuous evaluation interval. The algorithm for calculations must be relative to the sponsor-defined RFSTDTC variable in the Demographics (DM) domain.</Literal>
+        <Literal>Study day of the end of observation, in integer days. Can be populated when CLDY represents the start day of a continuous evaluation interval. The algorithm for calculations must be relative to the sponsor-defined RFSTDTC variable in the Demographics (DM) domain.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -7573,7 +7585,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>DKFZ000195</IRI>
-        <Literal>Contains the result value for all findings, copied or derived from LBORRES, in a standard format or standard units. LBSTRESC should store all results or findings in character format; if results are numeric, they should also be submitted in numeric format in LBSTRESN.</Literal>
+        <Literal>Contains the result value for all findings, copied or derived from LBORRES, in a standard format or standard units. LBSTRESC should store all results or findings in character format; if results are numeric, they should also be submitted in numeric format in LBSTRESN. For example, if a test has results NONE, NEG, and NEGATIVE in LBORRES and these results effectively have the same meaning, they could be represented in standard format in LBSTRESC as NEGATIVE. For other examples, see general assumptions.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -7693,7 +7705,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>DKFZ000201</IRI>
-        <Literal>Indicates where value falls with respect to reference range defined by LBORNRLO and LBORNRHI, LBSTNRLO and LBSTNRHI, or by LBSTNRC. Examples: NORMAL, ABNORMAL, HIGH, LOW. Should not be used to indicate biological significance.</Literal>
+        <Literal>Indicates where value falls with respect to reference range defined by LBORNRLO and LBORNRHI, LBSTNRLO and LBSTNRHI, or by LBSTNRC. Examples: NORMAL, ABNORMAL, HIGH, LOW. Sponsors should specify in the study metadata (Comments column in the data definition file) whether LBNRIND refers to the original or standard reference ranges and results. Should not be used to indicate biological significance.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -7893,7 +7905,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>DKFZ000211</IRI>
-        <Literal>Records toxicity grade value using a standard toxicity scale (such as the NCI CTCAE). If value is from a numeric scale, represent only the number (e.g., 2 and not Grade 2).</Literal>
+        <Literal>Records toxicity grade value using a standard toxicity scale (such as the NCI CTCAE). If value is from a numeric scale, represent only the number (e.g., "2" and not "Grade 2"). The sponsor is expected to provide the name of the scale and version used to map the terms, utilizing the data definition file external codelist attributes.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8013,7 +8025,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>DKFZ000217</IRI>
-        <Literal>Text description of time when specimen should be taken. This may be represented as an elapsed time relative to a fixed reference point, such as time of last dose. Examples: Start, 5 min post.</Literal>
+        <Literal>Text Description of time when specimen should be taken. This may be represented as an elapsed time relative to a fixed reference point, such as time of last dose. See LBTPTNUM and LBTPTREF. Examples: Start, 5 min post.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
