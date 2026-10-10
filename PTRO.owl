@@ -2018,7 +2018,7 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="DKFZ000023"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="DKFZ000028"/>
@@ -2066,7 +2066,7 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="DKFZ000040"/>
-        <Datatype abbreviatedIRI="xsd:integer"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="DKFZ000041"/>
@@ -6270,7 +6270,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
         <IRI>DKFZ000127</IRI>
-        <Literal>BIRTHDTC</Literal>
+        <Literal>BRTHDTC</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:creator"/>
