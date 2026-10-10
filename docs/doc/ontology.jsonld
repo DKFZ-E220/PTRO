@@ -2181,6 +2181,9 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Study_Day_of_Specimen_Collection"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@value" : "LBDY"
   } ],
@@ -2205,6 +2208,9 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Study_Day_of_End_of_Specimen_Collection"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@value" : "LBENDY"
   } ],
@@ -2228,6 +2234,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Nominal_Study_Day_for_Tabulations"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@value" : "LBNOMDY"
@@ -4415,7 +4424,7 @@
     "@value" : "S.V.Ilango"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Study day of the end of observation. Can be populated when CLENDTC represents the start day of a continuous evaluation interval. The algorithm for calculations must be relative to the sponsor-defined RFSTDTC variable in the Demographics (DM) domain."
+    "@value" : "Study day of the end of observation, in integer days. Can be populated when CLDY represents the start day of a continuous evaluation interval. The algorithm for calculations must be relative to the sponsor-defined RFSTDTC variable in the Demographics (DM) domain."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C83083"
@@ -4751,7 +4760,7 @@
     "@value" : "S.V.Ilango"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Contains the result value for all findings, copied or derived from LBORRES, in a standard format or standard units. LBSTRESC should store all results or findings in character format; if results are numeric, they should also be submitted in numeric format in LBSTRESN."
+    "@value" : "Contains the result value for all findings, copied or derived from LBORRES, in a standard format or standard units. LBSTRESC should store all results or findings in character format; if results are numeric, they should also be submitted in numeric format in LBSTRESN. For example, if a test has results NONE, NEG, and NEGATIVE in LBORRES and these results effectively have the same meaning, they could be represented in standard format in LBSTRESC as NEGATIVE. For other examples, see general assumptions."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C83083"
@@ -4877,7 +4886,7 @@
     "@value" : "S.V.Ilango"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Indicates where value falls with respect to reference range defined by LBORNRLO and LBORNRHI, LBSTNRLO and LBSTNRHI, or by LBSTNRC. Examples: NORMAL, ABNORMAL, HIGH, LOW. Should not be used to indicate biological significance."
+    "@value" : "Indicates where value falls with respect to reference range defined by LBORNRLO and LBORNRHI, LBSTNRLO and LBSTNRHI, or by LBSTNRC. Examples: NORMAL, ABNORMAL, HIGH, LOW. Sponsors should specify in the study metadata (Comments column in the data definition file) whether LBNRIND refers to the original or standard reference ranges and results. Should not be used to indicate biological significance."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C83083"
@@ -5087,7 +5096,7 @@
     "@value" : "S.V.Ilango"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Records toxicity grade value using a standard toxicity scale (such as the NCI CTCAE). If value is from a numeric scale, represent only the number (e.g., 2 and not Grade 2)."
+    "@value" : "Records toxicity grade value using a standard toxicity scale (such as the NCI CTCAE). If value is from a numeric scale, represent only the number (e.g., \"2\" and not \"Grade 2\"). The sponsor is expected to provide the name of the scale and version used to map the terms, utilizing the data definition file external codelist attributes."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C83083"
@@ -5213,7 +5222,7 @@
     "@value" : "S.V.Ilango"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Text description of time when specimen should be taken. This may be represented as an elapsed time relative to a fixed reference point, such as time of last dose. Examples: Start, 5 min post."
+    "@value" : "Text Description of time when specimen should be taken. This may be represented as an elapsed time relative to a fixed reference point, such as time of last dose. See LBTPTNUM and LBTPTREF. Examples: Start, 5 min post."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C83083"

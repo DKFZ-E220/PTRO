@@ -696,6 +696,7 @@
 # https://purls.helmholtz-metadaten.de/ptro/DKFZ000071
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000071> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000071> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256> .
+<https://purls.helmholtz-metadaten.de/ptro/DKFZ000071> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000071> <http://purl.org/dc/elements/1.1/creator> "OGiraldo" .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000071> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://library.cdisc.org/browser" .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000071> <http://www.w3.org/2000/01/rdf-schema#label> "Study_Day_of_Specimen_Collection" .
@@ -706,6 +707,7 @@
 # https://purls.helmholtz-metadaten.de/ptro/DKFZ000072
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000072> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000072> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256> .
+<https://purls.helmholtz-metadaten.de/ptro/DKFZ000072> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000072> <http://purl.org/dc/elements/1.1/creator> "OGiraldo" .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000072> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://library.cdisc.org/browser" .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000072> <http://www.w3.org/2000/01/rdf-schema#label> "Study_Day_of_End_of_Specimen_Collection" .
@@ -716,6 +718,7 @@
 # https://purls.helmholtz-metadaten.de/ptro/DKFZ000073
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000073> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000073> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256> .
+<https://purls.helmholtz-metadaten.de/ptro/DKFZ000073> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000073> <http://purl.org/dc/elements/1.1/creator> "OGiraldo" .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000073> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://library.cdisc.org/browser" .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000073> <http://www.w3.org/2000/01/rdf-schema#label> "Nominal_Study_Day_for_Tabulations" .
@@ -1578,7 +1581,7 @@
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000179> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C83083> .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000179> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000179> <http://purl.org/dc/elements/1.1/creator> "S.V.Ilango" .
-<https://purls.helmholtz-metadaten.de/ptro/DKFZ000179> <http://www.w3.org/2000/01/rdf-schema#comment> "Study day of the end of observation. Can be populated when CLENDTC represents the start day of a continuous evaluation interval. The algorithm for calculations must be relative to the sponsor-defined RFSTDTC variable in the Demographics (DM) domain." .
+<https://purls.helmholtz-metadaten.de/ptro/DKFZ000179> <http://www.w3.org/2000/01/rdf-schema#comment> "Study day of the end of observation, in integer days. Can be populated when CLDY represents the start day of a continuous evaluation interval. The algorithm for calculations must be relative to the sponsor-defined RFSTDTC variable in the Demographics (DM) domain." .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000179> <http://www.w3.org/2000/01/rdf-schema#label> "Study_Day_of_End_of_Observation" .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000179> <http://www.w3.org/2004/02/skos/core#altLabel> "CLENDY" .
 # 
@@ -1722,7 +1725,7 @@
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000195> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C83083> .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000195> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000195> <http://purl.org/dc/elements/1.1/creator> "S.V.Ilango" .
-<https://purls.helmholtz-metadaten.de/ptro/DKFZ000195> <http://www.w3.org/2000/01/rdf-schema#comment> "Contains the result value for all findings, copied or derived from LBORRES, in a standard format or standard units. LBSTRESC should store all results or findings in character format; if results are numeric, they should also be submitted in numeric format in LBSTRESN." .
+<https://purls.helmholtz-metadaten.de/ptro/DKFZ000195> <http://www.w3.org/2000/01/rdf-schema#comment> "Contains the result value for all findings, copied or derived from LBORRES, in a standard format or standard units. LBSTRESC should store all results or findings in character format; if results are numeric, they should also be submitted in numeric format in LBSTRESN. For example, if a test has results NONE, NEG, and NEGATIVE in LBORRES and these results effectively have the same meaning, they could be represented in standard format in LBSTRESC as NEGATIVE. For other examples, see general assumptions." .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000195> <http://www.w3.org/2000/01/rdf-schema#label> "Standardized_Result_in_Character_Format" .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000195> <http://www.w3.org/2004/02/skos/core#altLabel> "LBSTRESC" .
 # 
@@ -1776,7 +1779,7 @@
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000201> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C83083> .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000201> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000201> <http://purl.org/dc/elements/1.1/creator> "S.V.Ilango" .
-<https://purls.helmholtz-metadaten.de/ptro/DKFZ000201> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates where value falls with respect to reference range defined by LBORNRLO and LBORNRHI, LBSTNRLO and LBSTNRHI, or by LBSTNRC. Examples: NORMAL, ABNORMAL, HIGH, LOW. Should not be used to indicate biological significance." .
+<https://purls.helmholtz-metadaten.de/ptro/DKFZ000201> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates where value falls with respect to reference range defined by LBORNRLO and LBORNRHI, LBSTNRLO and LBSTNRHI, or by LBSTNRC. Examples: NORMAL, ABNORMAL, HIGH, LOW. Sponsors should specify in the study metadata (Comments column in the data definition file) whether LBNRIND refers to the original or standard reference ranges and results. Should not be used to indicate biological significance." .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000201> <http://www.w3.org/2000/01/rdf-schema#label> "Reference_Range_Indicator" .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000201> <http://www.w3.org/2004/02/skos/core#altLabel> "LBNRIND" .
 # 
@@ -1866,7 +1869,7 @@
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000211> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C83083> .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000211> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000211> <http://purl.org/dc/elements/1.1/creator> "S.V.Ilango" .
-<https://purls.helmholtz-metadaten.de/ptro/DKFZ000211> <http://www.w3.org/2000/01/rdf-schema#comment> "Records toxicity grade value using a standard toxicity scale (such as the NCI CTCAE). If value is from a numeric scale, represent only the number (e.g., 2 and not Grade 2)." .
+<https://purls.helmholtz-metadaten.de/ptro/DKFZ000211> <http://www.w3.org/2000/01/rdf-schema#comment> "Records toxicity grade value using a standard toxicity scale (such as the NCI CTCAE). If value is from a numeric scale, represent only the number (e.g., \"2\" and not \"Grade 2\"). The sponsor is expected to provide the name of the scale and version used to map the terms, utilizing the data definition file external codelist attributes." .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000211> <http://www.w3.org/2000/01/rdf-schema#label> "Standard_Toxicity_Grade" .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000211> <http://www.w3.org/2004/02/skos/core#altLabel> "LBTOXGR" .
 # 
@@ -1920,7 +1923,7 @@
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000217> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C83083> .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000217> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000217> <http://purl.org/dc/elements/1.1/creator> "S.V.Ilango" .
-<https://purls.helmholtz-metadaten.de/ptro/DKFZ000217> <http://www.w3.org/2000/01/rdf-schema#comment> "Text description of time when specimen should be taken. This may be represented as an elapsed time relative to a fixed reference point, such as time of last dose. Examples: Start, 5 min post." .
+<https://purls.helmholtz-metadaten.de/ptro/DKFZ000217> <http://www.w3.org/2000/01/rdf-schema#comment> "Text Description of time when specimen should be taken. This may be represented as an elapsed time relative to a fixed reference point, such as time of last dose. See LBTPTNUM and LBTPTREF. Examples: Start, 5 min post." .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000217> <http://www.w3.org/2000/01/rdf-schema#label> "Planned_Time_Point_Name" .
 <https://purls.helmholtz-metadaten.de/ptro/DKFZ000217> <http://www.w3.org/2004/02/skos/core#altLabel> "LBTPT" .
 # 

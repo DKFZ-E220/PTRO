@@ -1073,6 +1073,7 @@
 
     <owl:DatatypeProperty rdf:about="https://purls.helmholtz-metadaten.de/ptro/DKFZ000071">
         <rdfs:domain rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <dc:creator>OGiraldo</dc:creator>
         <rdfs:isDefinedBy>https://library.cdisc.org/browser</rdfs:isDefinedBy>
         <rdfs:label>Study_Day_of_Specimen_Collection</rdfs:label>
@@ -1088,6 +1089,7 @@
 
     <owl:DatatypeProperty rdf:about="https://purls.helmholtz-metadaten.de/ptro/DKFZ000072">
         <rdfs:domain rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <dc:creator>OGiraldo</dc:creator>
         <rdfs:isDefinedBy>https://library.cdisc.org/browser</rdfs:isDefinedBy>
         <rdfs:label>Study_Day_of_End_of_Specimen_Collection</rdfs:label>
@@ -1103,6 +1105,7 @@
 
     <owl:DatatypeProperty rdf:about="https://purls.helmholtz-metadaten.de/ptro/DKFZ000073">
         <rdfs:domain rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <dc:creator>OGiraldo</dc:creator>
         <rdfs:isDefinedBy>https://library.cdisc.org/browser</rdfs:isDefinedBy>
         <rdfs:label>Nominal_Study_Day_for_Tabulations</rdfs:label>
@@ -2415,7 +2418,7 @@
         <rdfs:domain rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C83083"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <dc:creator>S.V.Ilango</dc:creator>
-        <rdfs:comment>Study day of the end of observation. Can be populated when CLENDTC represents the start day of a continuous evaluation interval. The algorithm for calculations must be relative to the sponsor-defined RFSTDTC variable in the Demographics (DM) domain.</rdfs:comment>
+        <rdfs:comment>Study day of the end of observation, in integer days. Can be populated when CLDY represents the start day of a continuous evaluation interval. The algorithm for calculations must be relative to the sponsor-defined RFSTDTC variable in the Demographics (DM) domain.</rdfs:comment>
         <rdfs:label>Study_Day_of_End_of_Observation</rdfs:label>
         <skos:altLabel>CLENDY</skos:altLabel>
     </owl:DatatypeProperty>
@@ -2639,7 +2642,7 @@
         <rdfs:domain rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C83083"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <dc:creator>S.V.Ilango</dc:creator>
-        <rdfs:comment>Contains the result value for all findings, copied or derived from LBORRES, in a standard format or standard units. LBSTRESC should store all results or findings in character format; if results are numeric, they should also be submitted in numeric format in LBSTRESN.</rdfs:comment>
+        <rdfs:comment>Contains the result value for all findings, copied or derived from LBORRES, in a standard format or standard units. LBSTRESC should store all results or findings in character format; if results are numeric, they should also be submitted in numeric format in LBSTRESN. For example, if a test has results NONE, NEG, and NEGATIVE in LBORRES and these results effectively have the same meaning, they could be represented in standard format in LBSTRESC as NEGATIVE. For other examples, see general assumptions.</rdfs:comment>
         <rdfs:label>Standardized_Result_in_Character_Format</rdfs:label>
         <skos:altLabel>LBSTRESC</skos:altLabel>
     </owl:DatatypeProperty>
@@ -2723,7 +2726,7 @@
         <rdfs:domain rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C83083"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <dc:creator>S.V.Ilango</dc:creator>
-        <rdfs:comment>Indicates where value falls with respect to reference range defined by LBORNRLO and LBORNRHI, LBSTNRLO and LBSTNRHI, or by LBSTNRC. Examples: NORMAL, ABNORMAL, HIGH, LOW. Should not be used to indicate biological significance.</rdfs:comment>
+        <rdfs:comment>Indicates where value falls with respect to reference range defined by LBORNRLO and LBORNRHI, LBSTNRLO and LBSTNRHI, or by LBSTNRC. Examples: NORMAL, ABNORMAL, HIGH, LOW. Sponsors should specify in the study metadata (Comments column in the data definition file) whether LBNRIND refers to the original or standard reference ranges and results. Should not be used to indicate biological significance.</rdfs:comment>
         <rdfs:label>Reference_Range_Indicator</rdfs:label>
         <skos:altLabel>LBNRIND</skos:altLabel>
     </owl:DatatypeProperty>
@@ -2863,7 +2866,7 @@
         <rdfs:domain rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C83083"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <dc:creator>S.V.Ilango</dc:creator>
-        <rdfs:comment>Records toxicity grade value using a standard toxicity scale (such as the NCI CTCAE). If value is from a numeric scale, represent only the number (e.g., 2 and not Grade 2).</rdfs:comment>
+        <rdfs:comment>Records toxicity grade value using a standard toxicity scale (such as the NCI CTCAE). If value is from a numeric scale, represent only the number (e.g., &quot;2&quot; and not &quot;Grade 2&quot;). The sponsor is expected to provide the name of the scale and version used to map the terms, utilizing the data definition file external codelist attributes.</rdfs:comment>
         <rdfs:label>Standard_Toxicity_Grade</rdfs:label>
         <skos:altLabel>LBTOXGR</skos:altLabel>
     </owl:DatatypeProperty>
@@ -2947,7 +2950,7 @@
         <rdfs:domain rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C83083"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <dc:creator>S.V.Ilango</dc:creator>
-        <rdfs:comment>Text description of time when specimen should be taken. This may be represented as an elapsed time relative to a fixed reference point, such as time of last dose. Examples: Start, 5 min post.</rdfs:comment>
+        <rdfs:comment>Text Description of time when specimen should be taken. This may be represented as an elapsed time relative to a fixed reference point, such as time of last dose. See LBTPTNUM and LBTPTREF. Examples: Start, 5 min post.</rdfs:comment>
         <rdfs:label>Planned_Time_Point_Name</rdfs:label>
         <skos:altLabel>LBTPT</skos:altLabel>
     </owl:DatatypeProperty>

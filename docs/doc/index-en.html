@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://purls.helmholtz-metadaten.de/ptro/","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://purls.helmholtz-metadaten.de/ptro/","name":"https://purls.helmholtz-metadaten.de/ptro/", "headline":"Document describing the ontology https://purls.helmholtz-metadaten.de/ptro/", "dateReleased":"Sat Oct 10 11:13:58 UTC 2026", "version":"0.2 alpha", "license":"https://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"DKFZ-E220"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://purls.helmholtz-metadaten.de/ptro/","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://purls.helmholtz-metadaten.de/ptro/","name":"https://purls.helmholtz-metadaten.de/ptro/", "headline":"Document describing the ontology https://purls.helmholtz-metadaten.de/ptro/", "dateReleased":"Sat Oct 10 11:58:13 UTC 2026", "version":"0.2 alpha", "license":"https://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"DKFZ-E220"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -5897,6 +5897,12 @@ This section provides details for each class and property defined by [Ontology N
     <dd>
      <a href="#http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256">Subject Unique Identifier</a> <sup class="type-c" title="class">c</sup>
     </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a>
+    </dd>
    </dl>
   </div>
  </div>
@@ -6185,7 +6191,7 @@ This section provides details for each class and property defined by [Ontology N
   <h3>Planned_Time_Point_Name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://purls.helmholtz-metadaten.de/ptro/DKFZ000217</p>
   <div class="comment">
-   <span class="markdown">Text description of time when specimen should be taken. This may be represented as an elapsed time relative to a fixed reference point, such as time of last dose. Examples: Start, 5 min post.</span>
+   <span class="markdown">Text Description of time when specimen should be taken. This may be represented as an elapsed time relative to a fixed reference point, such as time of last dose. See LBTPTNUM and LBTPTREF. Examples: Start, 5 min post.</span>
   </div>
   <dl>
    <dt>
@@ -7750,7 +7756,7 @@ This section provides details for each class and property defined by [Ontology N
   <h3>Reference_Range_Indicator<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://purls.helmholtz-metadaten.de/ptro/DKFZ000201</p>
   <div class="comment">
-   <span class="markdown">Indicates where value falls with respect to reference range defined by LBORNRLO and LBORNRHI, LBSTNRLO and LBSTNRHI, or by LBSTNRC. Examples: NORMAL, ABNORMAL, HIGH, LOW. Should not be used to indicate biological significance.</span>
+   <span class="markdown">Indicates where value falls with respect to reference range defined by LBORNRLO and LBORNRHI, LBSTNRLO and LBSTNRHI, or by LBSTNRC. Examples: NORMAL, ABNORMAL, HIGH, LOW. Sponsors should specify in the study metadata (Comments column in the data definition file) whether LBNRIND refers to the original or standard reference ranges and results. Should not be used to indicate biological significance.</span>
   </div>
   <dl>
    <dt>
@@ -8668,7 +8674,7 @@ This section provides details for each class and property defined by [Ontology N
   <h3>Standard_Toxicity_Grade<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://purls.helmholtz-metadaten.de/ptro/DKFZ000211</p>
   <div class="comment">
-   <span class="markdown">Records toxicity grade value using a standard toxicity scale (such as the NCI CTCAE). If value is from a numeric scale, represent only the number (e.g., 2 and not Grade 2).</span>
+   <span class="markdown">Records toxicity grade value using a standard toxicity scale (such as the NCI CTCAE). If value is from a numeric scale, represent only the number (e.g., "2" and not "Grade 2"). The sponsor is expected to provide the name of the scale and version used to map the terms, utilizing the data definition file external codelist attributes.</span>
   </div>
   <dl>
    <dt>
@@ -8831,7 +8837,7 @@ This section provides details for each class and property defined by [Ontology N
   <h3>Standardized_Result_in_Character_Format<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://purls.helmholtz-metadaten.de/ptro/DKFZ000195</p>
   <div class="comment">
-   <span class="markdown">Contains the result value for all findings, copied or derived from LBORRES, in a standard format or standard units. LBSTRESC should store all results or findings in character format; if results are numeric, they should also be submitted in numeric format in LBSTRESN.</span>
+   <span class="markdown">Contains the result value for all findings, copied or derived from LBORRES, in a standard format or standard units. LBSTRESC should store all results or findings in character format; if results are numeric, they should also be submitted in numeric format in LBSTRESN. For example, if a test has results NONE, NEG, and NEGATIVE in LBORRES and these results effectively have the same meaning, they could be represented in standard format in LBSTRESC as NEGATIVE. For other examples, see general assumptions.</span>
   </div>
   <dl>
    <dt>
@@ -9262,7 +9268,7 @@ This section provides details for each class and property defined by [Ontology N
   <h3>Study_Day_of_End_of_Observation<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://purls.helmholtz-metadaten.de/ptro/DKFZ000179</p>
   <div class="comment">
-   <span class="markdown">Study day of the end of observation. Can be populated when CLENDTC represents the start day of a continuous evaluation interval. The algorithm for calculations must be relative to the sponsor-defined RFSTDTC variable in the Demographics (DM) domain.</span>
+   <span class="markdown">Study day of the end of observation, in integer days. Can be populated when CLDY represents the start day of a continuous evaluation interval. The algorithm for calculations must be relative to the sponsor-defined RFSTDTC variable in the Demographics (DM) domain.</span>
   </div>
   <dl>
    <dt>
@@ -9358,6 +9364,12 @@ This section provides details for each class and property defined by [Ontology N
     <dd>
      <a href="#http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256">Subject Unique Identifier</a> <sup class="type-c" title="class">c</sup>
     </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a>
+    </dd>
    </dl>
   </div>
  </div>
@@ -9390,6 +9402,12 @@ This section provides details for each class and property defined by [Ontology N
     </dt>
     <dd>
      <a href="#http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256" title="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C69256">Subject Unique Identifier</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a>
     </dd>
    </dl>
   </div>
